@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(#8fd3ff, #e6f7ff);
+  color: #1b2a41;
+}
+
+/* 🌤 Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.navbar nav a:hover {
+  opacity: 0.75;
+}
+
+/* 🌈 Hero */
+.hero {
+  background: linear-gradient(to bottom, #6ec1ff 0%, #bde9ff 100%);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* floating "cloud" circles for playful feel */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  background: rgba(255,255,255,0.4);
+  border-radius: 50%;
+}
+
+.hero::before {
+  width: 200px;
+  height: 200px;
+  top: 40px;
+  left: -60px;
+}
+
+.hero::after {
+  width: 300px;
+  height: 300px;
+  bottom: -120px;
+  right: -80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #2b6cb0;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  color: #0f3057;
+}
+
+/* 🍄 Buttons */
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary {
+  background: #22c55e;
+  color: white;
+  box-shadow: 0 4px 0 #15803d;
+}
+
+.secondary {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 4px 0 #1e40af;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+}
+
+/* 📰 Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.card p {
+  margin-bottom: 16px;
+}
+
+.card a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* 🍁 Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 0.9rem;
+}
