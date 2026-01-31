@@ -1,0 +1,107 @@
+[
+  {
+    "MAPID": "map_snail_hunting_ground_i",
+    "Map Name": "Snail Hunting Ground I",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/40000/render"
+  },
+  {
+    "MAPID": "map_snail_hunting_ground_ii",
+    "Map Name": "Snail Hunting Ground II",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/40001/render"
+  },
+  {
+    "MAPID": "map_snail_hunting_ground_iii",
+    "Map Name": "Snail Hunting Ground III",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/40002/render"
+  },
+  {
+    "MAPID": "map_a_split_road",
+    "Map Name": "A Split Road",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/50000/render"
+  },
+  {
+    "MAPID": "map_the_field_west_of_amherst",
+    "Map Name": "The Field West of Amherst",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000000/render"
+  },
+  {
+    "MAPID": "map_the_field_west_of_southperry",
+    "Map Name": "The Field West of SouthPerry",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/50001/render"
+  },
+  {
+    "MAPID": "map_snail_garden",
+    "Map Name": "Snail Garden",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000004/render"
+  },
+  {
+    "MAPID": "map_mushroom_garden",
+    "Map Name": "Mushroom Garden",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104030001/render"
+  },
+  {
+    "MAPID": "map_amherst",
+    "Map Name": "Amherst",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010000/render"
+  },
+  {
+    "MAPID": "map_amherst_weapon_store",
+    "Map Name": "Amherst Weapon Store",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010001/render"
+  },
+  {
+    "MAPID": "map_amherst_department_store",
+    "Map Name": "Amherst Department Store",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010003/render"
+  },
+  {
+    "MAPID": "map_amherst_town_street",
+    "Map Name": "Amherst Town Street",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010002/render"
+  },
+  {
+    "MAPID": "map_snail_field_of_flowers",
+    "Map Name": "Snail Field of Flowers",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010004/render"
+  },
+  {
+    "MAPID": "map_the_field_east_of_amherst",
+    "Map Name": "The Field East of Amherst",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1020000/render"
+  },
+  {
+    "MAPID": "map_tomato_field",
+    "Map Name": "Tomato Field",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1020001/render"
+  },
+  {
+    "MAPID": "map_hunting_ground_middle_of_the_forest_i",
+    "Map Name": "Hunting Ground Middle of the Forest I",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000005/render"
+  },
+  {
+    "MAPID": "map_hunting_ground_middle_of_the_forest_ii",
+    "Map Name": "Hunting Ground Middle of the Forest II",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000006/render"
+  },
+  {
+    "MAPID": "map_in_a_small_forest",
+    "Map Name": "In a Small Forest",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000001/render"
+  },
+  {
+    "MAPID": "map_dangerous_forest",
+    "Map Name": "Dangerous Forest",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1000002/render"
+  },
+  {
+    "MAPID": "map_southperry",
+    "Map Name": "Southperry",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/60000/render"
+  },
+  {
+    "MAPID": "map_southperry_armor_store",
+    "Map Name": "Southperry Armor Store",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/60001/render"
+  }
+]

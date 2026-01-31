@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MB3RE46XM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6MB3RE46XM');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monsters | MapleStory Classic World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 🌤 Header / Navigation -->
+  <header class="navbar">
+    <div class="logo">🍁 MapleStory Classic World</div>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="#">Guides</a>
+      <a href="search.html?type=items">Items</a>
+      <a href="search.html?type=maps">Maps</a>
+      <a href="search.html?type=monsters">Monsters</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <!-- 🔍 Search Section -->
+  <section class="search-section">
+    <h1>Library</h1>
+    <p>Search for monsters, items, or maps</p>
+    <div class="filters">
+      <div class="type-filters">
+        <label><input type="radio" name="entity-type" id="filter-all" checked> All</label>
+        <label><input type="radio" name="entity-type" id="filter-monster"> Monsters</label>
+        <label><input type="radio" name="entity-type" id="filter-item"> Items</label>
+        <label><input type="radio" name="entity-type" id="filter-map"> Maps</label>
+      </div>
+      <div class="sub-filters" id="sub-filters">
+        <div class="monster-filters" id="monster-filters" style="display: none;">
+          <h4>Monster Level</h4>
+          <label><input type="radio" name="level-range" class="level-filter" value=""> All</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="1-10"> 1-10</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="11-20"> 11-20</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="21-30"> 21-30</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="31-40"> 31-40</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="41-50"> 41-50</label>
+          <label><input type="radio" name="level-range" class="level-filter" value="51+"> 51+</label>
+        </div>
+        <div class="item-filters" id="item-filters" style="display: none;">
+          <h4>Item Category</h4>
+          <label><input type="radio" name="item-category" class="category-filter" value=""> All</label>
+          <label><input type="radio" name="item-category" class="category-filter" value="EQUIPMENT"> Equipment</label>
+          <label><input type="radio" name="item-category" class="category-filter" value="USE"> Use</label>
+          <label><input type="radio" name="item-category" class="category-filter" value="ETC"> Etc</label>
+          <div id="req-level-section" style="display: none;">
+            <h4>Required Level</h4>
+            <label><input type="radio" name="req-level" class="req-level-filter" value=""> All</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="1-10"> 1-10</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="11-20"> 11-20</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="21-30"> 21-30</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="31-40"> 31-40</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="41-50"> 41-50</label>
+            <label><input type="radio" name="req-level" class="req-level-filter" value="51+"> 51+</label>
+            <h4>Job</h4>
+            <label><input type="radio" name="job" class="job-filter" value=""> All </label>
+            <label><input type="radio" name="job" class="job-filter" value="Warrior"> Warrior</label>
+            <label><input type="radio" name="job" class="job-filter" value="Bowman"> Bowman</label>
+            <label><input type="radio" name="job" class="job-filter" value="Magician"> Magician</label>
+            <label><input type="radio" name="job" class="job-filter" value="Thief"> Thief</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input 
+      type="text"
+      id="searchInput" 
+      class="search-bar"
+      autocomplete="off"
+      placeholder="Search for anything!" 
+    />
+    <div id="searchResults" class="search-results"></div>
+  </section>
+    <footer>
+    <p>Fan-made MapleStory Classic World site by Jordsterking • Not affiliated with Nexon</p>
+  </footer>
+  <script src="search.js"></script>
+</body>
+</html>

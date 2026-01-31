@@ -1,0 +1,245 @@
+[
+  {
+    "MOBID": "mob_snail",
+    "Name": "Snail",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/100100/render/stand",
+    "Level": 1,
+    "XP": 3,
+    "HP": 8,
+    "XPCost": 2.67
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "Name": "Blue Snail",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/100101/render/stand",
+    "Level": 2,
+    "XP": 4,
+    "HP": 15,
+    "XPCost": 3.75
+  },
+  {
+    "MOBID": "mob_shroom",
+    "Name": "Shroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/120100/render/stand",
+    "Level": 2,
+    "XP": 5,
+    "HP": 20,
+    "XPCost": 4
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "Name": "Red Snail",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/130101/render/stand",
+    "Level": 4,
+    "XP": 8,
+    "HP": 40,
+    "XPCost": 5
+  },
+  {
+    "MOBID": "mob_stump",
+    "Name": "Stump",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/130100/render/stand",
+    "Level": 4,
+    "XP": 8,
+    "HP": 40,
+    "XPCost": 5
+  },
+  {
+    "MOBID": "mob_slime",
+    "Name": "Slime",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/210100/render/stand",
+    "Level": 6,
+    "XP": 10,
+    "HP": 50,
+    "XPCost": 5
+  },
+  {
+    "MOBID": "mob_pig",
+    "Name": "Pig",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1210100/render/stand",
+    "Level": 7,
+    "XP": 15,
+    "HP": 75,
+    "XPCost": 5
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "Name": "Orange Mushroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1210102/render/stand",
+    "Level": 8,
+    "XP": 15,
+    "HP": 80,
+    "XPCost": 5.33
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "Name": "Ribbon Pig",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1210101/render/stand",
+    "Level": 10,
+    "XP": 20,
+    "HP": 120,
+    "XPCost": 6
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "Name": "Dark Stump",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1110101/render/stand",
+    "Level": 10,
+    "XP": 18,
+    "HP": 250,
+    "XPCost": 13.89
+  },
+  {
+    "MOBID": "mob_octopus",
+    "Name": "Octopus",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1120100/render/stand",
+    "Level": 12,
+    "XP": 24,
+    "HP": 200,
+    "XPCost": 8.33
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "Name": "Green Mushroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1110100/render/stand",
+    "Level": 15,
+    "XP": 26,
+    "HP": 250,
+    "XPCost": 9.62
+  },
+  {
+    "MOBID": "mob_bubbling",
+    "Name": "Bubbling",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1210103/render/stand",
+    "Level": 15,
+    "XP": 26,
+    "HP": 240,
+    "XPCost": 9.23
+  },
+  {
+    "MOBID": "mob_axe_stump",
+    "Name": "Axe Stump",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/1130100/render/stand",
+    "Level": 17,
+    "XP": 30,
+    "HP": 300,
+    "XPCost": 10
+  },
+  {
+    "MOBID": "mob_ghost_stump",
+    "Name": "Ghost Stump",
+    "Picture": "https://maplestory.io/api/GMS/34/mob/1140100/render/stand",
+    "Level": 19,
+    "XP": 33,
+    "HP": 330,
+    "XPCost": 10
+  },
+  {
+    "MOBID": "mob_blue_mushroom",
+    "Name": "Blue Mushroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2220100/render/stand",
+    "Level": 20,
+    "XP": 32,
+    "HP": 350,
+    "XPCost": 10.94
+  },
+  {
+    "MOBID": "mob_stirge",
+    "Name": "Stirge",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2300100/render/fly",
+    "Level": 20,
+    "XP": 33,
+    "HP": 300,
+    "XPCost": 9.09
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "Name": "Jr. Necki",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2130103/render/stand",
+    "Level": 21,
+    "XP": 33,
+    "HP": 285,
+    "XPCost": 8.64
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "Name": "Horny Mushroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2110200/render/stand",
+    "Level": 22,
+    "XP": 35,
+    "HP": 300,
+    "XPCost": 8.57
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "Name": "Dark Axe Stump",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2130100/render/stand",
+    "Level": 22,
+    "XP": 38,
+    "HP": 550,
+    "XPCost": 14.47
+  },
+  {
+    "MOBID": "mob_wooden_mask",
+    "Name": "Wooden Mask",
+    "Picture": "https://maplestory.io/api/GMS/34/mob/2230110/render/stand",
+    "Level": 23,
+    "XP": 42,
+    "HP": 500,
+    "XPCost": 11.9
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "Name": "Zombie Mushroom",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2230101/render/stand",
+    "Level": 24,
+    "XP": 42,
+    "HP": 500,
+    "XPCost": 11.9
+  },
+  {
+    "MOBID": "mob_rocky_mask",
+    "Name": "Rocky Mask",
+    "Picture": "https://maplestory.io/api/GMS/34/mob/2230111/render/stand",
+    "Level": 24,
+    "XP": 45,
+    "HP": 600,
+    "XPCost": 13.33
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "Name": "Wild Boar",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2230102/render/stand",
+    "Level": 24,
+    "XP": 42,
+    "HP": 550,
+    "XPCost": 13.1
+  },
+  {
+    "MOBID": "mob_evil_eye",
+    "Name": "Evil Eye",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/2230100/render/stand",
+    "Level": 25,
+    "XP": 50,
+    "HP": 720,
+    "XPCost": 14.4
+  },
+  {
+    "MOBID": "mob_fairy",
+    "Name": "Fairy",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/3000001/render/stand",
+    "Level": 30,
+    "XP": 120,
+    "HP": 800,
+    "XPCost": 6.67
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "Name": "Fire Boar",
+    "Picture": "https://maplestory.io/api/GMS/12/mob/3210100/render/stand",
+    "Level": 32,
+    "XP": 60,
+    "HP": 1000,
+    "XPCost": 16.67
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "FromMapID": "map_snail_hunting_ground_i",
+    "ToMapID": "map_snail_hunting_ground_ii"
+  },
+  {
+    "FromMapID": "map_snail_hunting_ground_ii",
+    "ToMapID": "map_snail_hunting_ground_i"
+  },
+  {
+    "FromMapID": "map_snail_hunting_ground_ii",
+    "ToMapID": "map_snail_hunting_ground_iii"
+  },
+  {
+    "FromMapID": "map_snail_hunting_ground_iii",
+    "ToMapID": "map_snail_hunting_ground_ii"
+  },
+  {
+    "FromMapID": "map_snail_hunting_ground_iii",
+    "ToMapID": "map_a_split_road"
+  },
+  {
+    "FromMapID": "map_a_split_road",
+    "ToMapID": "map_snail_hunting_ground_iii"
+  },
+  {
+    "FromMapID": "map_a_split_road",
+    "ToMapID": "map_the_field_west_of_amherst"
+  },
+  {
+    "FromMapID": "map_a_split_road",
+    "ToMapID": "map_the_field_west_of_southperry"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_amherst",
+    "ToMapID": "map_a_split_road"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_amherst",
+    "ToMapID": "map_snail_garden"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_amherst",
+    "ToMapID": "map_mushroom_garden"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_amherst",
+    "ToMapID": "map_amherst"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_southperry",
+    "ToMapID": "map_a_split_road"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_southperry",
+    "ToMapID": "map_in_a_small_forest"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_southperry",
+    "ToMapID": "map_dangerous_forest"
+  },
+  {
+    "FromMapID": "map_the_field_west_of_southperry",
+    "ToMapID": "map_southperry"
+  },
+  {
+    "FromMapID": "map_snail_garden",
+    "ToMapID": "map_the_field_west_of_amherst"
+  },
+  {
+    "FromMapID": "map_mushroom_garden",
+    "ToMapID": "map_the_field_west_of_amherst"
+  },
+  {
+    "FromMapID": "map_amherst",
+    "ToMapID": "map_the_field_west_of_amherst"
+  },
+  {
+    "FromMapID": "map_amherst",
+    "ToMapID": "map_amherst_weapon_store"
+  },
+  {
+    "FromMapID": "map_amherst",
+    "ToMapID": "map_amherst_department_store"
+  },
+  {
+    "FromMapID": "map_amherst",
+    "ToMapID": "map_amherst_town_street"
+  },
+  {
+    "FromMapID": "map_amherst",
+    "ToMapID": "map_the_field_east_of_amherst"
+  },
+  {
+    "FromMapID": "map_amherst_weapon_store",
+    "ToMapID": "map_amherst"
+  },
+  {
+    "FromMapID": "map_amherst_department_store",
+    "ToMapID": "map_amherst"
+  },
+  {
+    "FromMapID": "map_amherst_town_street",
+    "ToMapID": "map_snail_field_of_flowers"
+  },
+  {
+    "FromMapID": "map_amherst_town_street",
+    "ToMapID": "map_amherst"
+  },
+  {
+    "FromMapID": "map_snail_field_of_flowers",
+    "ToMapID": "map_amherst_town_street"
+  },
+  {
+    "FromMapID": "map_the_field_east_of_amherst",
+    "ToMapID": "map_amherst"
+  },
+  {
+    "FromMapID": "map_the_field_east_of_amherst",
+    "ToMapID": "map_tomato_field"
+  },
+  {
+    "FromMapID": "map_the_field_east_of_amherst",
+    "ToMapID": "map_hunting_ground_middle_of_the_forest_i"
+  },
+  {
+    "FromMapID": "map_the_field_east_of_amherst",
+    "ToMapID": "map_hunting_ground_middle_of_the_forest_ii"
+  },
+  {
+    "FromMapID": "map_tomato_field",
+    "ToMapID": "map_the_field_east_of_amherst"
+  },
+  {
+    "FromMapID": "map_hunting_ground_middle_of_the_forest_i",
+    "ToMapID": "map_the_field_east_of_amherst"
+  },
+  {
+    "FromMapID": "map_hunting_ground_middle_of_the_forest_ii",
+    "ToMapID": "map_the_field_east_of_amherst"
+  },
+  {
+    "FromMapID": "map_in_a_small_forest",
+    "ToMapID": "map_the_field_west_of_southperry"
+  },
+  {
+    "FromMapID": "map_dangerous_forest",
+    "ToMapID": "map_the_field_west_of_southperry"
+  },
+  {
+    "FromMapID": "map_southperry",
+    "ToMapID": "map_the_field_west_of_southperry"
+  },
+  {
+    "FromMapID": "map_southperry",
+    "ToMapID": "map_southperry_armor_store"
+  },
+  {
+    "FromMapID": "map_southperry_armor_store",
+    "ToMapID": "map_southperry"
+  }
+]
