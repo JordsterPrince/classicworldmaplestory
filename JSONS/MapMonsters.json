@@ -238,5 +238,80 @@
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_snail",
     "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_right_around_lith_harbor",
+    "MOBID": "mob_blue_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_right_around_lith_harbor",
+    "MOBID": "mob_red_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_right_around_lith_harbor",
+    "MOBID": "mob_slime",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "MOBID": "mob_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "MOBID": "mob_blue_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "MOBID": "mob_slime",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "MOBID": "mob_red_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "MOBID": "mob_stump",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_ii",
+    "MOBID": "mob_slime",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_ii",
+    "MOBID": "mob_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_ii",
+    "MOBID": "mob_pig",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_ii",
+    "MOBID": "mob_ribbon_pig",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_iii",
+    "MOBID": "mob_snail",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_iii",
+    "MOBID": "mob_slime",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_iii",
+    "MOBID": "mob_stump",
+    "NumberOfMobs": ""
   }
 ]

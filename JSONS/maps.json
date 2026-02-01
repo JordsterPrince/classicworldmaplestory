@@ -103,5 +103,70 @@
     "MAPID": "map_southperry_armor_store",
     "Map Name": "Southperry Armor Store",
     "Map Picture": "https://maplestory.io/api/gms/62/map/60001/render"
+  },
+  {
+    "MAPID": "map_lith_harbor",
+    "Map Name": "Lith Harbor",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000000/render"
+  },
+  {
+    "MAPID": "map_lith_harbor_department_store",
+    "Map Name": "Lith Harbor Department Store",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000002/render"
+  },
+  {
+    "MAPID": "map_lith_harbor_armor_shop",
+    "Map Name": "Lith Harbor Armor Shop",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/60001/render"
+  },
+  {
+    "MAPID": "map_lith_harbor_weapon_shop",
+    "Map Name": "Lith Harbor Weapon Shop",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/1010001/render"
+  },
+  {
+    "MAPID": "map_right_around_lith_harbor",
+    "Map Name": "Right Around Lith Harbor",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000100/render"
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_i",
+    "Map Name": "Thicket Around the Beach I",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000200/render"
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_ii",
+    "Map Name": "Thicket Around the Beach II",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000300/render"
+  },
+  {
+    "MAPID": "map_thicket_around_the_beach_iii",
+    "Map Name": "Thicket Around the Beach III",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104000400/render"
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "Map Name": "3 Way Road Split",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104010000/render"
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "Map Name": "The Pig Beach",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104010001/render"
+  },
+  {
+    "MAPID": "map_beach_hunting_ground",
+    "Map Name": "Beach Hunting Ground",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104010002/render"
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "Map Name": "Forest West of Henesys",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/104020000/render"
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "Map Name": "Kerning City Middle Forest I",
+    "Map Picture": "https://maplestory.io/api/gms/62/map/103030000/render"
   }
 ]

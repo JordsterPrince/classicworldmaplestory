@@ -158,5 +158,101 @@
   {
     "FromMapID": "map_southperry_armor_store",
     "ToMapID": "map_southperry"
+  },
+  {
+    "FromMapID": "map_lith_harbor",
+    "ToMapID": "map_lith_harbor_department_store"
+  },
+  {
+    "FromMapID": "map_lith_harbor_department_store",
+    "ToMapID": "map_lith_harbor"
+  },
+  {
+    "FromMapID": "map_lith_harbor",
+    "ToMapID": "map_lith_harbor_armor_shop"
+  },
+  {
+    "FromMapID": "map_lith_harbor_armor_shop",
+    "ToMapID": "map_lith_harbor"
+  },
+  {
+    "FromMapID": "map_lith_harbor",
+    "ToMapID": "map_lith_harbor_weapon_shop"
+  },
+  {
+    "FromMapID": "map_lith_harbor_weapon_shop",
+    "ToMapID": "map_lith_harbor"
+  },
+  {
+    "FromMapID": "map_lith_harbor",
+    "ToMapID": "map_right_around_lith_harbor"
+  },
+  {
+    "FromMapID": "map_right_around_lith_harbor",
+    "ToMapID": "map_lith_harbor"
+  },
+  {
+    "FromMapID": "map_right_around_lith_harbor",
+    "ToMapID": "map_thicket_around_the_beach_i"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_i",
+    "ToMapID": "map_right_around_lith_harbor"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_i",
+    "ToMapID": "map_thicket_around_the_beach_ii"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_ii",
+    "ToMapID": "map_thicket_around_the_beach_i"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_ii",
+    "ToMapID": "map_thicket_around_the_beach_iii"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_iii",
+    "ToMapID": "map_thicket_around_the_beach_ii"
+  },
+  {
+    "FromMapID": "map_thicket_around_the_beach_iii",
+    "ToMapID": "map_3_way_road_split"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_thicket_around_the_beach_iii"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_the_pig_beach"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_beach_hunting_ground"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_forest_west_of_henesys"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_kerning_city_middle_forest_i"
+  },
+  {
+    "FromMapID": "map_the_pig_beach",
+    "ToMapID": "map_3_way_road_split"
+  },
+  {
+    "FromMapID": "map_beach_hunting_ground",
+    "ToMapID": "map_3_way_road_split"
+  },
+  {
+    "FromMapID": "map_forest_west_of_henesys",
+    "ToMapID": "map_3_way_road_split"
+  },
+  {
+    "FromMapID": "map_kerning_city_middle_forest_i",
+    "ToMapID": "map_3_way_road_split"
   }
 ]

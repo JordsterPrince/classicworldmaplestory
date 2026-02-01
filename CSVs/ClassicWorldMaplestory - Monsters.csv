@@ -1,28 +1,31 @@
 MOBID,Name,Picture,Level,XP,HP,XPCost
-mob_snail,Snail,https://maplestory.io/api/GMS/12/mob/100100/render/stand,1,3,8,2.67
-mob_blue_snail,Blue Snail,https://maplestory.io/api/GMS/12/mob/100101/render/stand,2,4,15,3.75
-mob_shroom,Shroom,https://maplestory.io/api/GMS/12/mob/120100/render/stand,2,5,20,4.00
-mob_red_snail,Red Snail,https://maplestory.io/api/GMS/12/mob/130101/render/stand,4,8,40,5.00
-mob_stump,Stump,https://maplestory.io/api/GMS/12/mob/130100/render/stand,4,8,40,5.00
-mob_slime,Slime,https://maplestory.io/api/GMS/12/mob/210100/render/stand,6,10,50,5.00
-mob_pig,Pig,https://maplestory.io/api/GMS/12/mob/1210100/render/stand,7,15,75,5.00
-mob_orange_mushroom,Orange Mushroom,https://maplestory.io/api/GMS/12/mob/1210102/render/stand,8,15,80,5.33
-mob_ribbon_pig,Ribbon Pig,https://maplestory.io/api/GMS/12/mob/1210101/render/stand,10,20,120,6.00
-mob_dark_stump,Dark Stump,https://maplestory.io/api/GMS/12/mob/1110101/render/stand,10,18,250,13.89
-mob_octopus,Octopus,https://maplestory.io/api/GMS/12/mob/1120100/render/stand,12,24,200,8.33
-mob_green_mushroom,Green Mushroom,https://maplestory.io/api/GMS/12/mob/1110100/render/stand,15,26,250,9.62
-mob_bubbling,Bubbling,https://maplestory.io/api/GMS/12/mob/1210103/render/stand,15,26,240,9.23
-mob_axe_stump,Axe Stump,https://maplestory.io/api/GMS/12/mob/1130100/render/stand,17,30,300,10.00
-mob_ghost_stump,Ghost Stump,https://maplestory.io/api/GMS/34/mob/1140100/render/stand,19,33,330,10.00
-mob_blue_mushroom,Blue Mushroom,https://maplestory.io/api/GMS/12/mob/2220100/render/stand,20,32,350,10.94
-mob_stirge,Stirge,https://maplestory.io/api/GMS/12/mob/2300100/render/fly,20,33,300,9.09
-mob_jr_necki,Jr. Necki,https://maplestory.io/api/GMS/12/mob/2130103/render/stand,21,33,285,8.64
-mob_horny_mushroom,Horny Mushroom,https://maplestory.io/api/GMS/12/mob/2110200/render/stand,22,35,300,8.57
-mob_dark_axe_stump,Dark Axe Stump,https://maplestory.io/api/GMS/12/mob/2130100/render/stand,22,38,550,14.47
-mob_wooden_mask,Wooden Mask,https://maplestory.io/api/GMS/34/mob/2230110/render/stand,23,42,500,11.90
-mob_zombie_mushroom,Zombie Mushroom,https://maplestory.io/api/GMS/12/mob/2230101/render/stand,24,42,500,11.90
-mob_rocky_mask,Rocky Mask,https://maplestory.io/api/GMS/34/mob/2230111/render/stand,24,45,600,13.33
-mob_wild_boar,Wild Boar,https://maplestory.io/api/GMS/12/mob/2230102/render/stand,24,42,550,13.10
-mob_evil_eye,Evil Eye,https://maplestory.io/api/GMS/12/mob/2230100/render/stand,25,50,720,14.40
-mob_fairy,Fairy,https://maplestory.io/api/GMS/12/mob/3000001/render/stand,30,120,800,6.67
-mob_fire_boar,Fire Boar,https://maplestory.io/api/GMS/12/mob/3210100/render/stand,32,60,1000,16.67
+mob_snail,Snail,https://maplestory.io/api/GMS/12/mob/100100/render/stand,1,2,40,20.00
+mob_blue_snail,Blue Snail,https://maplestory.io/api/GMS/12/mob/100101/render/stand,2,3,40,13.33
+mob_shroom,Shroom,https://maplestory.io/api/GMS/12/mob/120100/render/stand,2,5,50,10.00
+mob_red_snail,Red Snail,https://maplestory.io/api/GMS/12/mob/130101/render/stand,4,7,45,6.43
+mob_stump,Stump,https://maplestory.io/api/GMS/12/mob/130100/render/stand,4,9,125,13.89
+mob_slime,Slime,https://maplestory.io/api/GMS/12/mob/210100/render/stand,6,11,100,9.09
+mob_pig,Pig,https://maplestory.io/api/GMS/12/mob/1210100/render/stand,7,13,75,5.77
+mob_orange_mushroom,Orange Mushroom,https://maplestory.io/api/GMS/12/mob/1210102/render/stand,8,15,110,7.33
+mob_ribbon_pig,Ribbon Pig,https://maplestory.io/api/GMS/12/mob/1210101/render/stand,10,19,120,6.32
+mob_dark_stump,Dark Stump,https://maplestory.io/api/GMS/12/mob/1110101/render/stand,10,21,250,11.90
+mob_octopus,Octopus,https://maplestory.io/api/GMS/12/mob/1120100/render/stand,12,23,200,8.70
+mob_green_mushroom,Green Mushroom,https://maplestory.io/api/GMS/12/mob/1110100/render/stand,15,27,225,8.33
+mob_bubbling,Bubbling,https://maplestory.io/api/GMS/12/mob/1210103/render/stand,15,29,250,8.62
+mob_axe_stump,Axe Stump,https://maplestory.io/api/GMS/12/mob/1130100/render/stand,17,33,350,10.61
+mob_blue_mushroom,Blue Mushroom,https://maplestory.io/api/GMS/12/mob/2220100/render/stand,20,37,350,9.46
+mob_stirge,Stirge,https://maplestory.io/api/GMS/12/mob/2300100/render/fly,20,39,250,6.41
+mob_jr_necki,Jr. Necki,https://maplestory.io/api/GMS/12/mob/2130103/render/stand,21,41,285,6.95
+mob_horny_mushroom,Horny Mushroom,https://maplestory.io/api/GMS/12/mob/2110200/render/stand,22,43,350,8.14
+mob_dark_axe_stump,Dark Axe Stump,https://maplestory.io/api/GMS/12/mob/2130100/render/stand,22,45,350,7.78
+mob_zombie_mushroom,Zombie Mushroom,https://maplestory.io/api/GMS/12/mob/2230101/render/stand,24,47,375,7.98
+mob_wild_boar,Wild Boar,https://maplestory.io/api/GMS/12/mob/2230102/render/stand,24,49,550,11.22
+mob_evil_eye,Evil Eye,https://maplestory.io/api/GMS/12/mob/2230100/render/stand,25,53,550,10.38
+mob_iron_hog,Iron Hog,https://maplestory.io/api/gms/83/mob/4230103/render/stand,27,55,450,8.18
+mob_fairy,Fairy,https://maplestory.io/api/GMS/12/mob/3000001/render/stand,30,57,500,8.77
+mob_ligator,Ligator,https://maplestory.io/api/gms/83/mob/3110100/render/stand,32,61,700,11.48
+mob_fire_boar,Fire Boar,https://maplestory.io/api/GMS/12/mob/3210100/render/stand,32,63,600,9.52
+mob_curse_eye,Curse Eye,https://maplestory.io/api/gms/83/mob/3230100/render/stand,35,65,800,12.31
+mob_jr_wraith,Jr. Wraith,https://maplestory.io/api/gms/83/mob/3230101/render/stand,35,67,675,10.07
+mob_jr_boogie,Jr. Boogie,https://maplestory.io/api/gms/83/mob/3230300/render/stand,35,69,1050,15.22
+mob_lupin,Lupin,https://maplestory.io/api/gms/83/mob/3210800/render/stand,37,73,950,13.01

@@ -1,6 +1,24 @@
 let allData = [];
 let mobDrops = [];
 let mapMonsters = [];
+const BONUS_STAT_LABELS = {
+  'Weapon Def': 'Weapon Def',
+  'Magic Def': 'Magic Def',
+  'Weapon Attack': 'Attack Power',
+  'Attack Power': 'Attack Power',
+  'Magic Attack': 'Magic Attack',
+  'STR': 'STR',
+  'DEX': 'DEX',
+  'INT': 'INT',
+  'LUK': 'LUK',
+  'HP': 'HP',
+  'MP': 'MP',
+  'Speed': 'Speed',
+  'Jump': 'Jump',
+  'Accuracy': 'Accuracy',
+  'Avoidability': 'Avoidability'
+};
+
 
 // Load all data
 Promise.all([
@@ -125,21 +143,29 @@ window.showItem = (itemid) => {
     detailsHTML += `</div>
       <div class="bonus-stats">
         <h4>Stats</h4>`;
-    if (item['Equip Type'] === 'Weapon') {
-      if (item['Weapon Category']) detailsHTML += `<p><strong>Category:</strong> ${item['Weapon Category']}</p>`;
-      if (item['Attack Speed']) detailsHTML += `<p><strong>Attack Speed:</strong> ${item['Attack Speed']}</p>`;
-      if (item['Attack Power']) detailsHTML += `<p><strong>Attack Power:</strong> ${item['Attack Power']}</p>`;
-      if (item['Magic Attack']) detailsHTML += `<p><strong>Magic Attack:</strong> ${item['Magic Attack']}</p>`;
-    } else {
-      if (item['Weapon Def']) detailsHTML += `<p><strong>Weapon Def:</strong> ${item['Weapon Def']}</p>`;
-      if (item['Magic Def']) detailsHTML += `<p><strong>Magic Def:</strong> ${item['Magic Def']}</p>`;
-      if (item.HP) detailsHTML += `<p><strong>HP:</strong> ${item.HP}</p>`;
-      if (item.MP) detailsHTML += `<p><strong>MP:</strong> ${item.MP}</p>`;
-      if (item.STR) detailsHTML += `<p><strong>STR:</strong> ${item.STR}</p>`;
-      if (item.DEX) detailsHTML += `<p><strong>DEX:</strong> ${item.DEX}</p>`;
-      if (item.INT) detailsHTML += `<p><strong>INT:</strong> ${item.INT}</p>`;
-      if (item.LUK) detailsHTML += `<p><strong>LUK:</strong> ${item.LUK}</p>`;
-    }
+    // Show weapon-specific stats first
+    if (item['Weapon Category']) detailsHTML += `<p><strong>Category:</strong> ${item['Weapon Category']}</p>`;
+    if (item['Attack Speed']) detailsHTML += `<p><strong>Attack Speed:</strong> ${item['Attack Speed']}</p>`;
+    if (item['Attack Power']) detailsHTML += `<p><strong>Attack Power:</strong> ${item['Attack Power']}</p>`;
+    if (item['Magic Attack']) detailsHTML += `<p><strong>Magic Attack:</strong> ${item['Magic Attack']}</p>`;
+
+    // Dynamically show any other bonus stats
+    const bonusStats = [];
+    Object.keys(BONUS_STAT_LABELS).forEach(statKey => {
+      // Skip Attack Power since it's already shown in weapon-specific stats
+      if (statKey === 'Attack Power') return;
+      // Skip Magic Attack since it's already shown in weapon-specific stats
+      if (statKey === 'Magic Attack') return;
+      const value = item[statKey];
+      if (value != null && value !== '' && value !== '0' && value !== 0) {
+        bonusStats.push(`<p><strong>${BONUS_STAT_LABELS[statKey]}:</strong> ${value}</p>`);
+      }
+    });
+    
+    // Add bonus stats to the HTML
+    bonusStats.forEach(stat => {
+      detailsHTML += stat;
+    });
     detailsHTML += `</div>
     </div>
     ${droppersHTML}`;
@@ -472,21 +498,29 @@ function applyFilters() {
           detailsHTML += `</div>
             <div class="bonus-stats">
               <h4>Stats</h4>`;
-          if (item['Equip Type'] === 'Weapon') {
+            // Show weapon-specific stats first
             if (item['Weapon Category']) detailsHTML += `<p><strong>Category:</strong> ${item['Weapon Category']}</p>`;
             if (item['Attack Speed']) detailsHTML += `<p><strong>Attack Speed:</strong> ${item['Attack Speed']}</p>`;
             if (item['Attack Power']) detailsHTML += `<p><strong>Attack Power:</strong> ${item['Attack Power']}</p>`;
             if (item['Magic Attack']) detailsHTML += `<p><strong>Magic Attack:</strong> ${item['Magic Attack']}</p>`;
-          } else {
-            if (item['Weapon Def']) detailsHTML += `<p><strong>Weapon Def:</strong> ${item['Weapon Def']}</p>`;
-            if (item['Magic Def']) detailsHTML += `<p><strong>Magic Def:</strong> ${item['Magic Def']}</p>`;
-            if (item.HP) detailsHTML += `<p><strong>HP:</strong> ${item.HP}</p>`;
-            if (item.MP) detailsHTML += `<p><strong>MP:</strong> ${item.MP}</p>`;
-            if (item.STR) detailsHTML += `<p><strong>STR:</strong> ${item.STR}</p>`;
-            if (item.DEX) detailsHTML += `<p><strong>DEX:</strong> ${item.DEX}</p>`;
-            if (item.INT) detailsHTML += `<p><strong>INT:</strong> ${item.INT}</p>`;
-            if (item.LUK) detailsHTML += `<p><strong>LUK:</strong> ${item.LUK}</p>`;
-          }
+
+            // Dynamically show any other bonus stats
+            const bonusStats = [];
+            Object.keys(BONUS_STAT_LABELS).forEach(statKey => {
+              // Skip Attack Power since it's already shown in weapon-specific stats
+              if (statKey === 'Attack Power') return;
+              // Skip Magic Attack since it's already shown in weapon-specific stats
+              if (statKey === 'Magic Attack') return;
+              const value = item[statKey];
+              if (value != null && value !== '' && value !== '0' && value !== 0) {
+                bonusStats.push(`<p><strong>${BONUS_STAT_LABELS[statKey]}:</strong> ${value}</p>`);
+              }
+            });
+            
+            // Add bonus stats to the HTML
+            bonusStats.forEach(stat => {
+              detailsHTML += stat;
+            });
           detailsHTML += `</div>
           </div>`;
         }
