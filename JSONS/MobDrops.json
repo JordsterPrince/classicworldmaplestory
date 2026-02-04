@@ -646,7 +646,7 @@
   },
   {
     "MOBID": "mob_octopus",
-    "ITEMID": "item_silver_earring",
+    "ITEMID": "item_single_earring",
     "Chance": ""
   },
   {
@@ -1246,7 +1246,7 @@
   },
   {
     "MOBID": "mob_jr_necki",
-    "ITEMID": "item_orange_throwing",
+    "ITEMID": "item_orange_throwing_star",
     "Chance": ""
   },
   {
@@ -1271,6 +1271,131 @@
   },
   {
     "MOBID": "mob_jr_necki",
+    "ITEMID": "item_topaz_ore",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_iron_burgernet_helm",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_brown_jester",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_polefeather_hat",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_pilfer",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_black_pao",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_green_able_armor",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_red_kendo_robe",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_jean_shorts",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_black_pao_bottom",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_brown_sneak_pants",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_green_able_armor_skirt",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_yellow_windshoes",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_steel_fingerless_gloves",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_steel_shield",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_cutlus",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_iron_axe",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_mithril_pole_arm",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_eagle_crow",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_orange_potion",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_potion",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_wizard_potion",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_horny_mushroom_cap",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_bronze_ore",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_sapphire_ore",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_topaz_ore",
     "Chance": ""
   }
