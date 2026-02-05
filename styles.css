@@ -1,3 +1,159 @@
+@media (max-width: 900px) {
+  .navbar nav a {
+    display: block;
+    padding: 22px 0 22px 0;
+    font-size: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    letter-spacing: 0.5px;
+  }
+  .navbar nav a:last-child {
+    border-bottom: none;
+  }
+}
+/* Hamburger menu styles */
+.navbar {
+  position: relative;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 0;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 900px) {
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #333;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    flex-direction: column;
+    min-width: 160px;
+    padding: 12px 0;
+    z-index: 1000;
+  }
+  .navbar nav.show {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+/* Responsive padding for guide cards section */
+@media (max-width: 900px) {
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .guide-card {
+    max-width: 100%;
+    width: 100%;
+  }
+/* Dedicated guide section padding */
+.guide-section {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (max-width: 900px) {
+  .guide-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+}
+/* 📖 Guide Cards */
+.guide-cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Guide Card Layout for Icon */
+.guide-card {
+  flex: 1 1 180px;
+  min-width: 180px;
+  max-width: 220px;
+  height: 340px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e6f7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  transition: transform 0.18s, box-shadow 0.18s;
+  padding: 24px 12px 18px 12px;
+}
+.guide-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1b2a41;
+  text-align: center;
+}
+.guide-card-icon {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guide-card-icon img {
+  width: 80%;
+  max-width: 180px;
+  max-height: 220px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+.guide-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+}
+
+.guide-card.beginner {
+  background: linear-gradient(135deg, rgba(224,234,252,0.92) 0%, rgba(248,250,252,0.92) 100%);
+}
+.guide-card.warrior {
+  background: linear-gradient(135deg, rgba(247,202,201,0.92) 0%, rgba(248,250,252,0.92) 100%);
+}
+.guide-card.thief {
+  background: linear-gradient(135deg, rgba(199,206,234,0.92) 0%, rgba(248,250,252,0.92) 100%); /* purple (was mage) */
+}
+.guide-card.bowman {
+  background: linear-gradient(135deg, rgba(181,234,215,0.92) 0%, rgba(248,250,252,0.92) 100%);
+}
+.guide-card.mage {
+  background: linear-gradient(135deg, rgba(142,202,255,0.92) 0%, rgba(248,250,252,0.92) 100%); /* blue */
+}
+
+@media (max-width: 900px) {
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .guide-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,6 +187,7 @@ body {
   margin-left: 24px;
   font-weight: 500;
   transition: opacity 0.2s;
+  text-align: center;
 }
 
 .navbar nav a:hover {
@@ -105,7 +262,7 @@ body {
 /* 🌈 Hero */
 .hero {
   background: linear-gradient(to bottom, #6ec1ff 0%, #bde9ff 100%);
-  padding: 50px 20px;
+  padding: 50px 20px 0px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -171,6 +328,22 @@ body {
   padding: 80px 40px;
   max-width: 1100px;
   margin: auto;
+}
+
+/* Responsive: 2 columns on medium screens */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 20px;
+  }
+}
+
+/* Responsive: 1 column on small screens */
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
 }
 
 .card {

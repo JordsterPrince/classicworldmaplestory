@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MB3RE46XM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6MB3RE46XM');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../MapleLeaf.png" />
+  <title>Progression Table - MapleStory Classic World</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🌤 Header / Navigation -->
+  <header class="navbar">
+    <a class="logo" href="../index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+      <img src="../MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
+      <span>MapleStory Classic World</span>
+    </a>
+    <div class="hamburger" onclick="toggleNav(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../guides.html">Guides</a>
+      <a href="../calculators.html">Calculators</a>
+      <a href="../search.html">Library</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 📈 Progression Table -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Progression Table</h1>
+      <p>Track your equipment progression and upgrades.</p>
+    </div>
+  </section>
+
+  <!-- 🧮 Calculator Content -->
+  <section style="padding: 60px 40px; max-width: 900px; margin: auto;">
+    <div style="background: white; padding: 40px; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
+      <h2 style="margin-bottom: 24px;">Your Equipment</h2>
+      <div style="margin-bottom: 20px;">
+        <input id="equipSearch" type="text" placeholder="Search equipment..." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;">
+        <div id="searchResults" style="background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; z-index: 2;"></div>
+      </div>
+      <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
+        <thead>
+          <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
+            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Icon</th>
+            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Name</th>
+            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Score</th>
+            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Remove</th>
+          </tr>
+        </thead>
+        <tbody id="progressionTableBody"></tbody>
+      </table>
+      <button id="saveProgression" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Save</button>
+      <div id="saveMsg" style="margin-top: 10px; color: #1b2a41; font-weight: 500; text-align: center;"></div>
+      </div>
+      <div style="background: white; padding: 40px; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); margin-top: 40px;">
+        <h2 style="margin-bottom: 24px;">Planned Upgrades</h2>
+        <div style="margin-bottom: 20px;">
+          <input id="plannedEquipSearch" type="text" placeholder="Search planned upgrade..." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;">
+          <div id="plannedSearchResults" style="background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; z-index: 2;"></div>
+        </div>
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Icon</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Name</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Score</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Price</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Notes</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Remove</th>
+            </tr>
+          </thead>
+          <tbody id="plannedUpgradesTableBody"></tbody>
+        </table>
+        <button id="savePlannedUpgrades" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Save Planned Upgrades</button>
+        <div id="plannedSaveMsg" style="margin-top: 10px; color: #1b2a41; font-weight: 500; text-align: center;"></div>
+      </div>
+
+      <!-- Upgrade Comparison Table -->
+      <div style="background: white; padding: 40px; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); margin-top: 40px;">
+        <h2 style="margin-bottom: 24px;">Upgrade Comparison</h2>
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Current Equip Icon</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Icon</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Current Equip Score</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Score</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Cost</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Stat Gain</th>
+              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Cost Per Stat</th>
+            </tr>
+          </thead>
+          <tbody id="upgradeComparisonTableBody"></tbody>
+        </table>
+        <button id="calculateComparison" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Calculate Comparison</button>
+      </div>
+  </section>
+
+  <!-- 🍄 Footer -->
+    <script>
+      let equipmentList = [];
+      const equipSlots = [
+        { slot: 'Helmet', types: ['Hat', 'Helmet'] },
+        { slot: 'Top', types: ['Top', 'Overall'] },
+        { slot: 'Bottom', types: ['Bottom'] },
+        { slot: 'Shoes', types: ['Shoes'] },
+        { slot: 'Cape', types: ['Cape'] },
+        { slot: 'Gloves', types: ['Glove'] },
+        { slot: 'Earring', types: ['Earring'] },
+        { slot: 'Weapon', types: ['Weapon', 'Sword', 'Bow', 'Dagger', 'Staff', 'Polearm', 'Spear', 'Claw', 'Knuckle', 'Gun', 'Wand', 'Crossbow', 'Axe', 'Mace'] },
+        { slot: 'Secondary', types: ['Shield', 'Secondary'] }
+      ];
+      let progressionTable = {};
+      let plannedUpgradesTable = {};
+
+      // Fetch equipment from items.json
+      fetch('../JSONS/items.json')
+        .then(res => res.json())
+        .then(data => {
+          equipmentList = data.filter(item => item.Category === 'EQUIPMENT');
+        });
+
+      // Search bar logic for progression
+      const searchInput = document.getElementById('equipSearch');
+      const searchResults = document.getElementById('searchResults');
+      searchInput.addEventListener('input', function() {
+        const val = this.value.trim().toLowerCase();
+        if (!val) { searchResults.innerHTML = ''; return; }
+        const matches = equipmentList.filter(item => item['Item Name'] && item['Item Name'].toLowerCase().includes(val)).slice(0, 8);
+        searchResults.innerHTML = matches.map(item =>
+          `<div style='display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;' onclick='addProgressionRow("${item.ITEMID.replace(/"/g, '')}")'>
+            <img src="${item['Item Icon']}" alt="icon" style="width:32px;height:32px;object-fit:contain;border-radius:6px;">
+            <span>${item['Item Name']}</span>
+          </div>`
+        ).join('');
+      });
+
+      // Search bar logic for planned upgrades
+      const plannedSearchInput = document.getElementById('plannedEquipSearch');
+      const plannedSearchResults = document.getElementById('plannedSearchResults');
+      plannedSearchInput.addEventListener('input', function() {
+        const val = this.value.trim().toLowerCase();
+        if (!val) { plannedSearchResults.innerHTML = ''; return; }
+        const matches = equipmentList.filter(item => item['Item Name'] && item['Item Name'].toLowerCase().includes(val)).slice(0, 8);
+        plannedSearchResults.innerHTML = matches.map(item =>
+          `<div style='display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;' onclick='addPlannedUpgradeRow("${item.ITEMID.replace(/"/g, '')}")'>
+            <img src="${item['Item Icon']}" alt="icon" style="width:32px;height:32px;object-fit:contain;border-radius:6px;">
+            <span>${item['Item Name']}</span>
+          </div>`
+        ).join('');
+      });
+
+      // Add item to correct slot for progression
+      window.addProgressionRow = function(itemId) {
+        const item = equipmentList.find(i => i.ITEMID === itemId);
+        if (!item) return;
+        // Find slot
+        let slotName = null;
+        for (const slot of equipSlots) {
+          if (slot.types.some(type => (item['Equip Type'] || '').includes(type))) {
+            slotName = slot.slot;
+            break;
+          }
+        }
+        if (!slotName) return;
+        // Only allow one item per slot for Current Equipment
+        progressionTable[slotName] = {
+          ITEMID: item.ITEMID,
+          icon: item['Item Icon'],
+          name: item['Item Name'],
+          score: progressionTable[slotName]?.score || ''
+        };
+        renderTable();
+        searchResults.innerHTML = '';
+        searchInput.value = '';
+      }
+
+      // Add item to correct slot for planned upgrades
+      window.addPlannedUpgradeRow = function(itemId) {
+        const item = equipmentList.find(i => i.ITEMID === itemId);
+        if (!item) return;
+        // Find slot
+        let slotName = null;
+        for (const slot of equipSlots) {
+          if (slot.types.some(type => (item['Equip Type'] || '').includes(type))) {
+            slotName = slot.slot;
+            break;
+          }
+        }
+        if (!slotName) return;
+        plannedUpgradesTable[slotName] = {
+          ITEMID: item.ITEMID,
+          icon: item['Item Icon'],
+          name: item['Item Name'],
+          score: plannedUpgradesTable[slotName]?.score || '',
+          price: plannedUpgradesTable[slotName]?.price || '',
+          notes: plannedUpgradesTable[slotName]?.notes || ''
+        };
+        renderPlannedUpgradesTable();
+        plannedSearchResults.innerHTML = '';
+        plannedSearchInput.value = '';
+      }
+
+      function renderTable() {
+        const tbody = document.getElementById('progressionTableBody');
+        tbody.innerHTML = equipSlots.map(slot => {
+          const row = progressionTable[slot.slot];
+          return `<tr>
+            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
+            <td style='padding:10px;'>${row ? `<img src="${row.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? row.name : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<input type="number" value="${row.score}" min="0" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updateScore('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<button onclick="removeRow('${slot.slot}')" style="background:#eee;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;">Remove</button>` : ''}</td>
+          </tr>`;
+        }).join('');
+      }
+
+      function renderPlannedUpgradesTable() {
+        const tbody = document.getElementById('plannedUpgradesTableBody');
+        tbody.innerHTML = equipSlots.map(slot => {
+          const row = plannedUpgradesTable[slot.slot];
+          return `<tr>
+            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
+            <td style='padding:10px;'>${row ? `<img src="${row.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? row.name : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<input type="number" value="${row.score || ''}" min="0" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedScore('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<input type="text" value="${row.price}" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedPrice('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<input type="text" value="${row.notes}" style="width:120px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedNotes('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${row ? `<button onclick="removePlannedRow('${slot.slot}')" style="background:#eee;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;">Remove</button>` : ''}</td>
+          </tr>`;
+        }).join('');
+      }
+
+      window.updateScore = function(slot, val) {
+        if (progressionTable[slot]) progressionTable[slot].score = val;
+      }
+      window.updatePlannedScore = function(slot, val) {
+        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].score = val;
+      }
+      window.updatePlannedPrice = function(slot, val) {
+        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].price = val;
+      }
+      window.updatePlannedNotes = function(slot, val) {
+        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].notes = val;
+      }
+      window.removeRow = function(slot) {
+        delete progressionTable[slot];
+        renderTable();
+      }
+      window.removePlannedRow = function(slot) {
+        delete plannedUpgradesTable[slot];
+        renderPlannedUpgradesTable();
+      }
+
+      // Save to localStorage
+      document.getElementById('saveProgression').onclick = function() {
+        localStorage.setItem('progressionTable', JSON.stringify(progressionTable));
+        document.getElementById('saveMsg').textContent = 'Progression table saved!';
+        setTimeout(()=>{document.getElementById('saveMsg').textContent='';}, 2000);
+      }
+      document.getElementById('savePlannedUpgrades').onclick = function() {
+        localStorage.setItem('plannedUpgradesTable', JSON.stringify(plannedUpgradesTable));
+        document.getElementById('plannedSaveMsg').textContent = 'Planned upgrades saved!';
+        setTimeout(()=>{document.getElementById('plannedSaveMsg').textContent='';}, 2000);
+      }
+
+      // Load from localStorage
+      document.addEventListener('DOMContentLoaded', () => {
+        const saved = localStorage.getItem('progressionTable');
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            progressionTable = {};
+            for (const slot of equipSlots) {
+              if (parsed[slot.slot]) {
+                progressionTable[slot.slot] = parsed[slot.slot];
+              }
+            }
+          } catch {}
+        }
+        renderTable();
+        // Planned upgrades
+        const plannedSaved = localStorage.getItem('plannedUpgradesTable');
+        if (plannedSaved) {
+          try {
+            const parsed = JSON.parse(plannedSaved);
+            plannedUpgradesTable = {};
+            for (const slot of equipSlots) {
+              if (parsed[slot.slot]) {
+                plannedUpgradesTable[slot.slot] = parsed[slot.slot];
+              }
+            }
+          } catch {}
+        }
+        renderPlannedUpgradesTable();
+        renderUpgradeComparisonTable();
+        document.getElementById('calculateComparison').onclick = function() {
+          renderUpgradeComparisonTable();
+        };
+      });
+
+      function renderUpgradeComparisonTable() {
+        const tbody = document.getElementById('upgradeComparisonTableBody');
+        // Build row data objects first
+        const rows = equipSlots.map(slot => {
+          const curr = progressionTable[slot.slot];
+          const planned = plannedUpgradesTable[slot.slot];
+          let rowObj = { sortValue: null, html: '' };
+          if (!curr && !planned) {
+            rowObj.html = `<tr>
+              <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
+              <td colspan='7' style='padding:10px;color:#bbb;text-align:center;'>—</td>
+            </tr>`;
+            return rowObj;
+          }
+          const currIcon = curr ? `<img src="${curr.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
+          const plannedIcon = planned ? `<img src="${planned.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
+          const currScore = curr && curr.score !== undefined && curr.score !== '' ? Number(curr.score) : 0;
+          const plannedScore = planned && planned.score !== undefined && planned.score !== '' ? Number(planned.score) : 0;
+          const plannedCost = planned && planned.price !== undefined && planned.price !== '' ? planned.price : '';
+          let statGain = plannedScore - currScore;
+          let costPerStat = '';
+          let statGainDisplay = '';
+          let sortValue = null;
+          if (planned && statGain > 0) {
+            statGainDisplay = statGain;
+            const costNum = Number(plannedCost.replace(/[^\d.]/g, ''));
+            if (!isNaN(costNum) && statGain > 0) {
+              costPerStat = costNum > 0 ? (costNum / statGain).toFixed(2) : '';
+              sortValue = costNum > 0 ? (costNum / statGain) : null;
+            } else {
+              costPerStat = '';
+              sortValue = null;
+            }
+          } else if (planned && statGain <= 0) {
+            statGainDisplay = '<span style="color:#bbb;">No Gain</span>';
+            costPerStat = '<span style="color:#bbb;">No Gain</span>';
+            sortValue = null;
+          } else {
+            statGainDisplay = '<span style="color:#bbb;">—</span>';
+            costPerStat = '<span style="color:#bbb;">—</span>';
+            sortValue = null;
+          }
+          rowObj.sortValue = sortValue;
+          rowObj.html = `<tr>
+            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
+            <td style='padding:10px;'>${currIcon}</td>
+            <td style='padding:10px;'>${plannedIcon}</td>
+            <td style='padding:10px;'>${curr && curr.score !== undefined && curr.score !== '' ? curr.score : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${planned && planned.score !== undefined && planned.score !== '' ? planned.score : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${plannedCost !== '' ? plannedCost : '<span style="color:#bbb;">—</span>'}</td>
+            <td style='padding:10px;'>${statGainDisplay}</td>
+            <td style='padding:10px;'>${costPerStat}</td>
+          </tr>`;
+          return rowObj;
+        });
+        // Sort: valid costPerStat (lowest first), then those with no value
+        rows.sort((a, b) => {
+          if (a.sortValue === null && b.sortValue === null) return 0;
+          if (a.sortValue === null) return 1;
+          if (b.sortValue === null) return -1;
+          return a.sortValue - b.sortValue;
+        });
+        tbody.innerHTML = rows.map(r => r.html).join('');
+      }
+    </script>
+  <footer>
+    <p>Fan-made MapleStory Classic World site by Jordsterking • Not affiliated with Nexon</p>
+  </footer>
+<script>
+function toggleNav(el) {
+  var nav = document.querySelector('.navbar nav');
+  nav.classList.toggle('show');
+  el.classList.toggle('active');
+}
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('.navbar nav');
+  var burger = document.querySelector('.hamburger');
+  if (!nav.contains(e.target) && !burger.contains(e.target)) {
+    nav.classList.remove('show');
+    burger.classList.remove('active');
+  }
+});
+</script>
+</body>
+</html>
