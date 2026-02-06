@@ -48,25 +48,29 @@
   </section>
 
   <!-- 🧮 Calculator Content -->
-  <section style="padding: 60px 40px; max-width: 900px; margin: auto;">
+  <section style="padding: 60px 40px; max-width: 1200px;margin: auto;">
     <div style="background: white; padding: 40px; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
       <h2 style="margin-bottom: 24px;">Your Equipment</h2>
       <div style="margin-bottom: 20px;">
         <input id="equipSearch" type="text" placeholder="Search equipment..." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;">
         <div id="searchResults" style="background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; z-index: 2;"></div>
       </div>
-      <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
-        <thead>
-          <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
-            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Icon</th>
-            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Name</th>
-            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Score</th>
-            <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Remove</th>
-          </tr>
-        </thead>
-        <tbody id="progressionTableBody"></tbody>
-      </table>
+      <div class="table-scroll">
+        <table class="progression-table">
+            <thead>
+            <tr>
+                <th class="progression-th">Slot</th>
+                <th class="progression-th">Item Icon</th>
+                <th class="progression-th">Name</th>
+                <th class="progression-th">Primary Stat</th>
+                <th class="progression-th">Secondary Stat</th>
+                <th class="progression-th">Attack Power</th>
+                <th class="progression-th">Remove</th>
+            </tr>
+            </thead>
+            <tbody id="progressionTableBody"></tbody>
+        </table>
+      </div>
       <button id="saveProgression" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Save</button>
       <div id="saveMsg" style="margin-top: 10px; color: #1b2a41; font-weight: 500; text-align: center;"></div>
       </div>
@@ -76,20 +80,24 @@
           <input id="plannedEquipSearch" type="text" placeholder="Search planned upgrade..." style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;">
           <div id="plannedSearchResults" style="background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); position: relative; z-index: 2;"></div>
         </div>
-        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
-          <thead>
-            <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Icon</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Name</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Item Score</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Price</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Notes</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Remove</th>
-            </tr>
-          </thead>
-          <tbody id="plannedUpgradesTableBody"></tbody>
-        </table>
+        <div class="table-scroll">
+            <table class="progression-table">
+            <thead>
+                <tr>
+                <th class="progression-th">Slot</th>
+                <th class="progression-th">Item Icon</th>
+                <th class="progression-th">Name</th>
+                <th class="progression-th">Primary Stat</th>
+                <th class="progression-th">Secondary Stat</th>
+                <th class="progression-th">Attack Power</th>
+                <th class="progression-th">Price (mil)</th>
+                <th class="progression-th">Notes</th>
+                <th class="progression-th">Remove</th>
+                </tr>
+            </thead>
+            <tbody id="plannedUpgradesTableBody"></tbody>
+            </table>
+        </div>
         <button id="savePlannedUpgrades" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Save Planned Upgrades</button>
         <div id="plannedSaveMsg" style="margin-top: 10px; color: #1b2a41; font-weight: 500; text-align: center;"></div>
       </div>
@@ -97,21 +105,29 @@
       <!-- Upgrade Comparison Table -->
       <div style="background: white; padding: 40px; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); margin-top: 40px;">
         <h2 style="margin-bottom: 24px;">Upgrade Comparison</h2>
-        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
-          <thead>
-            <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Slot</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Current Equip Icon</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Icon</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Current Equip Score</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Score</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Planned Equip Cost</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Stat Gain</th>
-              <th style="padding: 15px; text-align: left; font-weight: 600; border: 1px solid #ddd;">Cost Per Stat</th>
-            </tr>
-          </thead>
-          <tbody id="upgradeComparisonTableBody"></tbody>
-        </table>
+        <div style="margin-bottom:16px;text-align:left;max-width:600px;">
+          <label style="font-size:1.1rem;font-weight:600;display:flex;align-items:center;gap:8px;">
+            <input type="checkbox" id="treatSecAsPrimary" checked style="width:20px;height:20px;">
+            Treat Secondary Stat as 1 Primary
+          </label>
+        </div>
+        <div class="table-scroll">
+            <table class="progression-table">
+                <thead>
+                    <tr>
+                    <th class="progression-th">Slot</th>
+                    <th class="progression-th">Current Equip Icon</th>
+                    <th class="progression-th">Planned Equip Icon</th>
+                    <th class="progression-th">Current Equip Score</th>
+                    <th class="progression-th">Planned Equip Score</th>
+                    <th class="progression-th">Planned Equip Cost</th>
+                    <th class="progression-th">Stat Gain</th>
+                    <th class="progression-th">Cost Per Stat (mil)</th>
+                    </tr>
+                </thead>
+                <tbody id="upgradeComparisonTableBody"></tbody>
+            </table>
+        </div>
         <button id="calculateComparison" style="width: 100%; padding: 15px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: transform 0.2s;">Calculate Comparison</button>
       </div>
   </section>
@@ -208,14 +224,16 @@
           }
         }
         if (!slotName) return;
-        plannedUpgradesTable[slotName] = {
+        // Allow multiple upgrades per slot
+        if (!plannedUpgradesTable[slotName]) plannedUpgradesTable[slotName] = [];
+        plannedUpgradesTable[slotName].push({
           ITEMID: item.ITEMID,
           icon: item['Item Icon'],
           name: item['Item Name'],
-          score: plannedUpgradesTable[slotName]?.score || '',
-          price: plannedUpgradesTable[slotName]?.price || '',
-          notes: plannedUpgradesTable[slotName]?.notes || ''
-        };
+          score: '',
+          price: '',
+          notes: ''
+        });
         renderPlannedUpgradesTable();
         plannedSearchResults.innerHTML = '';
         plannedSearchInput.value = '';
@@ -226,11 +244,13 @@
         tbody.innerHTML = equipSlots.map(slot => {
           const row = progressionTable[slot.slot];
           return `<tr>
-            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
-            <td style='padding:10px;'>${row ? `<img src="${row.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? row.name : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<input type="number" value="${row.score}" min="0" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updateScore('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<button onclick="removeRow('${slot.slot}')" style="background:#eee;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;">Remove</button>` : ''}</td>
+            <td class='progression-td progression-slot'>${slot.slot}</td>
+            <td class='progression-td'>${row ? `<img src="${row.icon}" alt="icon">` : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? row.name : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.primaryStat || ''}" min="0" onchange="updateStat('${slot.slot}', 'primaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.secondaryStat || ''}" min="0" onchange="updateStat('${slot.slot}', 'secondaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.attackPower || ''}" min="0" onchange="updateStat('${slot.slot}', 'attackPower', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? `<button onclick="removeRow('${slot.slot}')" class="progression-remove-btn">Remove</button>` : ''}</td>
           </tr>`;
         }).join('');
       }
@@ -238,38 +258,51 @@
       function renderPlannedUpgradesTable() {
         const tbody = document.getElementById('plannedUpgradesTableBody');
         tbody.innerHTML = equipSlots.map(slot => {
-          const row = plannedUpgradesTable[slot.slot];
-          return `<tr>
-            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
-            <td style='padding:10px;'>${row ? `<img src="${row.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? row.name : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<input type="number" value="${row.score || ''}" min="0" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedScore('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<input type="text" value="${row.price}" style="width:80px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedPrice('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<input type="text" value="${row.notes}" style="width:120px;padding:6px 8px;border:1px solid #ccc;border-radius:6px;font-size:1rem;" onchange="updatePlannedNotes('${slot.slot}', this.value)">` : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${row ? `<button onclick="removePlannedRow('${slot.slot}')" style="background:#eee;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;">Remove</button>` : ''}</td>
-          </tr>`;
+          const rows = plannedUpgradesTable[slot.slot] || [];
+          if (rows.length === 0) {
+            return `<tr>
+              <td class='progression-td progression-slot'>${slot.slot}</td>
+              <td class='progression-td' colspan='8'><span class="progression-empty">—</span></td>
+            </tr>`;
+          }
+          return rows.map((row, idx) => {
+            return `<tr>
+              <td class='progression-td progression-slot'>${slot.slot}${rows.length > 1 ? ' #' + (idx+1) : ''}</td>
+              <td class='progression-td'>${row ? `<img src="${row.icon}" alt="icon">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? row.name : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.primaryStat || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'primaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.secondaryStat || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'secondaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.attackPower || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'attackPower', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="text" class="progression-input-price" value="${row.price}" onchange="updatePlannedPrice('${slot.slot}', ${idx}, this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="text" class="progression-input-notes" value="${row.notes}" onchange="updatePlannedNotes('${slot.slot}', ${idx}, this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<button onclick="removePlannedRow('${slot.slot}', ${idx})" class="progression-remove-btn">Remove</button>` : ''}</td>
+            </tr>`;
+          }).join('');
         }).join('');
       }
 
-      window.updateScore = function(slot, val) {
-        if (progressionTable[slot]) progressionTable[slot].score = val;
+      window.updateStat = function(slot, stat, val) {
+        if (progressionTable[slot]) progressionTable[slot][stat] = val;
       }
-      window.updatePlannedScore = function(slot, val) {
-        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].score = val;
+      window.updatePlannedStat = function(slot, idx, stat, val) {
+        if (plannedUpgradesTable[slot] && plannedUpgradesTable[slot][idx]) plannedUpgradesTable[slot][idx][stat] = val;
       }
-      window.updatePlannedPrice = function(slot, val) {
-        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].price = val;
+      window.updatePlannedPrice = function(slot, idx, val) {
+        if (plannedUpgradesTable[slot] && plannedUpgradesTable[slot][idx]) plannedUpgradesTable[slot][idx].price = val;
       }
-      window.updatePlannedNotes = function(slot, val) {
-        if (plannedUpgradesTable[slot]) plannedUpgradesTable[slot].notes = val;
+      window.updatePlannedNotes = function(slot, idx, val) {
+        if (plannedUpgradesTable[slot] && plannedUpgradesTable[slot][idx]) plannedUpgradesTable[slot][idx].notes = val;
       }
       window.removeRow = function(slot) {
         delete progressionTable[slot];
         renderTable();
       }
-      window.removePlannedRow = function(slot) {
-        delete plannedUpgradesTable[slot];
-        renderPlannedUpgradesTable();
+      window.removePlannedRow = function(slot, idx) {
+        if (plannedUpgradesTable[slot]) {
+          plannedUpgradesTable[slot].splice(idx, 1);
+          if (plannedUpgradesTable[slot].length === 0) delete plannedUpgradesTable[slot];
+          renderPlannedUpgradesTable();
+        }
       }
 
       // Save to localStorage
@@ -307,7 +340,7 @@
             plannedUpgradesTable = {};
             for (const slot of equipSlots) {
               if (parsed[slot.slot]) {
-                plannedUpgradesTable[slot.slot] = parsed[slot.slot];
+                plannedUpgradesTable[slot.slot] = Array.isArray(parsed[slot.slot]) ? parsed[slot.slot] : [parsed[slot.slot]];
               }
             }
           } catch {}
@@ -317,62 +350,86 @@
         document.getElementById('calculateComparison').onclick = function() {
           renderUpgradeComparisonTable();
         };
+        document.getElementById('treatSecAsPrimary').addEventListener('change', function() {
+          renderUpgradeComparisonTable();
+        });
       });
 
       function renderUpgradeComparisonTable() {
         const tbody = document.getElementById('upgradeComparisonTableBody');
         // Build row data objects first
-        const rows = equipSlots.map(slot => {
+        let rows = [];
+        equipSlots.forEach(slot => {
           const curr = progressionTable[slot.slot];
-          const planned = plannedUpgradesTable[slot.slot];
-          let rowObj = { sortValue: null, html: '' };
-          if (!curr && !planned) {
-            rowObj.html = `<tr>
-              <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
-              <td colspan='7' style='padding:10px;color:#bbb;text-align:center;'>—</td>
-            </tr>`;
-            return rowObj;
+          const plannedArr = plannedUpgradesTable[slot.slot] || [];
+          if (plannedArr.length === 0) {
+            // No planned upgrades, show default row
+            rows.push({
+              sortValue: null,
+              html: `<tr>
+                <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
+                <td colspan='7' style='padding:10px;color:#bbb;text-align:center;'>—</td>
+              </tr>`
+            });
+            return;
           }
-          const currIcon = curr ? `<img src="${curr.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
-          const plannedIcon = planned ? `<img src="${planned.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
-          const currScore = curr && curr.score !== undefined && curr.score !== '' ? Number(curr.score) : 0;
-          const plannedScore = planned && planned.score !== undefined && planned.score !== '' ? Number(planned.score) : 0;
-          const plannedCost = planned && planned.price !== undefined && planned.price !== '' ? planned.price : '';
-          let statGain = plannedScore - currScore;
-          let costPerStat = '';
-          let statGainDisplay = '';
-          let sortValue = null;
-          if (planned && statGain > 0) {
-            statGainDisplay = statGain;
-            const costNum = Number(plannedCost.replace(/[^\d.]/g, ''));
-            if (!isNaN(costNum) && statGain > 0) {
-              costPerStat = costNum > 0 ? (costNum / statGain).toFixed(2) : '';
-              sortValue = costNum > 0 ? (costNum / statGain) : null;
+          plannedArr.forEach((planned, idx) => {
+            const currIcon = curr ? `<img src="${curr.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
+            const plannedIcon = planned ? `<img src="${planned.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
+            // Calculate scores using stat equivalence
+            let secToPrimary = 0, atkPowerToPrimary = 0;
+            try {
+              const eq = JSON.parse(localStorage.getItem('statEqValues'));
+              secToPrimary = eq?.secToPrimary || 0;
+              atkPowerToPrimary = eq?.atkPowerToPrimary || 0;
+            } catch {}
+            // Checkbox logic
+            const treatSecAsPrimary = document.getElementById('treatSecAsPrimary')?.checked;
+            const secMultiplier = treatSecAsPrimary ? 1 : secToPrimary;
+            const currScore = curr ? (Number(curr.primaryStat || 0) + Number(curr.secondaryStat || 0) * secMultiplier + Number(curr.attackPower || 0) * atkPowerToPrimary) : 0;
+            const plannedScore = planned ? (Number(planned.primaryStat || 0) + Number(planned.secondaryStat || 0) * secMultiplier + Number(planned.attackPower || 0) * atkPowerToPrimary) : 0;
+            const plannedCost = planned && planned.price !== undefined && planned.price !== '' ? planned.price : '';
+            let statGain = plannedScore - currScore;
+            let costPerStat = '';
+            let statGainDisplay = '';
+            let sortValue = null;
+            // Show scores in table, limit decimals
+            let currScoreDisplay = curr ? currScore.toFixed(2) : '<span style="color:#bbb;">—</span>';
+            let plannedScoreDisplay = planned ? plannedScore.toFixed(2) : '<span style="color:#bbb;">—</span>';
+            let statGainDisplayNum = statGain;
+            if (planned && statGain > 0) {
+              statGainDisplay = statGainDisplayNum.toFixed(2);
+              const costNum = Number(plannedCost.replace(/[^\d.]/g, ''));
+              if (!isNaN(costNum) && statGain > 0) {
+                costPerStat = costNum > 0 ? (costNum / statGain).toFixed(2) : '';
+                sortValue = costNum > 0 ? (costNum / statGain) : null;
+              } else {
+                costPerStat = '';
+                sortValue = null;
+              }
+            } else if (planned && statGain <= 0) {
+              statGainDisplay = '<span style="color:#bbb;">No Gain</span>';
+              costPerStat = '<span style="color:#bbb;">No Gain</span>';
+              sortValue = null;
             } else {
-              costPerStat = '';
+              statGainDisplay = '<span style="color:#bbb;">—</span>';
+              costPerStat = '<span style="color:#bbb;">—</span>';
               sortValue = null;
             }
-          } else if (planned && statGain <= 0) {
-            statGainDisplay = '<span style="color:#bbb;">No Gain</span>';
-            costPerStat = '<span style="color:#bbb;">No Gain</span>';
-            sortValue = null;
-          } else {
-            statGainDisplay = '<span style="color:#bbb;">—</span>';
-            costPerStat = '<span style="color:#bbb;">—</span>';
-            sortValue = null;
-          }
-          rowObj.sortValue = sortValue;
-          rowObj.html = `<tr>
-            <td style='padding:10px;font-weight:600;'>${slot.slot}</td>
-            <td style='padding:10px;'>${currIcon}</td>
-            <td style='padding:10px;'>${plannedIcon}</td>
-            <td style='padding:10px;'>${curr && curr.score !== undefined && curr.score !== '' ? curr.score : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${planned && planned.score !== undefined && planned.score !== '' ? planned.score : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${plannedCost !== '' ? plannedCost : '<span style="color:#bbb;">—</span>'}</td>
-            <td style='padding:10px;'>${statGainDisplay}</td>
-            <td style='padding:10px;'>${costPerStat}</td>
-          </tr>`;
-          return rowObj;
+            rows.push({
+              sortValue,
+              html: `<tr>
+                <td style='padding:10px;font-weight:600;'>${slot.slot}${plannedArr.length > 1 ? ' #' + (idx+1) : ''}</td>
+                <td style='padding:10px;'>${currIcon}</td>
+                <td style='padding:10px;'>${plannedIcon}</td>
+                <td style='padding:10px;'>${currScoreDisplay}</td>
+                <td style='padding:10px;'>${plannedScoreDisplay}</td>
+                <td style='padding:10px;'>${plannedCost !== '' ? plannedCost : '<span style="color:#bbb;">—</span>'}</td>
+                <td style='padding:10px;'>${statGainDisplay}</td>
+                <td style='padding:10px;'>${costPerStat}</td>
+              </tr>`
+            });
+          });
         });
         // Sort: valid costPerStat (lowest first), then those with no value
         rows.sort((a, b) => {
@@ -381,7 +438,17 @@
           if (b.sortValue === null) return -1;
           return a.sortValue - b.sortValue;
         });
-        tbody.innerHTML = rows.map(r => r.html).join('');
+        // Show stat equivalence missing message if needed
+        let statEqMissing = false;
+        try {
+          const eq = JSON.parse(localStorage.getItem('statEqValues'));
+          if (!eq || typeof eq.secToPrimary !== 'number' || typeof eq.atkPowerToPrimary !== 'number') statEqMissing = true;
+        } catch { statEqMissing = true; }
+        if (statEqMissing) {
+          tbody.innerHTML = `<tr><td colspan='8' style='padding:18px;text-align:center;color:#764ba2;font-size:1.15rem;'>Please Save your Stat Equivalence <a href='../calculators/stat-equivalence-calculator.html' style='color:#667eea;text-decoration:underline;font-weight:600;'>here</a>.</td></tr>`;
+        } else {
+          tbody.innerHTML = rows.map(r => r.html).join('');
+        }
       }
     </script>
   <footer>

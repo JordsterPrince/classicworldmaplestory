@@ -40,12 +40,76 @@
   </header>
 
   <!-- 📞 Contact Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Contact</h1>
-      <p>Contact information and community links coming soon!</p>
-    </div>
-  </section>
+  <!-- 📞 Contact Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Contact</h1>
+    <form id="contactForm" style="max-width:400px;margin:auto;padding-bottom:40px;">
+      <label for="type" style="font-weight:600;margin-bottom:6px;display:block;">Type:</label>
+      <select id="type" name="type" required style="width:100%;padding:12px;border-radius:8px;font-size:1.1rem;margin-bottom:18px;color:#2d2d2d;box-shadow:0 2px 8px rgba(118,75,162,0.08);">
+        <option>Bug Report</option>
+        <option>Feature Request</option>
+        <option>Other</option>
+      </select>
+      <label for="message" style="font-weight:600;margin-bottom:6px;display:block;">Message:</label>
+      <textarea id="message" name="message" required rows="5" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;margin-bottom:18px;"></textarea>
+      <label for="reply" style="font-weight:600;margin-bottom:6px;display:block;">Want a response? Email or discord tag:</label>
+      <input id="reply" name="reply" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;margin-bottom:18px;" placeholder="your@email.com or Discord#1234">
+      <button type="submit" style="width:100%;padding:15px;font-size:1.1rem;font-weight:600;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border:none;border-radius:8px;cursor:pointer;margin-top:10px;transition:transform 0.2s;">Send</button>
+    </form>
+    <div id="contactStatus" style="margin-top:16px;font-size:1.05rem;color:#1b2a41;font-weight:500;display:none;"></div>
+    </form>
+  </div>
+</section>
+<script>
+document.getElementById('contactForm').onsubmit = async function(e) {
+  e.preventDefault();
+  const status = document.getElementById('contactStatus');
+  status.textContent = "Sending...";
+  status.style.display = "block";
+  const data = {
+     type: this.type.value,
+     message: this.message.value,
+     reply: this.reply.value
+  };
+  try {
+    const res = await fetch('https://kpm48emv10.execute-api.us-east-1.amazonaws.com/prod/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    });
+    if (res.ok) {
+      status.textContent = "Message sent! Thank you.";
+      status.style.display = "block";
+      document.getElementById('contactForm').style.display = "none";
+      // Update thank you message styling and add icon
+      function showThankYouMessage() {
+        const thankYouDiv = document.createElement('div');
+        thankYouDiv.style.cssText = 'margin: 60px auto; max-width: 900px; width: 90vw; background: #fff; border-radius: 18px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); padding: 40px 24px; text-align: center;';
+        thankYouDiv.innerHTML = `
+          <h2 style="font-size:2rem;margin-bottom:18px;color:#764ba2;">Thank you for your message!</h2>
+          <p style="font-size:1.15rem;margin-bottom:32px;color:#333;">Your message has been sent. I'll get back to you as soon as possible.</p>
+          <img src="https://maplestory.io/api/GMS/263/npc/9010009/icon/" alt="Thank you NPC" style="width:180px;height:280px;margin-top:10px;display:block;margin-left:auto;margin-right:auto;">
+        `;
+        // Remove hero and form
+        const hero = document.querySelector('.hero');
+        if (hero) hero.style.display = 'none';
+        const formSection = document.querySelector('form');
+        if (formSection) formSection.style.display = 'none';
+        // Insert thank you message
+        document.body.appendChild(thankYouDiv);
+      }
+      showThankYouMessage();
+    } else {
+      status.textContent = "Error sending message. Please try again.";
+      status.style.display = "block";
+    }
+  } catch {
+    status.textContent = "Network error. Please try again.";
+    status.style.display = "block";
+  }
+};
+</script>
 
 <script>
 function toggleNav(el) {
