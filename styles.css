@@ -719,4 +719,30 @@ footer {
   font-size: 0.9rem;
 }
 
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  margin: 4px 0 8px;
+  user-select: none;
+}
 
+.verified-check {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.verified-text {
+  font-weight: 600;
+}
+
+/* VERIFIED */
+.verified-badge.verified {
+  color: #2ecc71; /* green */
+}
+
+/* UNVERIFIED */
+.verified-badge.unverified {
+  color: #9aa0a6; /* gray */
+}

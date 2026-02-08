@@ -6,7 +6,8 @@
     "Level": 1,
     "XP": 2,
     "HP": 40,
-    "XPCost": 20
+    "XPCost": 20,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_blue_snail",
@@ -15,7 +16,8 @@
     "Level": 2,
     "XP": 3,
     "HP": 40,
-    "XPCost": 13.33
+    "XPCost": 13.33,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_shroom",
@@ -24,7 +26,8 @@
     "Level": 2,
     "XP": 5,
     "HP": 50,
-    "XPCost": 10
+    "XPCost": 10,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_red_snail",
@@ -33,7 +36,8 @@
     "Level": 4,
     "XP": 7,
     "HP": 45,
-    "XPCost": 6.43
+    "XPCost": 6.43,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_stump",
@@ -42,7 +46,8 @@
     "Level": 4,
     "XP": 9,
     "HP": 125,
-    "XPCost": 13.89
+    "XPCost": 13.89,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_slime",
@@ -51,7 +56,8 @@
     "Level": 6,
     "XP": 11,
     "HP": 100,
-    "XPCost": 9.09
+    "XPCost": 9.09,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_pig",
@@ -60,7 +66,8 @@
     "Level": 7,
     "XP": 13,
     "HP": 75,
-    "XPCost": 5.77
+    "XPCost": 5.77,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_orange_mushroom",
@@ -69,7 +76,8 @@
     "Level": 8,
     "XP": 15,
     "HP": 110,
-    "XPCost": 7.33
+    "XPCost": 7.33,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_ribbon_pig",
@@ -78,7 +86,8 @@
     "Level": 10,
     "XP": 19,
     "HP": 120,
-    "XPCost": 6.32
+    "XPCost": 6.32,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_dark_stump",
@@ -87,7 +96,8 @@
     "Level": 10,
     "XP": 21,
     "HP": 250,
-    "XPCost": 11.9
+    "XPCost": 11.9,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_octopus",
@@ -96,7 +106,8 @@
     "Level": 12,
     "XP": 23,
     "HP": 200,
-    "XPCost": 8.7
+    "XPCost": 8.7,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_green_mushroom",
@@ -105,7 +116,8 @@
     "Level": 15,
     "XP": 27,
     "HP": 225,
-    "XPCost": 8.33
+    "XPCost": 8.33,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_bubbling",
@@ -114,7 +126,8 @@
     "Level": 15,
     "XP": 29,
     "HP": 250,
-    "XPCost": 8.62
+    "XPCost": 8.62,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_axe_stump",
@@ -123,7 +136,8 @@
     "Level": 17,
     "XP": 33,
     "HP": 350,
-    "XPCost": 10.61
+    "XPCost": 10.61,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_blue_mushroom",
@@ -132,7 +146,8 @@
     "Level": 20,
     "XP": 37,
     "HP": 350,
-    "XPCost": 9.46
+    "XPCost": 9.46,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_stirge",
@@ -141,7 +156,8 @@
     "Level": 20,
     "XP": 39,
     "HP": 250,
-    "XPCost": 6.41
+    "XPCost": 6.41,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_jr_necki",
@@ -150,7 +166,8 @@
     "Level": 21,
     "XP": 41,
     "HP": 285,
-    "XPCost": 6.95
+    "XPCost": 6.95,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_horny_mushroom",
@@ -159,7 +176,8 @@
     "Level": 22,
     "XP": 43,
     "HP": 350,
-    "XPCost": 8.14
+    "XPCost": 8.14,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_dark_axe_stump",
@@ -168,7 +186,8 @@
     "Level": 22,
     "XP": 45,
     "HP": 350,
-    "XPCost": 7.78
+    "XPCost": 7.78,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_zombie_mushroom",
@@ -177,7 +196,8 @@
     "Level": 24,
     "XP": 47,
     "HP": 375,
-    "XPCost": 7.98
+    "XPCost": 7.98,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_wild_boar",
@@ -186,7 +206,8 @@
     "Level": 24,
     "XP": 49,
     "HP": 550,
-    "XPCost": 11.22
+    "XPCost": 11.22,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_evil_eye",
@@ -195,7 +216,8 @@
     "Level": 25,
     "XP": 53,
     "HP": 550,
-    "XPCost": 10.38
+    "XPCost": 10.38,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_iron_hog",
@@ -204,7 +226,8 @@
     "Level": 27,
     "XP": 55,
     "HP": 450,
-    "XPCost": 8.18
+    "XPCost": 8.18,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_fairy",
@@ -213,7 +236,8 @@
     "Level": 30,
     "XP": 57,
     "HP": 500,
-    "XPCost": 8.77
+    "XPCost": 8.77,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_ligator",
@@ -222,7 +246,8 @@
     "Level": 32,
     "XP": 61,
     "HP": 700,
-    "XPCost": 11.48
+    "XPCost": 11.48,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_fire_boar",
@@ -231,7 +256,8 @@
     "Level": 32,
     "XP": 63,
     "HP": 600,
-    "XPCost": 9.52
+    "XPCost": 9.52,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_curse_eye",
@@ -240,7 +266,8 @@
     "Level": 35,
     "XP": 65,
     "HP": 800,
-    "XPCost": 12.31
+    "XPCost": 12.31,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_jr_wraith",
@@ -249,7 +276,8 @@
     "Level": 35,
     "XP": 67,
     "HP": 675,
-    "XPCost": 10.07
+    "XPCost": 10.07,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_jr_boogie",
@@ -258,7 +286,8 @@
     "Level": 35,
     "XP": 69,
     "HP": 1050,
-    "XPCost": 15.22
+    "XPCost": 15.22,
+    "Verified": "TRUE"
   },
   {
     "MOBID": "mob_lupin",
@@ -267,6 +296,7 @@
     "Level": 37,
     "XP": 73,
     "HP": 950,
-    "XPCost": 13.01
+    "XPCost": 13.01,
+    "Verified": "TRUE"
   }
 ]

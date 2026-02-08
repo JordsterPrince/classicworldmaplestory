@@ -2,316 +2,379 @@
   {
     "MAPID": "map_snail_hunting_ground_i",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_hunting_ground_ii",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_hunting_ground_ii",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_hunting_ground_iii",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_hunting_ground_iii",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_a_split_road",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_a_split_road",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_a_split_road",
     "MOBID": "mob_shroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_amherst",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_amherst",
     "MOBID": "mob_shroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_amherst",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_amherst",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_garden",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_garden",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_garden",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_mushroom_garden",
     "MOBID": "mob_shroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_mushroom_garden",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_field_of_flowers",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_field_of_flowers",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_snail_field_of_flowers",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_east_of_amherst",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_east_of_amherst",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_east_of_amherst",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_east_of_amherst",
     "MOBID": "mob_pig",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_tomato_field",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_tomato_field",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_tomato_field",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_i",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_i",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_i",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_ii",
     "MOBID": "mob_pig",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_ii",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_ii",
     "MOBID": "mob_shroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_hunting_ground_middle_of_the_forest_ii",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_southperry",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_southperry",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_southperry",
     "MOBID": "mob_orange_mushroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_the_field_west_of_southperry",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_in_a_small_forest",
     "MOBID": "mob_orange_mushroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_in_a_small_forest",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_in_a_small_forest",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_in_a_small_forest",
     "MOBID": "mob_shroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_in_a_small_forest",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_orange_mushroom",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_dangerous_forest",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_right_around_lith_harbor",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_right_around_lith_harbor",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_right_around_lith_harbor",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
     "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
     "MOBID": "mob_red_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_ii",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_ii",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_ii",
     "MOBID": "mob_pig",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_ii",
     "MOBID": "mob_ribbon_pig",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_iii",
     "MOBID": "mob_snail",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_iii",
     "MOBID": "mob_slime",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_iii",
     "MOBID": "mob_stump",
+    "Verified": "FALSE",
     "NumberOfMobs": ""
   }
 ]

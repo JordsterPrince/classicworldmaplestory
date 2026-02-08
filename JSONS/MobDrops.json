@@ -2,2136 +2,2941 @@
   {
     "MOBID": "mob_snail",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_green_headband",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_white_undershirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_red_miniskirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_sword",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_green_apple",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_snail",
-    "ITEMID": "item_scroll_for_cape_for_weapon_defense_60",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_snail",
     "ITEMID": "item_snail_shell",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_green_headband",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_white_undershirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_red_miniskirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_sword",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_green_apple",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_snail",
     "ITEMID": "item_bronze_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_snail",
     "ITEMID": "item_garnet_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
-    "ITEMID": "item_undershirt",
+    "ITEMID": "item_blue_headband",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
-    "ITEMID": "item_blue_onelined_tshirt",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
-    "ITEMID": "item_greybrown_training_shirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_redstriped_tshirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_grey_thick_sweat_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_greybrown_training_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_scroll_for_cape_for_weapon_defense_100",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_blue_snail_shell",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_undershirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_blue_onelined_tshirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_grey__brown_training_shirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_redstriped_tshirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_grey_thick_sweat_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_greybrown_training_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_steel_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_silver_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_amethyst_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_opal_ore",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_arrow_for_bow",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_shroom",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_jean_capris",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_green_avelin_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_ice_jeans",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_hand_axe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_field_dagger",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_shroom",
-    "ITEMID": "item_scroll_for_cape_for_hp_60",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_shroom",
     "ITEMID": "item_mushroom_spore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_shroom",
+    "ITEMID": "item_jean_capris",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_shroom",
+    "ITEMID": "item_green_avelin_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_shroom",
+    "ITEMID": "item_ice_jeans",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_shroom",
+    "ITEMID": "item_hand_axe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_shroom",
+    "ITEMID": "item_field_dagger",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_shroom",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_shroom",
     "ITEMID": "item_aquamarine_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_red_snail",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_red_snail",
-    "ITEMID": "item_opal_ore",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_amethyst_earrings",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_red_cloth_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_brown_woodsman_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_brown_duo",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_leather_purse",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_yellow_tshirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_metal_wand",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_wooden_sword",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_scroll_for_overall_armor_for_dex_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_scroll_for_cape_for_mp_100",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_arrow_for_bow",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_red_snail",
     "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_red_snail",
     "ITEMID": "item_red_snail_shell",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_opal_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_amethyst_earrings",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_red_cloth_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_brown_woodsman_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_brown_duo",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_leather_purse",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_yellow_tshirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_metal_wand",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_wooden_sword",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
-    "ITEMID": "item_white_tubetop",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
-    "ITEMID": "item_brown_high_boots",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_juno",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
-    "ITEMID": "item_wooden_club",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
-    "ITEMID": "item_triangular_zamadar",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
-    "ITEMID": "item_composite_bow",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
-    "ITEMID": "item_scroll_for_topwear_for_def_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
-    "ITEMID": "item_scroll_for_cape_for_hp_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
-    "ITEMID": "item_sap_of_ancient_tree",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_tree_branch",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_white_tubetop",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_brown_high_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_wooden_club",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_triangular_zamadar",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_composite_bow",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_sap_of_ancient_tree",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_adamantium_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_emerald_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
-    "ITEMID": "item_white_bandana",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
-    "ITEMID": "item_blue_jean_shorts",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_beige_nitty",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_lemona",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_metal_axe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_iron_axe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_spear",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_fork_on_a_stick",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_scroll_for_overall_armor_for_def_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_scroll_for_bottomwear_for_def_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_scroll_for_cape_for_dex_100",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
     "ITEMID": "item_suishy_liquid",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
     "ITEMID": "item_slime_bubble",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_slime",
-    "ITEMID": "item_orihalcon_ore",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_slime",
     "ITEMID": "item_sapphire_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_white_bandana",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_blue_jean_shorts",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_beige_nitty",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_lemona",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_metal_axe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_spear",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_fork_on_a_stick",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_orihalcon_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
-    "ITEMID": "item_brown_skullcap",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_dark_nightshift",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_orange_lolica_armor",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_brown_hard_leather_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_white_split_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_wooden_samurai_sword",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_wooden_mallet",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_garnier",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_scroll_for_shoes_for_avoidability_10",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
-    "ITEMID": "item_scroll_for_cape_for_luk_100",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
     "ITEMID": "item_pigs_head",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_brown_skullcap",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_dark_nightshift",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_orange_lolica_armor",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_brown_hard_leather_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_white_split_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_wooden_samurai_sword",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_wooden_mallet",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_garnier",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
     "ITEMID": "item_leather",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
     "ITEMID": "item_gold_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_bronze_koif",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_white_gomushin",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_brown_hard_leather_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_red_ninja_sandals",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_basic_archer_gloves",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_double_axe",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
     "ITEMID": "item_orange_mushroom_cap",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_orange_mushroom",
-    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
     "ITEMID": "item_bronze_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_bronze_koif",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_white_gomushin",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_brown_hard_leather_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_red_ninja_sandals",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_basic_archer_gloves",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_double_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_orange_mushroom",
     "ITEMID": "item_diamond_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_ribbon_pig",
-    "ITEMID": "item_silver_leather_hoodwear",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_ribbon_pig",
-    "ITEMID": "item_orange_sporty_tshirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_ribbon_pig",
-    "ITEMID": "item_dark_nightshift_pants",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_pigs_ribbon",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_silver_leather_hoodwear",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_orange_sporty_tshirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_dark_nightshift_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_stiff_feather",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_amethyst_earrings",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_redstriped_tshirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_white_split_skirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_amethyst_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_green_arianne",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_yellow_avelin",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_green_arianne_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_yellow_avelin_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_stolen_fence",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_stump",
-    "ITEMID": "item_wooden_staff",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_leaf",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_green_arianne",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_yellow_avelin",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_green_arianne_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_yellow_avelin_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_stolen_fence",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_wooden_staff",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_pole_arm",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_steel_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_garnet_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_single_earring",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_brown_corporal",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_brown_corporal_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_yellow_arianne_skirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_steel_shield",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_battle_shield",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_octopus_leg",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_adamantium_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_octopus",
     "ITEMID": "item_aquamarine_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_green_matty",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_green_bennis_chainmail",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_purple_arianne",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_red_nightshift",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_grey_able_armor",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_composite_bow",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_blue_pao_bottom",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_purple_arianne_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_red_nightshift_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_grey_able_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_pan_lid",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_zeco",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_battle_crossbow",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_green_mushroom_cap",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_emerald_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_green_matty",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_green_bennis_chainmail",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_purple_arianne",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_red_nightshift",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_grey_able_armor",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_composite_bow",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_blue_pao_bottom",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_purple_arianne_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_red_nightshift_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_grey_able_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_pan_lid",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_zeco",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_battle_crossbow",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_green_arianne",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_blue_potion",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_silver_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_orihalcon_ore",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_emerald_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_red_apprentice_hat",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_blue_nightshift",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_yellow_able_armor",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_blue_nightshift_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
-    "ITEMID": "item_brown_able_armor_skirt",
+    "ITEMID": "item_brown_able_skirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_blue_jewelry_boots",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_fish_spear",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_bubblings_huge_bubble",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_the_magic_rock",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_wooden_samurai_sword",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_spear",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_sapphire_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_axe_stump",
+    "ITEMID": "item_firewood",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_axe_stump",
+    "ITEMID": "item_opal_ore",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_yellow_starry_bandana",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_blue_robin_hat",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_orange_split_piece",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_brown_nightshift",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_brown_nightshift_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_white_split_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_blue_avenger",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_contra_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_wizard_wand",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_old_wooden_staff",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_wooden_baseball_bat",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_wooden_top",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_axe_stump",
-    "ITEMID": "item_firewood",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_red_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_amethyst_earrings",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_battle_shield",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_orihalcon_ore",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_axe_stump",
-    "ITEMID": "item_opal_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_red_loosecap",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_green_burgler",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_blue_sergeant",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_red_shivermail",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_steel_fitted_mail",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_steel_sergeant_kilt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_red_shivermail_skirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_mithril_war_boots",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
-    "ITEMID": "item_purple_jewelrey_boots",
+    "ITEMID": "item_purple_jewelry_boots",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_halfmoon_zamadar",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_wizard_staff",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_mithril_pole_arm",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_magic_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_blue_mushroom_cap",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_orange_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_field_dagger",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_fork_on_a_stick",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_gold_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_sapphire_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_topaz_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
-    "ITEMID": "item_green_robin_hat",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_steel_corporal",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_red_pao",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_pink_qi_pao",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_steel_corporal_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_red_pao_bottom",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_purple_qi_pao_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_blue_basic_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_work_gloves",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_ryden",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_lemon",
+    "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_stirge_wing",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
-    "ITEMID": "item_orange_potion",
+    "ITEMID": "item_stiff_feather",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_iron_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_broken_mirror_glass",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_green_robin_hat",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_steel_corporal",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_red_pao",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_pink_qi_pao",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_steel_corporal_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_red_pao_bottom",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_purple_qi_pao_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_blue_basic_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_work_gloves",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_ryden",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_lemon",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_steel_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_garnet_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
-    "ITEMID": "item_steel_sharp_helm",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_blue_baseball_cap",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_brown_lamelle",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_purple_split",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_blue_kendo_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_brown_ramel_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_red_jack_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_orange",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_jr_necki",
-    "ITEMID": "item_orange_throwing_star",
+    "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_jr_necki_skin",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_steel_sharp_helm",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_blue_baseball_cap",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_brown_lamelle",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_purple_split",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_blue_kendo_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_brown_ramel_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_red_jack_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_orange",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_jr_necki",
+    "ITEMID": "item_orange_throwing_stars",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_white_split_skirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_coconut_knife",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_jr_necki",
     "ITEMID": "item_topaz_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_iron_burgernet_helm",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_brown_jester",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_blue_polefeather_hat",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_blue_pilfer",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_black_pao",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_green_able_armor",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_red_kendo_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_blue_jean_shorts",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_black_pao_bottom",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_brown_sneak_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_green_able_armor_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_yellow_windshoes",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_steel_fingerless_gloves",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_steel_shield",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_cutlus",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_iron_axe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_mithril_pole_arm",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_eagle_crow",
+    "ITEMID": "item_blue_shark",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_wizard_potion",
+    "ITEMID": "item_magic_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_horny_mushroom_cap",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_topaz_ore",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_bronze_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_iron_burgernet_helm",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_brown_jester",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_polefeather_hat",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_pilfer",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_black_pao",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_green_able_armor",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_red_kendo_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_blue_jean_shorts",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_black_pao_bottom",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_brown_sneak_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_green_able_armor_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_yellow_windshoes",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_steel_fingerless_gloves",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_steel_shield",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_cutlus",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_mithril_pole_arm",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_eagle_crow",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_horny_mushroom",
+    "ITEMID": "item_wizard_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_horny_mushroom",
     "ITEMID": "item_sapphire_ore",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_horny_mushroom",
-    "ITEMID": "item_topaz_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_bronze_football_helmet",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_yellow_starry_bandana",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_purple_shivermail",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_brown_doroness_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_purple_doroness_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_green_legolier_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_green_able_armor_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_purple_shivermail_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_red_lappy_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_black_lappy_boots",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_blue_potion",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_sap_of_ancient_tree",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_dark_axe_stump",
-    "ITEMID": "item_wooden_top",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_firewood",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_bronze_football_helmet",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_yellow_starry_bandana",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_purple_shivermail",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_brown_doroness_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_purple_doroness_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_green_legolier_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_green_able_armor_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_purple_shivermail_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_red_lappy_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_black_lappy_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_sap_of_ancient_tree",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_axe_stump",
+    "ITEMID": "item_wooden_top",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_axe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_steel_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_diamond_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_dark_axe_stump",
     "ITEMID": "item_the_summoning_rock",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_iron_burgernet_helm",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_pink_jester",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_weighted_earrings",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_gold_earrings",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_steel_corporal",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_red_hwarang_shirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_green_hwarang_shirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_black_pao",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_brown_sneak",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_blue_chaos_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_white_chaos_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_red_martial_arts_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_brown_sneak_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_red_arten",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_blue_counter",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_mithril_wand",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_iron_axe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_nakamaki",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_hunters_bow",
+    "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_orange_potion",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_white_potion",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_zombie_mushroom",
-    "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_dexterity_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_charm_of_the_undead",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_iron_burgernet_helm",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_pink_jester",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_weighted_earrings",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_gold_earrings",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_steel_corporal",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_red_hwarang_shirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_green_hwarang_shirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_black_pao",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_brown_sneak",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_blue_chaos_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_white_chaos_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_red_martial_arts_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_brown_sneak_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_red_arten",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_blue_counter",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_mithril_wand",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_iron_axe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_nakamaki",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_hunters_bow",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_zombie_mushroom",
+    "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_adamantium_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_zombie_mushroom",
     "ITEMID": "item_emerald_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_mesos",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_blue_jester",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_bronze_football_helmet",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_bronze_pride",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_brown_guiltian",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_red_distinction",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_weighted_earrings",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_sapphire_earrings",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_brown_piette",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_green_shivermail",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_purple_shivermail",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_purple_doroness_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_red_doroness_robe",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_blue_knucklevest_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_brown_piette_pants",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_green_able_armor_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_green_shivermail_skirt",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_iron_chain_boots",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_mithril_battle_grieves",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_circle_winded_staff",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_lionheart",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_sabretooth",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_nakamaki",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_ryden",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_eagle_crow",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_wild_boar",
-    "ITEMID": "item_mithril_guards",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_warrior_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_wild_boar_tooth",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_leather",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_blue_jester",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_bronze_football_helmet",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_bronze_pride",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_brown_guiltian",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_red_distinction",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_weighted_earrings",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_sapphire_earrings",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_brown_piette",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_green_shivermail",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_purple_shivermail",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_purple_doroness_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_red_doroness_robe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_blue_knucklevest_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_brown_piette_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_green_able_armor_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_green_shivermail_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_iron_chain_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_mithril_battle_grieves",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_circle_winded_staff",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_lionheart",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_sabretooth",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_nakamaki",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_ryden",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_eagle_crow",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
+    "ITEMID": "item_mithril_guards",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_stiff_feather",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_power_crystal_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_the_summoning_rock",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_adamantium_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_wild_boar",
     "ITEMID": "item_opal_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_great_red_helmet",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_cats_eye",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_yellow_square",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_red_hwarang_shirt",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_green_avelin",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_green_bennis_chainmail",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_gold_sneak",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_white_crusader_chainmail",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_white_wizard_robe",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_blue_engrit",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_khaki_shadow_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_gold_sneak_pants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_bennis_chainpants",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_ocean_mesana",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_cutlus",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_mithril_maul",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_forked_spear",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_orange_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_speed_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_evil_eye_tail",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_silver_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_sapphire_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_evil_eye",
     "ITEMID": "item_diamond_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_blue_loosecap",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_brown_guiltian",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_brown_burgler",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_redlined_kismet",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_bluelined_kismet",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_orange_calaf",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_red_moon_shoes",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_blue_pierre_shoes",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_gold_cleave",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_adamantium_tower_shield",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_dankke",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_knuckle_mace",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_halfmoon_zamadar",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_blood_slain",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_elixir",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_iron_hogs_metal_hoof",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_adamantium_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_sapphire_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_mesos",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_orange_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_all_cure_potion",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_antidote",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_eyedrop",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_tonic",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_fairys_antenna",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_silver_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_orihalcon_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_amethyst_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_garnet_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_aquamarine_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_opal_ore",
+    "Verified": "FALSE",
     "Chance": ""
   },
   {
     "MOBID": "mob_fairy",
     "ITEMID": "item_topaz_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_mesos",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_green_bennis_chainmail",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_green_lamelle",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_red_amoria_top",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_yellow_engrit",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_green_ramel_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_red_amoria_skirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_brown_moon_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_mithril_trigger",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_steel_arbion",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_green_marker",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_steel_tower_shield",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_gephart",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_mithril_maul",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_zeco",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_blue_potion",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_elixir",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_ligator_skin",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_the_magic_rock",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ligator",
+    "ITEMID": "item_aquamarine_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_blood_fitted_mail",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_fire_boars_tooth",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_leather",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_red_matty",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_green_burgler",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_green_hwarang_shirt",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_brown_martial_arts_pants",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_red_hunter_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_black_salt_shoes",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_red_silky_boots",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_gold_sylvia",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_blue_lutia",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_korean_fan",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_mithril_wand",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_crystal_wand",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_ryden",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_heckler",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_silver_guardian",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_white_potion",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_wolbi_throwing_stars",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_snowball_throwing_stars",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_arwens_glass_shoe",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_the_summoning_rock",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_steel_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_mithril_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_garnet_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_fire_boar",
+    "ITEMID": "item_diamond_ore",
+    "Verified": "FALSE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_curse_eye",
+    "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_curse_eye",
+    "ITEMID": "item_curse_eye_tail",
+    "Verified": "TRUE",
     "Chance": ""
   }
 ]

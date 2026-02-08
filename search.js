@@ -13,12 +13,52 @@ const BONUS_STAT_LABELS = {
   'LUK': 'LUK',
   'HP': 'HP',
   'MP': 'MP',
+  'Crit Rate ': 'Crit Rate',
+  'Crit Damage': 'Crit Damage',
   'Speed': 'Speed',
   'Jump': 'Jump',
   'Accuracy': 'Accuracy',
-  'Avoidability': 'Avoidability'
+  'Avoidability': 'Avoidability',
+  'Knockback': 'Knockback'
 };
 
+function getUseItemStats(item) {
+  const statKeys = ['Attack Power', 'Magic Attack', 'Weapon Def', 'Magic Def', 'STR', 'DEX', 'INT', 'LUK', 'HP', 'MP', 'Crit Rate ', 'Crit Damage', 'Speed', 'Jump', 'Accuracy', 'Avoidability', 'Knockback'];
+
+  const stats = statKeys.filter(stat => {
+    const value = item[stat];
+    return value !== undefined && value !== null && value !== '' && Number(value) !== 0;
+  });
+
+  if (stats.length === 0) return '';
+
+  return `
+    <div class="use-item-stats">
+      ${stats
+        .map(stat => `<p><strong>${stat}:</strong> +${item[stat]}</p>`)
+        .join('')}
+    </div>
+  `;
+}
+
+function getVerifiedBadge(item) {
+  const isVerified = item.Verified === "TRUE";
+
+  return `
+    <div class="verified-badge ${isVerified ? 'verified' : 'unverified'}">
+      <span class="verified-check">✔</span>
+      <span class="verified-text">
+        ${isVerified ? 'Verified in Game' : 'Unverified in Game'}
+      </span>
+    </div>
+  `;
+}
+
+function getVerifiedDropBorderStyle(drop) {
+  return drop && (drop.Verified === true || drop.Verified === "TRUE")
+    ? 'style="border:3px solid green;"'
+    : '';
+}
 
 // Load all data
 Promise.all([
@@ -86,7 +126,7 @@ window.showItem = (itemid) => {
     const monster = allData.find(d => d.type === 'monster' && d.MOBID === drop.MOBID);
     if (monster) {
       droppersHTML += `
-        <div class="drop-card" onclick="showMonster('${monster.MOBID}')">
+        <div class="drop-card" ${getVerifiedDropBorderStyle(drop)} onclick="showMonster('${monster.MOBID}')">
           <img src="${monster.Picture}" alt="${monster.Name}" style="width:40px; height:40px;">
           <p>${monster.Name}</p>
           ${drop.Chance ? `<p>Chance: ${drop.Chance}</p>` : ''}
@@ -100,7 +140,8 @@ window.showItem = (itemid) => {
   
   if (item.Category === 'ETC') {
     detailsHTML += `
-      <div class="entity-header">
+      <div class="item-header">
+        ${getVerifiedBadge(item)}
         <h3>${item['Item Name']}</h3>
         <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
       </div>
@@ -113,7 +154,8 @@ window.showItem = (itemid) => {
     `;
   } else if (item.Category === 'USE') {
     detailsHTML += `
-      <div class="entity-header">
+      <div class="item-header">
+        ${getVerifiedBadge(item)}
         <h3>${item['Item Name']}</h3>
         <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
       </div>
@@ -121,11 +163,14 @@ window.showItem = (itemid) => {
         <p><strong>Category:</strong> ${item.Category}</p>
         <p><strong>Use Type:</strong> ${item['Use Type']}</p>
         <p><strong>Description:</strong> ${item.Description}</p>
+        ${getUseItemStats(item)}
       </div>
       ${droppersHTML}
     `;
   } else if (item.Category === 'EQUIPMENT') {
-    detailsHTML += `<div class="item-header">
+    detailsHTML += `
+    <div class="item-header">
+      ${getVerifiedBadge(item)}
       <h3>${item['Item Name']}</h3>
       <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
       <p><strong>Equip Type:</strong> ${item['Equip Type'] || 'N/A'}</p>
@@ -138,7 +183,8 @@ window.showItem = (itemid) => {
         <p><strong>STR:</strong> ${item['Req Str'] || '0'}</p>
         <p><strong>DEX:</strong> ${item['Req Dex'] || '0'}</p>
         <p><strong>INT:</strong> ${item['Req Int'] || '0'}</p>
-        <p><strong>LUK:</strong> ${item['Req Luk'] || '0'}</p>`;
+        <p><strong>LUK:</strong> ${item['Req Luk'] || '0'}</p>
+        <p><strong>Fame:</strong> ${item['Req Fame'] || '0'}</p>`;
     if (item['Upgrade Slots']) detailsHTML += `<p><strong>Upgrade Slots:</strong> ${item['Upgrade Slots']}</p>`;
     detailsHTML += `</div>
       <div class="bonus-stats">
@@ -187,7 +233,7 @@ window.showMonster = (mobid) => {
     const droppedItem = allData.find(d => d.type === 'item' && d.ITEMID === drop.ITEMID);
     if (droppedItem) {
       dropsHTML += `
-        <div class="drop-card" onclick="showItem('${drop.ITEMID}')">
+        <div class="drop-card" ${getVerifiedDropBorderStyle(drop)} onclick="showItem('${drop.ITEMID}')">
           <img src="${droppedItem['Item Icon']}" alt="${droppedItem['Item Name']}" style="width:40px; height:40px;">
           <p>${droppedItem['Item Name']}</p>
           ${drop.Chance ? `<p>Chance: ${drop.Chance}</p>` : ''}
@@ -406,7 +452,7 @@ function applyFilters() {
           const droppedItem = allData.find(d => d.type === 'item' && d.ITEMID === drop.ITEMID);
           if (droppedItem) {
             dropsHTML += `
-              <div class="drop-card" onclick="showItem('${drop.ITEMID}')">
+              <div class="drop-card" ${getVerifiedDropBorderStyle(drop)} onclick="showItem('${drop.ITEMID}')">
                 <img src="${droppedItem['Item Icon']}" alt="${droppedItem['Item Name']}" style="width:40px; height:40px;">
                 <p>${droppedItem['Item Name']}</p>
                 ${drop.Chance ? `<p>Chance: ${drop.Chance}</p>` : ''}
@@ -437,7 +483,7 @@ function applyFilters() {
 
         detailsHTML = `
           <div class="monster-details">
-            <div class="entity-header">
+            <div class="item-header">
               <h3>${item.Name}</h3>
               <img src="${item.Picture}" alt="${item.Name}" class="item-icon">
             </div>
@@ -457,7 +503,8 @@ function applyFilters() {
         
         if (item.Category === 'ETC') {
           detailsHTML += `
-            <div class="entity-header">
+            <div class="item-header">
+            ${getVerifiedBadge(item)}
               <h3>${item['Item Name']}</h3>
               <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
             </div>
@@ -469,7 +516,8 @@ function applyFilters() {
           `;
         } else if (item.Category === 'USE') {
           detailsHTML += `
-            <div class="entity-header">
+            <div class="item-header">
+            ${getVerifiedBadge(item)}
               <h3>${item['Item Name']}</h3>
               <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
             </div>
@@ -477,10 +525,13 @@ function applyFilters() {
               <p><strong>Category:</strong> ${item.Category}</p>
               <p><strong>Use Type:</strong> ${item['Use Type']}</p>
               <p><strong>Description:</strong> ${item.Description}</p>
+              ${getUseItemStats(item)}
             </div>
           `;
         } else if (item.Category === 'EQUIPMENT') {
-          detailsHTML += `<div class="item-header">
+          detailsHTML += `
+          <div class="item-header">
+            ${getVerifiedBadge(item)}
             <h3>${item['Item Name']}</h3>
             <img src="${item['Item Icon']}" alt="${item['Item Name']}" class="item-icon">
             <p><strong>Equip Type:</strong> ${item['Equip Type'] || 'N/A'}</p>
@@ -493,7 +544,8 @@ function applyFilters() {
               <p><strong>STR:</strong> ${item['Req Str'] || '0'}</p>
               <p><strong>DEX:</strong> ${item['Req Dex'] || '0'}</p>
               <p><strong>INT:</strong> ${item['Req Int'] || '0'}</p>
-              <p><strong>LUK:</strong> ${item['Req Luk'] || '0'}</p>`;
+              <p><strong>LUK:</strong> ${item['Req Luk'] || '0'}</p>
+              <p><strong>Fame:</strong> ${item['Req Fame'] || '0'}</p>`;
           if (item['Upgrade Slots']) detailsHTML += `<p><strong>Upgrade Slots:</strong> ${item['Upgrade Slots']}</p>`;
           detailsHTML += `</div>
             <div class="bonus-stats">
@@ -532,7 +584,7 @@ function applyFilters() {
           const monster = allData.find(d => d.type === 'monster' && d.MOBID === drop.MOBID);
           if (monster) {
             droppersHTML += `
-              <div class="drop-card" onclick="showMonster('${monster.MOBID}')">
+              <div class="drop-card" ${getVerifiedDropBorderStyle(drop)} onclick="showMonster('${monster.MOBID}')">
                 <img src="${monster.Picture}" alt="${monster.Name}" style="width:40px; height:40px;">
                 <p>${monster.Name}</p>
                 ${drop.Chance ? `<p>Chance: ${drop.Chance}</p>` : ''}
