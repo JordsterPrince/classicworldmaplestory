@@ -7,6 +7,24 @@
   },
   {
     "MOBID": "mob_snail",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_snail",
     "ITEMID": "item_snail_shell",
     "Verified": "TRUE",
     "Chance": ""
@@ -80,6 +98,12 @@
   {
     "MOBID": "mob_blue_snail",
     "ITEMID": "item_blue_snail_shell",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_snail",
+    "ITEMID": "item_iron_ore",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -217,6 +241,12 @@
   },
   {
     "MOBID": "mob_red_snail",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_red_snail",
     "ITEMID": "item_arrow_for_crossbow",
     "Verified": "TRUE",
     "Chance": ""
@@ -282,12 +312,6 @@
     "Chance": ""
   },
   {
-    "MOBID": "mob_red_snail",
-    "ITEMID": "item_arrow_for_bow",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
     "MOBID": "mob_stump",
     "ITEMID": "item_mesos",
     "Verified": "TRUE",
@@ -320,6 +344,12 @@
   {
     "MOBID": "mob_stump",
     "ITEMID": "item_tree_branch",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stump",
+    "ITEMID": "item_adamantium_ore",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -361,12 +391,6 @@
   },
   {
     "MOBID": "mob_stump",
-    "ITEMID": "item_adamantium_ore",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stump",
     "ITEMID": "item_emerald_ore",
     "Verified": "FALSE",
     "Chance": ""
@@ -380,6 +404,12 @@
   {
     "MOBID": "mob_slime",
     "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_slime",
+    "ITEMID": "item_arrow_for_bow",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -469,13 +499,31 @@
   },
   {
     "MOBID": "mob_pig",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
     "ITEMID": "item_arrow_for_bow",
     "Verified": "TRUE",
     "Chance": ""
   },
   {
     "MOBID": "mob_pig",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
     "ITEMID": "item_pigs_head",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_pig",
+    "ITEMID": "item_leather",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -529,12 +577,6 @@
   },
   {
     "MOBID": "mob_pig",
-    "ITEMID": "item_leather",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_pig",
     "ITEMID": "item_gold_ore",
     "Verified": "FALSE",
     "Chance": ""
@@ -554,6 +596,12 @@
   {
     "MOBID": "mob_orange_mushroom",
     "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_orange_mushroom",
+    "ITEMID": "item_arrow_for_crossbow",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -619,7 +667,25 @@
   },
   {
     "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_pigs_ribbon",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_ribbon_pig",
+    "ITEMID": "item_leather",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -667,12 +733,6 @@
   },
   {
     "MOBID": "mob_ribbon_pig",
-    "ITEMID": "item_red_potion",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_ribbon_pig",
     "ITEMID": "item_mithril_ore",
     "Verified": "FALSE",
     "Chance": ""
@@ -686,6 +746,12 @@
   {
     "MOBID": "mob_dark_stump",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_dark_stump",
+    "ITEMID": "item_arrow_for_bow",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -763,6 +829,12 @@
   },
   {
     "MOBID": "mob_octopus",
+    "ITEMID": "item_octopus_leg",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_octopus",
     "ITEMID": "item_single_earring",
     "Verified": "FALSE",
     "Chance": ""
@@ -805,12 +877,6 @@
   },
   {
     "MOBID": "mob_octopus",
-    "ITEMID": "item_octopus_leg",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_octopus",
     "ITEMID": "item_blue_potion",
     "Verified": "FALSE",
     "Chance": ""
@@ -836,6 +902,12 @@
   {
     "MOBID": "mob_green_mushroom",
     "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_green_mushroom",
+    "ITEMID": "item_blue_potion",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -943,12 +1015,6 @@
   },
   {
     "MOBID": "mob_green_mushroom",
-    "ITEMID": "item_blue_potion",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_green_mushroom",
     "ITEMID": "item_silver_ore",
     "Verified": "FALSE",
     "Chance": ""
@@ -962,6 +1028,24 @@
   {
     "MOBID": "mob_bubbling",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_bubbling",
+    "ITEMID": "item_bubblings_huge_bubble",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_bubbling",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_bubbling",
+    "ITEMID": "item_arrow_for_crossbow",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -1009,19 +1093,7 @@
   },
   {
     "MOBID": "mob_bubbling",
-    "ITEMID": "item_bubblings_huge_bubble",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_bubbling",
     "ITEMID": "item_the_magic_rock",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_bubbling",
-    "ITEMID": "item_red_potion",
     "Verified": "FALSE",
     "Chance": ""
   },
@@ -1064,6 +1136,12 @@
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_axe_stump",
+    "ITEMID": "item_red_potion",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -1153,12 +1231,6 @@
   },
   {
     "MOBID": "mob_axe_stump",
-    "ITEMID": "item_red_potion",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_axe_stump",
     "ITEMID": "item_blue_potion",
     "Verified": "FALSE",
     "Chance": ""
@@ -1184,6 +1256,24 @@
   {
     "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_mushroom",
+    "ITEMID": "item_red_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_mushroom",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_blue_mushroom",
+    "ITEMID": "item_blue_mushroom_cap",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -1267,12 +1357,6 @@
   },
   {
     "MOBID": "mob_blue_mushroom",
-    "ITEMID": "item_blue_mushroom_cap",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_blue_mushroom",
     "ITEMID": "item_orange_potion",
     "Verified": "FALSE",
     "Chance": ""
@@ -1339,6 +1423,18 @@
   },
   {
     "MOBID": "mob_stirge",
+    "ITEMID": "item_blue_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
+    "ITEMID": "item_arrow_for_crossbow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_stirge",
     "ITEMID": "item_stirge_wing",
     "Verified": "TRUE",
     "Chance": ""
@@ -1358,12 +1454,6 @@
   {
     "MOBID": "mob_stirge",
     "ITEMID": "item_broken_mirror_glass",
-    "Verified": "TRUE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_stirge",
-    "ITEMID": "item_blue_potion",
     "Verified": "TRUE",
     "Chance": ""
   },
@@ -2035,6 +2125,12 @@
   },
   {
     "MOBID": "mob_wild_boar",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_wild_boar",
     "ITEMID": "item_arrow_for_crossbow",
     "Verified": "TRUE",
     "Chance": ""
@@ -2395,6 +2491,12 @@
   },
   {
     "MOBID": "mob_iron_hog",
+    "ITEMID": "item_iron_hogs_metal_hoof",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_iron_hog",
     "ITEMID": "item_blue_loosecap",
     "Verified": "FALSE",
     "Chance": ""
@@ -2492,12 +2594,6 @@
   {
     "MOBID": "mob_iron_hog",
     "ITEMID": "item_elixir",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_iron_hog",
-    "ITEMID": "item_iron_hogs_metal_hoof",
     "Verified": "FALSE",
     "Chance": ""
   },

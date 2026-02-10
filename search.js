@@ -60,6 +60,19 @@ function getVerifiedDropBorderStyle(drop) {
     : '';
 }
 
+function getVerifiedMonsterBadge(monster) {
+  const isVerified = monster && (monster.Verified === true || monster.Verified === "TRUE");
+
+  return `
+    <div class="verified-badge ${isVerified ? 'verified' : 'unverified'}">
+      <span class="verified-check">✔</span>
+      <span class="verified-text">
+        ${isVerified ? 'Verified mob stats in game' : 'Unverified mob stats in game'}
+      </span>
+    </div>
+  `;
+}
+
 // Load all data
 Promise.all([
   fetch("JSONS/mobs.json").then(res => res.json()),
@@ -265,6 +278,7 @@ window.showMonster = (mobid) => {
   const detailsHTML = `
     <div class="monster-details">
       <div class="entity-header">
+        ${getVerifiedMonsterBadge(item)}
         <h3>${item.Name}</h3>
         <img src="${item.Picture}" alt="${item.Name}" class="item-icon">
       </div>
@@ -484,6 +498,7 @@ function applyFilters() {
         detailsHTML = `
           <div class="monster-details">
             <div class="item-header">
+              ${getVerifiedMonsterBadge(item)}
               <h3>${item.Name}</h3>
               <img src="${item.Picture}" alt="${item.Name}" class="item-icon">
             </div>
