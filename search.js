@@ -73,15 +73,22 @@ function getVerifiedMonsterBadge(monster) {
   `;
 }
 
+function getVerifiedMapMonsterBorderStyle(mm) {
+  return mm && (mm.Verified === true || mm.Verified === "TRUE")
+    ? 'style="border:3px solid green;"'
+    : '';
+}
+
 // Load all data
 Promise.all([
   fetch("JSONS/mobs.json").then(res => res.json()),
   fetch("JSONS/items.json").then(res => res.json()),
   fetch("JSONS/maps.json").then(res => res.json()),
   fetch("JSONS/MobDrops.json").then(res => res.json()),
-  fetch("JSONS/MapMonsters.json").then(res => res.json())
+  fetch("JSONS/MapMonsters.json").then(res => res.json()),
+  fetch("JSONS/MapConnections.json").then(res => res.json())
 ])
-.then(([monstersData, itemsData, mapsData, dropsData, mapMonstersData]) => {
+.then(([monstersData, itemsData, mapsData, dropsData, mapMonstersData, mapConnectionsData]) => {
   // Add type and displayName to each
   monstersData.forEach(item => {
     item.type = 'monster';
@@ -98,7 +105,8 @@ Promise.all([
   allData = [...monstersData, ...itemsData, ...mapsData];
   mobDrops = dropsData;
   mapMonsters = mapMonstersData;
-  console.log("All data loaded:", allData.length, "Drops:", mobDrops.length, "MapMonsters:", mapMonsters.length);
+  mapConnections = mapConnectionsData;
+  console.log("All data loaded:", allData.length, "Drops:", mobDrops.length, "MapMonsters:", mapMonsters.length, "MapConnections:", mapConnections.length);
 
   updateSubFilters();
 
@@ -265,7 +273,7 @@ window.showMonster = (mobid) => {
       const map = allData.find(d => d.type === 'map' && d.MAPID === me.MAPID);
       if (map) {
         mapHTML += `
-          <div class="drop-card" onclick="showMap('${map.MAPID}')">
+          <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(me)} onclick="showMap('${map.MAPID}')">
             <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
             <p>${map['Map Name']}</p>
           </div>
@@ -307,7 +315,7 @@ window.showMap = (mapid) => {
     const monster = allData.find(d => d.type === 'monster' && d.MOBID === mm.MOBID);
     if (monster) {
       monstersHTML += `
-        <div class="drop-card" onclick="showMonster('${mm.MOBID}')">
+        <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(mm)} onclick="showMonster('${mm.MOBID}')">
           <img src="${monster.Picture}" alt="${monster.Name}" style="width:40px; height:40px;">
           <p>${monster.Name}</p>
           ${mm.NumberOfMobs ? `<p>Mobs: ${mm.NumberOfMobs}</p>` : ''}
@@ -317,17 +325,42 @@ window.showMap = (mapid) => {
   });
   monstersHTML += '</div></div>';
 
+    const connected = mapConnections.filter(mc => mc.FromMapID === item.MAPID);
+  let connectionsHTML = '';
+  if (connected.length > 0) {
+    connectionsHTML = '<div class="map-section"><h4>Connecting Maps</h4><div class="map-grid">';
+    connected.forEach(mc => {
+      const map = allData.find(d => d.type === 'map' && d.MAPID === mc.ToMapID);
+      if (map) {
+        connectionsHTML += `
+          <div class="drop-card" onclick="showMap('${map.MAPID}')">
+            <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
+            <p>${map['Map Name']}</p>
+          </div>
+        `;
+      }
+    });
+    connectionsHTML += '</div></div>';
+  }
+
   const detailsHTML = `
-    <div class="map-details">
-      <div class="entity-header">
-        <h3>${item['Map Name']}</h3>
-        <img src="${item['Map Picture']}" alt="${item['Map Name']}" class="item-icon">
+      <div class="map-details">
+        <div class="entity-header">
+          <h3>${item['Map Name']}</h3>
+          <img 
+            src="${item['Map Picture']}" 
+            alt="${item['Map Name']}" 
+            class="item-icon"
+            style="width: 100%; height: 100%; object-fit: cover;"
+          >
+        </div>
+        ${monstersHTML}
+        ${connectionsHTML}
       </div>
-      ${monstersHTML}
-    </div>
-  `;
+    `;
   resultsContainer.innerHTML = detailsHTML;
 };
+
 const resultsContainer = document.getElementById("searchResults");
 const filterAll = document.getElementById("filter-all");
 const filterMonster = document.getElementById("filter-monster");
@@ -485,7 +518,7 @@ function applyFilters() {
             const map = allData.find(d => d.type === 'map' && d.MAPID === me.MAPID);
             if (map) {
               mapHTML += `
-                <div class="drop-card" onclick="showMap('${map.MAPID}')">
+                <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(me)} onclick="showMap('${map.MAPID}')">
                   <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
                   <p>${map['Map Name']}</p>
                 </div>
@@ -619,7 +652,7 @@ function applyFilters() {
           const monster = allData.find(d => d.type === 'monster' && d.MOBID === mm.MOBID);
           if (monster) {
             monstersHTML += `
-              <div class="drop-card" onclick="showMonster('${mm.MOBID}')">
+              <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(mm)} onclick="showMonster('${mm.MOBID}')">
                 <img src="${monster.Picture}" alt="${monster.Name}" style="width:40px; height:40px;">
                 <p>${monster.Name}</p>
                 ${mm.NumberOfMobs ? `<p>Mobs: ${mm.NumberOfMobs}</p>` : ''}
@@ -629,17 +662,41 @@ function applyFilters() {
         });
         monstersHTML += '</div></div>';
 
-        detailsHTML = `
-          <div class="map-details">
-            <div class="entity-header">
-              <h3>${item['Map Name']}</h3>
-              <img src="${item['Map Picture']}" alt="${item['Map Name']}" class="item-icon">
-            </div>
-            ${monstersHTML}
+          const connected = mapConnections.filter(mc => mc.FromMapID === item.MAPID);
+  let connectionsHTML = '';
+  if (connected.length > 0) {
+    connectionsHTML = '<div class="map-section"><h4>Connecting Maps</h4><div class="map-grid">';
+    connected.forEach(mc => {
+      const map = allData.find(d => d.type === 'map' && d.MAPID === mc.ToMapID);
+      if (map) {
+        connectionsHTML += `
+          <div class="drop-card" onclick="showMap('${map.MAPID}')">
+            <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
+            <p>${map['Map Name']}</p>
           </div>
         `;
-        resultsContainer.innerHTML = detailsHTML;
       }
+    });
+    connectionsHTML += '</div></div>';
+  }
+
+      const detailsHTML = `
+        <div class="map-details">
+          <div class="entity-header">
+            <h3>${item['Map Name']}</h3>
+            <img 
+              src="${item['Map Picture']}" 
+              alt="${item['Map Name']}" 
+              class="item-icon"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            >
+          </div>
+          ${monstersHTML}
+          ${connectionsHTML}
+        </div>
+      `;
+      resultsContainer.innerHTML = detailsHTML;
+    }
     };
 
     resultsContainer.appendChild(div);
