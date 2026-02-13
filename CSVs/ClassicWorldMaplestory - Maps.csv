@@ -1,35 +1,140 @@
-MAPID,Map Name,Map Picture
-map_snail_hunting_ground_i,Snail Hunting Ground I,https://maplestory.io/api/gms/62/map/40000/render
-map_snail_hunting_ground_ii,Snail Hunting Ground II,https://maplestory.io/api/gms/62/map/40001/render
-map_snail_hunting_ground_iii,Snail Hunting Ground III,https://maplestory.io/api/gms/62/map/40002/render
-map_a_split_road,A Split Road,https://maplestory.io/api/gms/62/map/50000/render
-map_the_field_west_of_amherst,The Field West of Amherst,https://maplestory.io/api/gms/62/map/1000000/render
-map_the_field_west_of_southperry,The Field West of SouthPerry,https://maplestory.io/api/gms/62/map/50001/render
-map_snail_garden,Snail Garden,https://maplestory.io/api/gms/62/map/1000004/render
-map_mushroom_garden,Mushroom Garden,https://maplestory.io/api/gms/62/map/104030001/render
-map_amherst,Amherst,https://maplestory.io/api/gms/62/map/1010000/render
-map_amherst_weapon_store,Amherst Weapon Store,https://maplestory.io/api/gms/62/map/1010001/render
-map_amherst_department_store,Amherst Department Store,https://maplestory.io/api/gms/62/map/1010003/render
-map_amherst_town_street,Amherst Town Street,https://maplestory.io/api/gms/62/map/1010002/render
-map_snail_field_of_flowers,Snail Field of Flowers,https://maplestory.io/api/gms/62/map/1010004/render
-map_the_field_east_of_amherst,The Field East of Amherst,https://maplestory.io/api/gms/62/map/1020000/render
-map_tomato_field,Tomato Field,https://maplestory.io/api/gms/62/map/1020001/render
-map_hunting_ground_middle_of_the_forest_i,Hunting Ground Middle of the Forest I,https://maplestory.io/api/gms/62/map/1000005/render
-map_hunting_ground_middle_of_the_forest_ii,Hunting Ground Middle of the Forest II,https://maplestory.io/api/gms/62/map/1000006/render
-map_in_a_small_forest,In a Small Forest,https://maplestory.io/api/gms/62/map/1000001/render
-map_dangerous_forest,Dangerous Forest,https://maplestory.io/api/gms/62/map/1000002/render
-map_southperry,Southperry,https://maplestory.io/api/gms/62/map/60000/render
-map_southperry_armor_store,Southperry Armor Store,https://maplestory.io/api/gms/62/map/60001/render
-map_lith_harbor,Lith Harbor,https://maplestory.io/api/gms/62/map/104000000/render
-map_lith_harbor_department_store,Lith Harbor Department Store,https://maplestory.io/api/gms/62/map/104000002/render
-map_lith_harbor_armor_shop,Lith Harbor Armor Shop,https://maplestory.io/api/gms/62/map/60001/render
-map_lith_harbor_weapon_shop,Lith Harbor Weapon Shop,https://maplestory.io/api/gms/62/map/1010001/render
-map_right_around_lith_harbor,Right Around Lith Harbor,https://maplestory.io/api/gms/62/map/104000100/render
-map_thicket_around_the_beach_i,Thicket Around the Beach I,https://maplestory.io/api/gms/62/map/104000200/render
-map_thicket_around_the_beach_ii,Thicket Around the Beach II,https://maplestory.io/api/gms/62/map/104000300/render
-map_thicket_around_the_beach_iii,Thicket Around the Beach III,https://maplestory.io/api/gms/62/map/104000400/render
-map_3_way_road_split,3 Way Road Split,https://maplestory.io/api/gms/62/map/104010000/render
-map_the_pig_beach,The Pig Beach,https://maplestory.io/api/gms/62/map/104010001/render
-map_beach_hunting_ground,Beach Hunting Ground,https://maplestory.io/api/gms/62/map/104010002/render
-map_forest_west_of_henesys,Forest West of Henesys,https://maplestory.io/api/gms/62/map/104020000/render
-map_kerning_city_middle_forest_i,Kerning City Middle Forest I,https://maplestory.io/api/gms/62/map/103030000/render
+MAPID,Map Name,Map Picture,Map Song Name,Map Song
+map_snail_hunting_ground_i,Snail Hunting Ground I,https://maplestory.io/api/gms/62/map/40000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_snail_hunting_ground_ii,Snail Hunting Ground II,https://maplestory.io/api/gms/62/map/40001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_snail_hunting_ground_iii,Snail Hunting Ground III,https://maplestory.io/api/gms/62/map/40002/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_a_split_road,A Split Road,https://maplestory.io/api/gms/62/map/50000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_the_field_west_of_amherst,The Field West of Amherst,https://maplestory.io/api/gms/62/map/1000000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_the_field_west_of_southperry,The Field West of SouthPerry,https://maplestory.io/api/gms/62/map/50001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_snail_garden,Snail Garden,https://maplestory.io/api/gms/62/map/1000004/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_mushroom_garden,Mushroom Garden,https://maplestory.io/api/gms/62/map/104030001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_amherst,Amherst,https://maplestory.io/api/gms/62/map/1010000/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_amherst_weapon_store,Amherst Weapon Store,https://maplestory.io/api/gms/62/map/1010001/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_amherst_department_store,Amherst Department Store,https://maplestory.io/api/gms/62/map/1010003/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_amherst_town_street,Amherst Town Street,https://maplestory.io/api/gms/62/map/1010002/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_snail_field_of_flowers,Snail Field of Flowers,https://maplestory.io/api/gms/62/map/1010004/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_the_field_east_of_amherst,The Field East of Amherst,https://maplestory.io/api/gms/62/map/1020000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_tomato_field,Tomato Field,https://maplestory.io/api/gms/62/map/1020001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_hunting_ground_middle_of_the_forest_i,Hunting Ground Middle of the Forest I,https://maplestory.io/api/gms/62/map/1000005/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_hunting_ground_middle_of_the_forest_ii,Hunting Ground Middle of the Forest II,https://maplestory.io/api/gms/62/map/1000006/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_in_a_small_forest,In a Small Forest,https://maplestory.io/api/gms/62/map/1000001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_dangerous_forest,Dangerous Forest,https://maplestory.io/api/gms/62/map/1000002/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_southperry,Southperry,https://maplestory.io/api/gms/62/map/60000/render,Go Picnic,https://maplestory.io/api/GMS/22/music/Bgm00/GoPicnic
+map_southperry_armor_store,Southperry Armor Store,https://maplestory.io/api/gms/62/map/60001/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_lith_harbor,Lith Harbor,https://maplestory.io/api/gms/62/map/104000000/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_lith_harbor_department_store,Lith Harbor Department Store,https://maplestory.io/api/gms/62/map/104000002/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_lith_harbor_armor_shop,Lith Harbor Armor Shop,https://maplestory.io/api/gms/62/map/60001/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_lith_harbor_weapon_shop,Lith Harbor Weapon Shop,https://maplestory.io/api/gms/62/map/1010001/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_right_around_lith_harbor,Right Around Lith Harbor,https://maplestory.io/api/gms/62/map/104000100/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_thicket_around_the_beach_i,Thicket Around the Beach I,https://maplestory.io/api/gms/62/map/104000200/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_thicket_around_the_beach_ii,Thicket Around the Beach II,https://maplestory.io/api/gms/62/map/104000300/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_thicket_around_the_beach_iii,Thicket Around the Beach III,https://maplestory.io/api/gms/62/map/104000400/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_3_way_road_split,3 Way Road Split,https://maplestory.io/api/gms/62/map/104010000/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_the_pig_beach,The Pig Beach,https://maplestory.io/api/gms/62/map/104010001/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_beach_hunting_ground,Beach Hunting Ground,https://maplestory.io/api/gms/62/map/104010002/render,Above The Treetops,https://maplestory.io/api/GMS/22/music/Bgm02/AboveTheTreetops
+map_forest_west_of_henesys,Forest West of Henesys,https://maplestory.io/api/gms/62/map/104020000/render,Cava Bien,https://maplestory.io/api/GMS/22/music/Bgm01/CavaBien
+map_kerning_city_middle_forest_i,Kerning City Middle Forest I,https://maplestory.io/api/gms/62/map/103030000/render,Blue Sky,https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky
+map_a_hill_west_of_henesys,A Hill West of Henesys,https://maplestory.io/api/gms/62/map/104030000/render,Cava Bien,https://maplestory.io/api/GMS/22/music/Bgm01/CavaBien
+map_henesys_hunting_ground_i,Henesys Hunting Ground I,https://maplestory.io/api/gms/62/map/104040000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_henesys_hunting_ground_ii,Henesys Hunting Ground II,https://maplestory.io/api/gms/62/map/104040001/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_henesys,Henesys,https://maplestory.io/api/gms/62/map/100000000/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_henesys_market,Henesys Market,https://maplestory.io/api/gms/62/map/100000100/render,Go Picnic,https://maplestory.io/api/GMS/22/music/Bgm00/GoPicnic
+map_henesys_weapon_store,Henesys Weapon Store,https://maplestory.io/api/gms/62/map/100000101/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_henesys_department_store,Henesys Department Store,https://maplestory.io/api/gms/62/map/100000102/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_henesys_park,Henesys Park,https://maplestory.io/api/gms/62/map/100000200/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_bowman_instructional_school,Bowman Instructional School,https://maplestory.io/api/gms/62/map/100000201/render,Floral Life,https://maplestory.io/api/GMS/22/music/Bgm00/FloralLife
+map_the_hill_east_of_henesys,The Hill East of Henesys,https://maplestory.io/api/gms/62/map/100010000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_the_rainforest_east_of_henesys,The Rain-Forest East of Henesys,https://maplestory.io/api/gms/62/map/100020000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_the_forest_east_of_henesys,The Forest East of Henesys,https://maplestory.io/api/gms/22/map/100030000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_the_forest_south_of_ellinia,The Forest South of Ellinia,https://maplestory.io/api/gms/22/map/100040000/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_the_forest_of_wisdom,The Forest of Wisdom,https://maplestory.io/api/gms/22/map/100040100/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_the_field_south_of_ellinia,The Field South of Ellinia,https://maplestory.io/api/gms/22/map/100050000/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_ellinia,Ellinia,https://maplestory.io/api/gms/22/map/101000000/render,When The Morning Comes,https://maplestory.io/api/GMS/22/music/Bgm02/WhenTheMorningComes
+map_ellinia_weapon_store,Ellinia Weapon Store,https://maplestory.io/api/gms/62/map/101000001/render,When The Morning Comes,https://maplestory.io/api/GMS/22/music/Bgm02/WhenTheMorningComes
+map_ellinia_department_store,Ellinia Department Store,https://maplestory.io/api/gms/62/map/101000002/render,When The Morning Comes,https://maplestory.io/api/GMS/22/music/Bgm02/WhenTheMorningComes
+map_magic_library,Magic Library,https://maplestory.io/api/gms/62/map/101000003/render,When The Morning Comes,https://maplestory.io/api/GMS/22/music/Bgm02/WhenTheMorningComes
+map_the_field_up_north_of_ellinia,The Field up North of Ellinia,https://maplestory.io/api/gms/62/map/101010000/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_the_tree_that_grew_i,The Tree That Grew I,https://maplestory.io/api/gms/62/map/101010100/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_the_forest_north_of_ellinia,The Forest North of Ellinia,https://maplestory.io/api/gms/62/map/101020000/render,Moonlight Shadow,https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow
+map_east_domain_of_perion,East Domain of Perion,https://maplestory.io/api/gms/62/map/101030000/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_rocky_road_iii,Rocky Road III,https://maplestory.io/api/gms/62/map/101030100/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_rocky_road_ii,Rocky Road II,https://maplestory.io/api/gms/62/map/101030200/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_rocky_road_i,Rocky Road I,https://maplestory.io/api/gms/62/map/101030300/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_east_rocky_mountain_i,East Rocky Mountain I,https://maplestory.io/api/gms/62/map/101030400/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_perion_street_corner,Perion Street Corner,https://maplestory.io/api/gms/62/map/101040000/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_perion,Perion,https://maplestory.io/api/gms/62/map/102000000/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_perion_department_store,Perion Department Store,https://maplestory.io/api/gms/62/map/102000002/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_perion_weapon_store,Perion Weapon Store,https://maplestory.io/api/gms/62/map/102000001/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_warriors_sanctuary,Warriors' Sanctuary,https://maplestory.io/api/gms/62/map/102000003/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_west_street_corner_of_perion,West Street Corner of Perion,https://maplestory.io/api/gms/62/map/102010000/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_west_rocky_mountain_i,West Rocky Mountain I,https://maplestory.io/api/gms/62/map/102020000/render,Highland Star,https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar
+map_west_domain_of_perion,West Domain of Perion,https://maplestory.io/api/gms/62/map/102030000/render,Nightmare,https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare
+map_construction_site_north_of_kerning_city,Construction Site North of Kerning City,https://maplestory.io/api/gms/62/map/102040000/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_sunset_sky,Sunset Sky,https://maplestory.io/api/gms/62/map/102050000/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_kerning_city,Kerning City,https://maplestory.io/api/gms/62/map/103000000/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_naora_hospital,Naora Hospital,https://maplestory.io/api/gms/62/map/103000004/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_kerning_city_self_defence_item_store,Kerning City Self Defence Item Store,https://maplestory.io/api/gms/62/map/103000001/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_kerning_city_pharmacy,Kerning City Pharmacy,https://maplestory.io/api/gms/62/map/103000002/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_kerning_city_repair_shop,Kerning City Repair Shop,https://maplestory.io/api/gms/62/map/103000006/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_thieves_hideout,Thieves Hideout,https://maplestory.io/api/gms/62/map/103000003/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_kerning_city_contruction_site,Kerning City Contruction Site,https://maplestory.io/api/gms/62/map/103010000/render,Bad Guys,https://maplestory.io/api/GMS/22/music/Bgm01/BadGuys
+map_l_forest_i,L Forest I,https://maplestory.io/api/gms/62/map/103020000/render,Blue Sky,https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky
+map_l_forest_ii,L Forest II,https://maplestory.io/api/gms/62/map/103020100/render,Blue Sky,https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky
+map_l_forest_iii,L Forest III,https://maplestory.io/api/gms/62/map/103020200/render,Blue Sky,https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky
+map_the_swamp_of_despair_i,The Swamp of Despair I,https://maplestory.io/api/gms/62/map/107000000/render,Jungle Book,https://maplestory.io/api/GMS/62/music/Bgm02/JungleBook
+map_the_swamp_of_despair_ii,The Swamp of Despair II,https://maplestory.io/api/gms/62/map/107000100/render,Jungle Book,https://maplestory.io/api/GMS/62/music/Bgm02/JungleBook
+map_the_swamp_of_despair_iii,The Swamp of Despair III,https://maplestory.io/api/GMS/22/map/107000200/render,Jungle Book,https://maplestory.io/api/GMS/62/music/Bgm02/JungleBook
+map_dangerous_croko_i,Dangerous Croko I,https://maplestory.io/api/gms/62/map/107000300/render,Jungle Book,https://maplestory.io/api/GMS/62/music/Bgm02/JungleBook
+map_dangerous_croko_ii,Dangerous Croko II,https://maplestory.io/api/gms/62/map/107000400/render,Jungle Book,https://maplestory.io/api/GMS/62/music/Bgm02/JungleBook
+map_damp_treeforest,Damp Tree-Forest,https://maplestory.io/api/gms/62/map/107000500/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_deep_forest,Deep Forest,https://maplestory.io/api/gms/62/map/105030000/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_swampy_land_in_a_deep_forest,Swampy Land in a Deep Forest,https://maplestory.io/api/gms/62/map/105040000/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_sleepywood,Sleepywood,https://maplestory.io/api/gms/62/map/105040300/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_the_road_to_the_dungeon,The Road to the Dungeon,https://maplestory.io/api/gms/62/map/106010000/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_henesys_dungeon_entrance,Henesys Dungeon Entrance,https://maplestory.io/api/gms/62/map/106010100/render,Rest N Peace,https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace
+map_deep_valley_i,Deep Valley I,https://maplestory.io/api/GMS/22/map/106000000/render,Highland Star,https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar
+map_deep_valley_ii,Deep Valley II,https://maplestory.io/api/GMS/22/map/106000100/render,Highland Star,https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar
+map_deep_valley_iii,Deep Valley III,https://maplestory.io/api/GMS/22/map/106000200/render,Highland Star,https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar
+map_ant_tunnel_i,Ant Tunnel I,https://maplestory.io/api/gms/62/map/105050000/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_ant_tunnel_ii,Ant Tunnel II,https://maplestory.io/api/gms/62/map/105050100/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_ant_tunnel_iii,Ant Tunnel III,https://maplestory.io/api/gms/62/map/105050200/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_ant_tunnel_iv,Ant Tunnel IV,https://maplestory.io/api/gms/62/map/105050300/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_dark_cave,Dark Cave,https://maplestory.io/api/gms/62/map/105050400/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_dangerous_steam,Dangerous Steam,https://maplestory.io/api/gms/62/map/105060000/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_deep_ant_tunnel_i,Deep Ant Tunnel I,https://maplestory.io/api/gms/62/map/105060100/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_deep_ant_tunnel_ii,Deep Ant Tunnel II,https://maplestory.io/api/gms/62/map/105070000/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_ant_tunnel_park,Ant Tunnel Park,https://maplestory.io/api/gms/62/map/105070001/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_the_cave_of_evil_eye_i,The Cave of Evil Eye I,https://maplestory.io/api/gms/62/map/105070100/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_the_cave_of_evil_eye_ii,The Cave of Evil Eye II,https://maplestory.io/api/gms/22/map/105070200/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_the_cave_of_evil_eye_iii,The Cave of Evil Eye III,https://maplestory.io/api/GMS/22/map/105070300/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_the_cave_of_evil_eye_iv,The Cave of Evil Eye IV,https://maplestory.io/api/GMS/22/map/105070400/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_drake_hunting_ground,Drake Hunting Ground,https://maplestory.io/api/GMS/22/map/105080000/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_the_tunnel_that_lost_light_i,The Tunnel That Lost Light I,https://maplestory.io/api/gms/62/map/105090000/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_the_tunnel_that_lost_light_ii,The Tunnel That Lost Light II,https://maplestory.io/api/gms/62/map/105090100/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_another_entrance,Another Entrance,https://maplestory.io/api/GMS/22/map/105090200/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_drakes_meal_table,Drake's Meal Table,https://maplestory.io/api/gms/62/map/105090300/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_wild_cargos_area,Wild Cargo's Area,https://maplestory.io/api/GMS/22/map/105090301/render,Ancient Move,https://maplestory.io/api/GMS/22/music/Bgm01/AncientMove
+map_another_path,Another Path,https://maplestory.io/api/GMS/22/map/105090400/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_sanctuary_entrance_i,Sanctuary Entrance I,https://maplestory.io/api/gms/62/map/105090500/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_sanctuary_entrance_ii,Sanctuary Entrance II,https://maplestory.io/api/GMS/22/map/105090600/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_sanctuary_entrance_iii,Sanctuary Entrance III,https://maplestory.io/api/GMS/22/map/105090700/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_sanctuary_entrance_iv,Sanctuary Entrance IV,https://maplestory.io/api/GMS/22/map/105090800/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_the_cursed_sactuary,The Cursed Sactuary,https://maplestory.io/api/GMS/22/map/105090900/render,Evil Eyes,https://maplestory.io/api/GMS/22/music/Bgm02/EvilEyes
+map_sleepy_dungeon_i,Sleepy Dungeon I,https://maplestory.io/api/gms/62/map/105040301/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_sleepy_dungeon_ii,Sleepy Dungeon II,https://maplestory.io/api/gms/62/map/105040302/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_sleepy_dungeon_iii,Sleepy Dungeon III,https://maplestory.io/api/gms/62/map/105040303/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_sleepy_dungeon_iv,Sleepy Dungeon IV,https://maplestory.io/api/gms/62/map/105040304/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_sleepy_dungeon_v,Sleepy Dungeon V,https://maplestory.io/api/gms/62/map/105040305/render,Sleepywood,https://maplestory.io/api/GMS/62/music/Bgm00/SleepyWood
+map_forgotten_dungeon_tunnel,Forgotten Dungeon Tunnel,,,
+map_the_end_of_fleeting_light,The End of Fleeting Light,,,
+map_forgotten_hollow,Forgotten Hollow,,,
+map_cave_fairy_sanctuary,Cave Fairy Sanctuary,,,
+map_cave_fairy_department_store,Cave Fairy Department Store,,,
+map_primeval_forest_i,Primeval Forest I,,,
+map_primeval_forest_ii,Primeval Forest II,,,
+map_primeval_forest_iii,Primeval Forest III,,,
+map_forgotten_entrance_i,Forgotten Entrance I,,,
+map_forgotten_entrance_ii,Forgotten Entrance II,,,
+map_forgotten_entrance_iii,Forgotten Entrance III,,,
+map_the_tree_tunnel_at_the_forest_up_north,The Tree Tunnel At the Forest Up North,https://maplestory.io/api/gms/62/map/101020001/render,Missing You,https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou
+map_forbidden_entrance,Forbidden Entrance,,,
+map_perilous_descent,Perilous Descent,,,

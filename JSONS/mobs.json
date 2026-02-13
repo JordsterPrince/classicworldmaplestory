@@ -117,7 +117,7 @@
     "XP": 27,
     "HP": 225,
     "XPCost": 8.33,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_bubbling",
@@ -127,7 +127,7 @@
     "XP": 29,
     "HP": 250,
     "XPCost": 8.62,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_axe_stump",
@@ -207,7 +207,7 @@
     "XP": 49,
     "HP": 550,
     "XPCost": 11.22,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_evil_eye",
@@ -227,7 +227,7 @@
     "XP": 55,
     "HP": 450,
     "XPCost": 8.18,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_fairy",
@@ -237,7 +237,7 @@
     "XP": 57,
     "HP": 500,
     "XPCost": 8.77,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_ligator",
@@ -257,7 +257,7 @@
     "XP": 63,
     "HP": 600,
     "XPCost": 9.52,
-    "Verified": "TRUE"
+    "Verified": "FALSE"
   },
   {
     "MOBID": "mob_curse_eye",
@@ -298,5 +298,195 @@
     "HP": 950,
     "XPCost": 13.01,
     "Verified": "TRUE"
+  },
+  {
+    "MOBID": "mob_glowshroom",
+    "Name": "Glowshroom",
+    "Picture": "/images/monsters/glowshroom.png",
+    "Level": "?",
+    "XP": 77,
+    "HP": 850,
+    "XPCost": 11.04,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_raffle",
+    "Name": "Raffle",
+    "Picture": "/images/monsters/raffle.png",
+    "Level": "?",
+    "XP": 79,
+    "HP": 1150,
+    "XPCost": 14.56,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_zombie_lupin",
+    "Name": "Zombie Lupin",
+    "Picture": "https://maplestory.io/api/gms/83/mob/4230101/render/stand",
+    "Level": "?",
+    "XP": 80,
+    "HP": 1150,
+    "XPCost": 14.38,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_golden_stirge",
+    "Name": "Golden Stirge",
+    "Picture": "/images/monsters/golden_stirge.png",
+    "Level": "?",
+    "XP": 83,
+    "HP": 800,
+    "XPCost": 9.64,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_aquamander",
+    "Name": "Aquamander",
+    "Picture": "/images/monsters/aquamander.png",
+    "Level": "?",
+    "XP": 85,
+    "HP": 1300,
+    "XPCost": 15.29,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_copper_drake",
+    "Name": "Copper Drake",
+    "Picture": "https://maplestory.io/api/gms/83/mob/4130100/render/stand",
+    "Level": "?",
+    "XP": 89,
+    "HP": 1600,
+    "XPCost": 17.98,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_echopus",
+    "Name": "Echopus",
+    "Picture": "/images/monsters/echopus.png",
+    "Level": "?",
+    "XP": 89,
+    "HP": 1300,
+    "XPCost": 14.61,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_rafflesia",
+    "Name": "Rafflesia",
+    "Picture": "/images/monsters/rafflesia.png",
+    "Level": "?",
+    "XP": 93,
+    "HP": 1500,
+    "XPCost": 16.13,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_wraith",
+    "Name": "Wraith",
+    "Picture": "https://maplestory.io/api/gms/83/mob/4230102/render/stand",
+    "Level": "?",
+    "XP": 95,
+    "HP": 1450,
+    "XPCost": 15.26,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_rotten_mushroom",
+    "Name": "Rotten Mushroom",
+    "Picture": "/images/monsters/rotten_mushroom.png",
+    "Level": "?",
+    "XP": 95,
+    "HP": 1750,
+    "XPCost": 18.42,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_malady",
+    "Name": "Malady",
+    "Picture": "https://maplestory.io/api/gms/83/mob/5300100/render/fly",
+    "Level": 55,
+    "XP": 95,
+    "HP": 1900,
+    "XPCost": 20,
+    "Verified": "TRUE"
+  },
+  {
+    "MOBID": "mob_duskmander",
+    "Name": "Duskmander",
+    "Picture": "/images/monsters/duskmander.png",
+    "Level": "?",
+    "XP": 99,
+    "HP": 1900,
+    "XPCost": 19.19,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_drake",
+    "Name": "Drake",
+    "Picture": "https://maplestory.io/api/gms/83/mob/5130100/render/stand",
+    "Level": "?",
+    "XP": 99,
+    "HP": 1625,
+    "XPCost": 16.41,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_croco",
+    "Name": "Croco",
+    "Picture": "https://maplestory.io/api/gms/83/mob/5130103/render/stand",
+    "Level": "?",
+    "XP": 103,
+    "HP": 1750,
+    "XPCost": 16.99,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_myewood",
+    "Name": "Myewood",
+    "Picture": "/images/monsters/myewood.png",
+    "Level": "?",
+    "XP": 107,
+    "HP": 2125,
+    "XPCost": 19.86,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_red_drake",
+    "Name": "Red Drake",
+    "Picture": "https://maplestory.io/api/gms/83/mob/6130100/render/stand",
+    "Level": "?",
+    "XP": 109,
+    "HP": 1800,
+    "XPCost": 16.51,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_stone_golem",
+    "Name": "Stone Golem",
+    "Picture": "https://maplestory.io/api/gms/83/mob/5130101/render/stand",
+    "Level": "?",
+    "XP": 109,
+    "HP": 2550,
+    "XPCost": 23.39,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_dark_stone_golem",
+    "Name": "Dark Stone Golem",
+    "Picture": "https://maplestory.io/api/gms/83/mob/5130102/render/stand",
+    "Level": "?",
+    "XP": 109,
+    "HP": 2650,
+    "XPCost": 24.31,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_sporewood",
+    "Name": "Sporewood",
+    "Picture": "/images/monsters/sporewood.png",
+    "Level": "?",
+    "XP": 120,
+    "HP": 3000,
+    "XPCost": 25,
+    "Verified": "FALSE"
   }
 ]

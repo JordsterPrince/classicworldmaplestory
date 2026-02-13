@@ -10,8 +10,8 @@ mob_orange_mushroom,Orange Mushroom,https://maplestory.io/api/GMS/12/mob/1210102
 mob_ribbon_pig,Ribbon Pig,https://maplestory.io/api/GMS/12/mob/1210101/render/stand,10,19,120,6.32,TRUE
 mob_dark_stump,Dark Stump,https://maplestory.io/api/GMS/12/mob/1110101/render/stand,10,21,250,11.90,TRUE
 mob_octopus,Octopus,https://maplestory.io/api/GMS/12/mob/1120100/render/stand,12,23,200,8.70,TRUE
-mob_green_mushroom,Green Mushroom,https://maplestory.io/api/GMS/12/mob/1110100/render/stand,15,27,225,8.33,TRUE
-mob_bubbling,Bubbling,https://maplestory.io/api/GMS/12/mob/1210103/render/stand,15,29,250,8.62,TRUE
+mob_green_mushroom,Green Mushroom,https://maplestory.io/api/GMS/12/mob/1110100/render/stand,15,27,225,8.33,FALSE
+mob_bubbling,Bubbling,https://maplestory.io/api/GMS/12/mob/1210103/render/stand,15,29,250,8.62,FALSE
 mob_axe_stump,Axe Stump,https://maplestory.io/api/GMS/12/mob/1130100/render/stand,17,33,350,10.61,TRUE
 mob_blue_mushroom,Blue Mushroom,https://maplestory.io/api/GMS/12/mob/2220100/render/stand,20,37,350,9.46,TRUE
 mob_stirge,Stirge,https://maplestory.io/api/GMS/12/mob/2300100/render/fly,20,39,250,6.41,TRUE
@@ -19,13 +19,32 @@ mob_jr_necki,Jr. Necki,https://maplestory.io/api/GMS/12/mob/2130103/render/stand
 mob_horny_mushroom,Horny Mushroom,https://maplestory.io/api/GMS/12/mob/2110200/render/stand,22,43,350,8.14,TRUE
 mob_dark_axe_stump,Dark Axe Stump,https://maplestory.io/api/GMS/12/mob/2130100/render/stand,22,45,350,7.78,TRUE
 mob_zombie_mushroom,Zombie Mushroom,https://maplestory.io/api/GMS/12/mob/2230101/render/stand,24,47,375,7.98,TRUE
-mob_wild_boar,Wild Boar,https://maplestory.io/api/GMS/12/mob/2230102/render/stand,24,49,550,11.22,TRUE
+mob_wild_boar,Wild Boar,https://maplestory.io/api/GMS/12/mob/2230102/render/stand,24,49,550,11.22,FALSE
 mob_evil_eye,Evil Eye,https://maplestory.io/api/GMS/12/mob/2230100/render/stand,25,53,550,10.38,TRUE
-mob_iron_hog,Iron Hog,https://maplestory.io/api/gms/83/mob/4230103/render/stand,27,55,450,8.18,TRUE
-mob_fairy,Fairy,https://maplestory.io/api/GMS/12/mob/3000001/render/stand,30,57,500,8.77,TRUE
+mob_iron_hog,Iron Hog,https://maplestory.io/api/gms/83/mob/4230103/render/stand,27,55,450,8.18,FALSE
+mob_fairy,Fairy,https://maplestory.io/api/GMS/12/mob/3000001/render/stand,30,57,500,8.77,FALSE
 mob_ligator,Ligator,https://maplestory.io/api/gms/83/mob/3110100/render/stand,32,61,700,11.48,TRUE
-mob_fire_boar,Fire Boar,https://maplestory.io/api/GMS/12/mob/3210100/render/stand,32,63,600,9.52,TRUE
+mob_fire_boar,Fire Boar,https://maplestory.io/api/GMS/12/mob/3210100/render/stand,32,63,600,9.52,FALSE
 mob_curse_eye,Curse Eye,https://maplestory.io/api/gms/83/mob/3230100/render/stand,35,65,800,12.31,TRUE
 mob_jr_wraith,Jr. Wraith,https://maplestory.io/api/gms/83/mob/3230101/render/stand,35,67,675,10.07,TRUE
 mob_jr_boogie,Jr. Boogie,https://maplestory.io/api/gms/83/mob/3230300/render/stand,35,69,1050,15.22,TRUE
 mob_lupin,Lupin,https://maplestory.io/api/gms/83/mob/3210800/render/stand,37,73,950,13.01,TRUE
+mob_glowshroom,Glowshroom,/images/monsters/glowshroom.png,?,77,850,11.04,FALSE
+mob_raffle,Raffle,/images/monsters/raffle.png,?,79,1150,14.56,FALSE
+mob_zombie_lupin,Zombie Lupin,https://maplestory.io/api/gms/83/mob/4230101/render/stand,?,80,1150,14.38,FALSE
+mob_golden_stirge,Golden Stirge,/images/monsters/golden_stirge.png,?,83,800,9.64,FALSE
+mob_aquamander,Aquamander,/images/monsters/aquamander.png,?,85,1300,15.29,FALSE
+mob_copper_drake,Copper Drake,https://maplestory.io/api/gms/83/mob/4130100/render/stand,?,89,1600,17.98,FALSE
+mob_echopus,Echopus,/images/monsters/echopus.png,?,89,1300,14.61,FALSE
+mob_rafflesia,Rafflesia,/images/monsters/rafflesia.png,?,93,1500,16.13,FALSE
+mob_wraith,Wraith,https://maplestory.io/api/gms/83/mob/4230102/render/stand,?,95,1450,15.26,FALSE
+mob_rotten_mushroom,Rotten Mushroom,/images/monsters/rotten_mushroom.png,?,95,1750,18.42,FALSE
+mob_malady,Malady,https://maplestory.io/api/gms/83/mob/5300100/render/fly,55,95,1900,20.00,TRUE
+mob_duskmander,Duskmander,/images/monsters/duskmander.png,?,99,1900,19.19,FALSE
+mob_drake,Drake,https://maplestory.io/api/gms/83/mob/5130100/render/stand,?,99,1625,16.41,FALSE
+mob_croco,Croco,https://maplestory.io/api/gms/83/mob/5130103/render/stand,?,103,1750,16.99,FALSE
+mob_myewood,Myewood,/images/monsters/myrewood.png,?,107,2125,19.86,FALSE
+mob_red_drake,Red Drake,https://maplestory.io/api/gms/83/mob/6130100/render/stand,?,109,1800,16.51,FALSE
+mob_stone_golem,Stone Golem,https://maplestory.io/api/gms/83/mob/5130101/render/stand,?,109,2550,23.39,FALSE
+mob_dark_stone_golem,Dark Stone Golem,https://maplestory.io/api/gms/83/mob/5130102/render/stand,?,109,2650,24.31,FALSE
+mob_sporewood,Sporewood,/images/monsters/sporewood.png,?,120,3000,25.00,FALSE
