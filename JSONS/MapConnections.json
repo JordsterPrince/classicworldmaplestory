@@ -41,7 +41,7 @@
   },
   {
     "FromMapID": "map_the_field_west_of_amherst",
-    "ToMapID": "map_mushroom_garden"
+    "ToMapID": "map_maple_island__mushroom_garden"
   },
   {
     "FromMapID": "map_the_field_west_of_amherst",
@@ -68,7 +68,7 @@
     "ToMapID": "map_the_field_west_of_amherst"
   },
   {
-    "FromMapID": "map_mushroom_garden",
+    "FromMapID": "map_maple_island__mushroom_garden",
     "ToMapID": "map_the_field_west_of_amherst"
   },
   {
@@ -225,6 +225,10 @@
   },
   {
     "FromMapID": "map_3_way_road_split",
+    "ToMapID": "map_kerning_city_middle_forest_i"
+  },
+  {
+    "FromMapID": "map_3_way_road_split",
     "ToMapID": "map_the_pig_beach"
   },
   {
@@ -234,10 +238,6 @@
   {
     "FromMapID": "map_3_way_road_split",
     "ToMapID": "map_forest_west_of_henesys"
-  },
-  {
-    "FromMapID": "map_3_way_road_split",
-    "ToMapID": "map_kerning_city_middle_forest_i"
   },
   {
     "FromMapID": "map_the_pig_beach",
@@ -254,6 +254,22 @@
   {
     "FromMapID": "map_kerning_city_middle_forest_i",
     "ToMapID": "map_l_forest_iii"
+  },
+  {
+    "FromMapID": "map_kerning_city_middle_forest_i",
+    "ToMapID": "map_kerning_city_middle_forest_ii"
+  },
+  {
+    "FromMapID": "map_kerning_city_middle_forest_ii",
+    "ToMapID": "map_kerning_city_middle_forest_i"
+  },
+  {
+    "FromMapID": "map_kerning_city_middle_forest_ii",
+    "ToMapID": "map_kerning_city_middle_forest_iii"
+  },
+  {
+    "FromMapID": "map_kerning_city_middle_forest_iii",
+    "ToMapID": "map_kerning_city_middle_forest_ii"
   },
   {
     "FromMapID": "map_kerning_city_middle_forest_i",
@@ -365,6 +381,14 @@
   },
   {
     "FromMapID": "map_the_forest_east_of_henesys",
+    "ToMapID": "map_the_blue_mushroom_forest"
+  },
+  {
+    "FromMapID": "map_the_blue_mushroom_forest",
+    "ToMapID": "map_the_forest_east_of_henesys"
+  },
+  {
+    "FromMapID": "map_the_forest_east_of_henesys",
     "ToMapID": "map_the_forest_south_of_ellinia"
   },
   {
@@ -378,6 +402,38 @@
   {
     "FromMapID": "map_the_forest_of_wisdom",
     "ToMapID": "map_the_forest_south_of_ellinia"
+  },
+  {
+    "FromMapID": "map_the_forest_of_wisdom",
+    "ToMapID": "map_monkey_forest_i"
+  },
+  {
+    "FromMapID": "map_monkey_forest_i",
+    "ToMapID": "map_the_forest_of_wisdom"
+  },
+  {
+    "FromMapID": "map_monkey_forest_i",
+    "ToMapID": "map_monkey_forest_ii"
+  },
+  {
+    "FromMapID": "map_monkey_forest_ii",
+    "ToMapID": "map_monkey_forest_i"
+  },
+  {
+    "FromMapID": "map_monkey_forest_ii",
+    "ToMapID": "map_the_forest_of_evil_i"
+  },
+  {
+    "FromMapID": "map_the_forest_of_evil_i",
+    "ToMapID": "map_monkey_forest_ii"
+  },
+  {
+    "FromMapID": "map_the_forest_of_evil_i",
+    "ToMapID": "map_the_forest_of_evil_ii"
+  },
+  {
+    "FromMapID": "map_the_forest_of_evil_ii",
+    "ToMapID": "map_the_forest_of_evil_i"
   },
   {
     "FromMapID": "map_the_forest_of_wisdom",
@@ -437,11 +493,99 @@
   },
   {
     "FromMapID": "map_the_tree_that_grew_i",
+    "ToMapID": "map_the_tree_that_grew_ii"
+  },
+  {
+    "FromMapID": "map_the_tree_that_grew_ii",
+    "ToMapID": "map_the_tree_that_grew_i"
+  },
+  {
+    "FromMapID": "map_the_tree_that_grew_ii",
+    "ToMapID": "map_the_tree_that_grew_iii"
+  },
+  {
+    "FromMapID": "map_the_tree_that_grew_iii",
+    "ToMapID": "map_the_tree_that_grew_ii"
+  },
+  {
+    "FromMapID": "map_the_tree_that_grew_i",
     "ToMapID": "map_the_field_up_north_of_ellinia"
   },
   {
     "FromMapID": "map_the_forest_north_of_ellinia",
     "ToMapID": "map_east_domain_of_perion"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_i"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_ii"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_iii"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_iv"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_v"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_vi"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_vii"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_viii"
+  },
+  {
+    "FromMapID": "map_the_forest_north_of_ellinia",
+    "ToMapID": "map_tree_dungeon_forest_up_north_ix"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_i",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_ii",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_iii",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_iv",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_v",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_vi",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_vii",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_viii",
+    "ToMapID": "map_the_forest_north_of_ellinia"
+  },
+  {
+    "FromMapID": "map_tree_dungeon_forest_up_north_ix",
+    "ToMapID": "map_the_forest_north_of_ellinia"
   },
   {
     "FromMapID": "map_the_forest_north_of_ellinia",
@@ -473,11 +617,19 @@
   },
   {
     "FromMapID": "map_rocky_road_i",
-    "ToMapID": "map_perion_street_corner"
+    "ToMapID": "map_east_rocky_mountain_i"
   },
   {
     "FromMapID": "map_rocky_road_i",
     "ToMapID": "map_rocky_road_ii"
+  },
+  {
+    "FromMapID": "map_east_rocky_mountain_i",
+    "ToMapID": "map_perion_street_corner"
+  },
+  {
+    "FromMapID": "map_east_rocky_mountain_i",
+    "ToMapID": "map_rocky_road_i"
   },
   {
     "FromMapID": "map_perion_street_corner",
@@ -512,16 +664,80 @@
     "ToMapID": "map_warriors_sanctuary"
   },
   {
+    "FromMapID": "map_perion",
+    "ToMapID": "map_perion_street_corner"
+  },
+  {
     "FromMapID": "map_warriors_sanctuary",
     "ToMapID": "map_perion"
   },
   {
     "FromMapID": "map_perion",
-    "ToMapID": "map_perion_street_corner"
+    "ToMapID": "map_deep_valley_i"
+  },
+  {
+    "FromMapID": "map_deep_valley_i",
+    "ToMapID": "map_perion"
+  },
+  {
+    "FromMapID": "map_deep_valley_i",
+    "ToMapID": "map_dangerous_valley"
+  },
+  {
+    "FromMapID": "map_dangerous_valley",
+    "ToMapID": "map_deep_valley_i"
+  },
+  {
+    "FromMapID": "map_dangerous_valley",
+    "ToMapID": "map_dangerous_valley_ii"
+  },
+  {
+    "FromMapID": "map_dangerous_valley_ii",
+    "ToMapID": "map_dangerous_valley"
+  },
+  {
+    "FromMapID": "map_deep_valley_i",
+    "ToMapID": "map_deep_valley_ii"
+  },
+  {
+    "FromMapID": "map_deep_valley_ii",
+    "ToMapID": "map_deep_valley_i"
+  },
+  {
+    "FromMapID": "map_deep_valley_ii",
+    "ToMapID": "map_deep_valley_iii"
+  },
+  {
+    "FromMapID": "map_deep_valley_iii",
+    "ToMapID": "map_deep_valley_ii"
+  },
+  {
+    "FromMapID": "map_deep_valley_iii",
+    "ToMapID": "map_perion_dungeon_entrance"
+  },
+  {
+    "FromMapID": "map_perion_dungeon_entrance",
+    "ToMapID": "map_deep_valley_iii"
+  },
+  {
+    "FromMapID": "map_perion_dungeon_entrance",
+    "ToMapID": "map_deep_forest"
+  },
+  {
+    "FromMapID": "map_deep_forest",
+    "ToMapID": "map_perion_dungeon_entrance"
   },
   {
     "FromMapID": "map_west_street_corner_of_perion",
     "ToMapID": "map_west_rocky_mountain_i"
+  },
+  {
+    "FromMapID": "map_west_street_corner_of_perion",
+    "ToMapID": "map_land_of_wild_boar"
+  },
+  {
+    "FromMapID": "map_land_of_wild_boar",
+    "ToMapID": "map_west_street_corner_of_perion"
   },
   {
     "FromMapID": "map_west_street_corner_of_perion",
@@ -561,7 +777,7 @@
   },
   {
     "FromMapID": "map_kerning_city",
-    "ToMapID": "map_sunset_sky"
+    "ToMapID": "map_kerning_city_contruction_site"
   },
   {
     "FromMapID": "map_kerning_city",
@@ -589,6 +805,10 @@
   },
   {
     "FromMapID": "map_kerning_city",
+    "ToMapID": "map_line_1_area_1"
+  },
+  {
+    "FromMapID": "map_kerning_city",
     "ToMapID": "map_the_swamp_of_despair_i"
   },
   {
@@ -609,7 +829,35 @@
   },
   {
     "FromMapID": "map_kerning_city",
-    "ToMapID": "map_kerning_city_contruction_site"
+    "ToMapID": "map_sunset_sky"
+  },
+  {
+    "FromMapID": "map_line_1_area_1",
+    "ToMapID": "map_kerning_city"
+  },
+  {
+    "FromMapID": "map_line_1_area_1",
+    "ToMapID": "map_transfer_area"
+  },
+  {
+    "FromMapID": "map_transfer_area",
+    "ToMapID": "map_line_1_area_1"
+  },
+  {
+    "FromMapID": "map_transfer_area",
+    "ToMapID": "map_line_1_area_2"
+  },
+  {
+    "FromMapID": "map_line_1_area_2",
+    "ToMapID": "map_transfer_area"
+  },
+  {
+    "FromMapID": "map_line_1_area_2",
+    "ToMapID": "map_line_1_area_3"
+  },
+  {
+    "FromMapID": "map_line_1_area_3",
+    "ToMapID": "map_line_1_area_2"
   },
   {
     "FromMapID": "map_kerning_city_contruction_site",
@@ -989,6 +1237,10 @@
   },
   {
     "FromMapID": "map_the_end_of_fleeting_light",
+    "ToMapID": "map_forbidden_entrance"
+  },
+  {
+    "FromMapID": "map_the_end_of_fleeting_light",
     "ToMapID": "map_forgotten_dungeon_tunnel"
   },
   {
@@ -1080,19 +1332,15 @@
     "ToMapID": "map_the_tree_tunnel_at_the_forest_up_north"
   },
   {
-    "FromMapID": "map_the_end_of_fleeting_light",
-    "ToMapID": "map_forbidden_entrance"
-  },
-  {
     "FromMapID": "map_forbidden_entrance",
     "ToMapID": "map_the_end_of_fleeting_light"
   },
   {
     "FromMapID": "map_forbidden_entrance",
-    "ToMapID": "map_perilous_descent"
+    "ToMapID": "map_perilous_descent_i"
   },
   {
-    "FromMapID": "map_perilous_descent",
+    "FromMapID": "map_perilous_descent_i",
     "ToMapID": "map_forbidden_entrance"
   }
 ]

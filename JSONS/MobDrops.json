@@ -3073,6 +3073,12 @@
   },
   {
     "MOBID": "mob_curse_eye",
+    "ITEMID": "item_green_hawkeye",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_curse_eye",
     "ITEMID": "item_red_duke",
     "Verified": "FALSE",
     "Chance": ""
@@ -3782,6 +3788,12 @@
   {
     "MOBID": "mob_malady",
     "ITEMID": "item_mesos",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_malady",
+    "ITEMID": "item_maroon_moon_pants",
     "Verified": "TRUE",
     "Chance": ""
   },

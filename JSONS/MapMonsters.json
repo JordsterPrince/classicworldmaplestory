@@ -90,13 +90,13 @@
     "NumberOfMobs": ""
   },
   {
-    "MAPID": "map_mushroom_garden",
+    "MAPID": "map_maple_island__mushroom_garden",
     "MOBID": "mob_shroom",
     "Verified": "FALSE",
     "NumberOfMobs": ""
   },
   {
-    "MAPID": "map_mushroom_garden",
+    "MAPID": "map_maple_island__mushroom_garden",
     "MOBID": "mob_snail",
     "Verified": "FALSE",
     "NumberOfMobs": ""
@@ -319,13 +319,13 @@
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
-    "MOBID": "mob_slime",
+    "MOBID": "mob_red_snail",
     "Verified": "TRUE",
     "NumberOfMobs": ""
   },
   {
     "MAPID": "map_thicket_around_the_beach_i",
-    "MOBID": "mob_red_snail",
+    "MOBID": "mob_slime",
     "Verified": "TRUE",
     "NumberOfMobs": ""
   },
@@ -375,6 +375,1374 @@
     "MAPID": "map_thicket_around_the_beach_iii",
     "MOBID": "mob_stump",
     "Verified": "FALSE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_3_way_road_split",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_pig_beach",
+    "MOBID": "mob_iron_hog",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_beach_hunting_ground",
+    "MOBID": "mob_snail",
+    "Verified": "FALSE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forest_west_of_henesys",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_blue_snail",
+    "Verified": "FALSE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_a_hill_west_of_henesys",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_shroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_henesys_hunting_ground_i",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_shroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_i",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_shroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_blue_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_l_forest_iii",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_1",
+    "MOBID": "mob_bubbling",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_transfer_area",
+    "MOBID": "mob_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_2",
+    "MOBID": "mob_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_2",
+    "MOBID": "mob_jr_wraith",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_3",
+    "MOBID": "mob_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_3",
+    "MOBID": "mob_jr_wraith",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_3",
+    "MOBID": "mob_wriath",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_line_1_area_4",
+    "MOBID": "mob_wriath",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_i",
+    "MOBID": "mob_zombie_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_i",
+    "MOBID": "mob_malady",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_ii",
+    "MOBID": "mob_zombie_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_ii",
+    "MOBID": "mob_malady",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_field_up_north_of_ellinia",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_field_up_north_of_ellinia",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_i",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_ii",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_ii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_ii",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_iii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_iii",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_iii",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_north_of_ellinia",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_north_of_ellinia",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_north_of_ellinia",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_north_of_ellinia",
+    "MOBID": "mob_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_i",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iii",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iv",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iv",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_v",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_v",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_v",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_viii",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_shroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_hill_east_of_henesys",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_rainforest_east_of_henesys",
+    "MOBID": "mob_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_rainforest_east_of_henesys",
+    "MOBID": "mob_ribbon_pig",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_shroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_orange_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_forest_east_of_henesys",
+    "MOBID": "mob_blue_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_blue_mushroom_forest",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_blue_mushroom_forest",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_blue_mushroom_forest",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_blue_mushroom_forest",
+    "MOBID": "mob_blue_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_blue_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_dark_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perion_street_corner",
+    "MOBID": "mob_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_land_of_wild_boar",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_land_of_wild_boar",
+    "MOBID": "mob_dark_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_land_of_wild_boar",
+    "MOBID": "mob_wild_boar",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_valley_i",
+    "MOBID": "mob_red_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_valley_i",
+    "MOBID": "mob_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_valley_i",
+    "MOBID": "mob_dark_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_valley_i",
+    "MOBID": "mob_wild_boar",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_valley_i",
+    "MOBID": "mob_fire_boar",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_valley",
+    "MOBID": "mob_fire_boar",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_valley",
+    "MOBID": "mob_copper_drake",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_i",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_i",
+    "MOBID": "mob_ligator",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_i",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_ii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_ii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_ii",
+    "MOBID": "mob_ligator",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_ii",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_iii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_iii",
+    "MOBID": "mob_ligator",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_swamp_of_despair_iii",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_i",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_i",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_i",
+    "MOBID": "mob_ligator",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_i",
+    "MOBID": "mob_croco",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_ii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_ii",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_croko_ii",
+    "MOBID": "mob_croco",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_damp_treeforest",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_damp_treeforest",
+    "MOBID": "mob_octopus",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_damp_treeforest",
+    "MOBID": "mob_dark_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_snail",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_forest",
+    "MOBID": "mob_dark_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_swampy_land_in_a_deep_forest",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_swampy_land_in_a_deep_forest",
+    "MOBID": "mob_dark_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_swampy_land_in_a_deep_forest",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_swampy_land_in_a_deep_forest",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_i",
+    "MOBID": "mob_octopus",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_i",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_i",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_slime",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_green_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_dark_axe_stump",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_ii",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iii",
+    "MOBID": "mob_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iii",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iii",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iii",
+    "MOBID": "mob_dark_stone_golem",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iv",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iv",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iv",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_iv",
+    "MOBID": "mob_dark_stone_golem",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_v",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_v",
+    "MOBID": "mob_jr_necki",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_v",
+    "MOBID": "mob_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_v",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sleepy_dungeon_v",
+    "MOBID": "mob_dark_stone_golem",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_dungeon_tunnel",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_dungeon_tunnel",
+    "MOBID": "mob_glowshroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_dungeon_tunnel",
+    "MOBID": "mob_raffle",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_dungeon_tunnel",
+    "MOBID": "mob_echopus",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_end_of_fleeting_light",
+    "MOBID": "mob_rafflesia",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_end_of_fleeting_light",
+    "MOBID": "mob_aquamander",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_end_of_fleeting_light",
+    "MOBID": "mob_duskmander",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forbidden_entrance",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forbidden_entrance",
+    "MOBID": "mob_rafflesia",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forbidden_entrance",
+    "MOBID": "mob_duskmander",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forbidden_entrance",
+    "MOBID": "mob_golden_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perilous_descent_i",
+    "MOBID": "mob_rotten_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perilous_descent_i",
+    "MOBID": "mob_myewood",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_perilous_descent_i",
+    "MOBID": "mob_sporewood",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_i",
+    "MOBID": "mob_rafflesia",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_i",
+    "MOBID": "mob_aquamander",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_ii",
+    "MOBID": "mob_golden_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_ii",
+    "MOBID": "mob_aquamander",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_ii",
+    "MOBID": "mob_rafflesia",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_iii",
+    "MOBID": "mob_echopus",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_primeval_forest_iii",
+    "MOBID": "mob_rafflesia",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_i",
+    "MOBID": "mob_raffle",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_i",
+    "MOBID": "mob_golden_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_i",
+    "MOBID": "mob_echopus",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_ii",
+    "MOBID": "mob_lupin",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_ii",
+    "MOBID": "mob_glowshroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_ii",
+    "MOBID": "mob_raffle",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_iii",
+    "MOBID": "mob_curse_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_iii",
+    "MOBID": "mob_glowshroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_forgotten_entrance_iii",
+    "MOBID": "mob_raffle",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_i",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_i",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_ii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_ii",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_iii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_iii",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_iv",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_iv",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dark_cave",
+    "MOBID": "mob_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dark_cave",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_steam",
+    "MOBID": "mob_stirge",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_steam",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_steam",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_i",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_i",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_i",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_ii",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_ii",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_ii",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_park",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_park",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_ant_tunnel_park",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_i",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_i",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
     "NumberOfMobs": ""
   }
 ]

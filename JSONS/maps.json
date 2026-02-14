@@ -49,8 +49,8 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace"
   },
   {
-    "MAPID": "map_mushroom_garden",
-    "Map Name": "Mushroom Garden",
+    "MAPID": "map_maple_island__mushroom_garden",
+    "Map Name": "Maple Island - Mushroom Garden",
     "Map Picture": "https://maplestory.io/api/gms/62/map/104030001/render",
     "Map Song Name": "Rest N Peace",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace"
@@ -238,9 +238,30 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky"
   },
   {
+    "MAPID": "map_kerning_city_middle_forest_ii",
+    "Map Name": "Kerning City Middle Forest II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103030100/render",
+    "Map Song Name": "Blue Sky",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky"
+  },
+  {
+    "MAPID": "map_kerning_city_middle_forest_iii",
+    "Map Name": "Kerning City Middle Forest III",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103030200/render",
+    "Map Song Name": "Blue Sky",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky"
+  },
+  {
     "MAPID": "map_a_hill_west_of_henesys",
     "Map Name": "A Hill West of Henesys",
     "Map Picture": "https://maplestory.io/api/gms/62/map/104030000/render",
+    "Map Song Name": "Cava Bien",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/CavaBien"
+  },
+  {
+    "MAPID": "map_mushroom_garden",
+    "Map Name": "Mushroom Garden",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/104030001/render",
     "Map Song Name": "Cava Bien",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/CavaBien"
   },
@@ -322,6 +343,13 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace"
   },
   {
+    "MAPID": "map_the_blue_mushroom_forest",
+    "Map Name": "The Blue Mushroom Forest",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/100030001/render",
+    "Map Song Name": "Rest N Peace",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/RestNPeace"
+  },
+  {
     "MAPID": "map_the_forest_south_of_ellinia",
     "Map Name": "The Forest South of Ellinia",
     "Map Picture": "https://maplestory.io/api/gms/22/map/100040000/render",
@@ -332,6 +360,34 @@
     "MAPID": "map_the_forest_of_wisdom",
     "Map Name": "The Forest of Wisdom",
     "Map Picture": "https://maplestory.io/api/gms/22/map/100040100/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_monkey_forest_i",
+    "Map Name": "Monkey Forest I",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/100040101/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_monkey_forest_ii",
+    "Map Name": "Monkey Forest II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/100040103/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_i",
+    "Map Name": "The Forest of Evil I",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/100040105/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_the_forest_of_evil_ii",
+    "Map Name": "The Forest of Evil II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/100040106/render",
     "Map Song Name": "Moonlight Shadow",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
   },
@@ -385,11 +441,88 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
   },
   {
+    "MAPID": "map_the_tree_that_grew_ii",
+    "Map Name": "The Tree That Grew II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101010101/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_the_tree_that_grew_iii",
+    "Map Name": "The Tree That Grew III",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101010102/render",
+    "Map Song Name": "Moonlight Shadow",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
     "MAPID": "map_the_forest_north_of_ellinia",
     "Map Name": "The Forest North of Ellinia",
     "Map Picture": "https://maplestory.io/api/gms/62/map/101020000/render",
     "Map Song Name": "Moonlight Shadow",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/MoonlightShadow"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_i",
+    "Map Name": "Tree Dungeon, Forest Up North I",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020002/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_ii",
+    "Map Name": "Tree Dungeon, Forest Up North II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020003/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iii",
+    "Map Name": "Tree Dungeon, Forest Up North III",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020004/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_iv",
+    "Map Name": "Tree Dungeon, Forest Up North IV",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020005/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_v",
+    "Map Name": "Tree Dungeon, Forest Up North V",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020006/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_vi",
+    "Map Name": "Tree Dungeon, Forest Up North VI",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020007/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_vii",
+    "Map Name": "Tree Dungeon, Forest Up North VII",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020008/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_viii",
+    "Map Name": "Tree Dungeon, Forest Up North VIII",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020009/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
+  },
+  {
+    "MAPID": "map_tree_dungeon_forest_up_north_ix",
+    "Map Name": "Tree Dungeon, Forest Up North IX",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101020010/render",
+    "Map Song Name": "Missing You",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm02/MissingYou"
   },
   {
     "MAPID": "map_east_domain_of_perion",
@@ -430,6 +563,13 @@
     "MAPID": "map_perion_street_corner",
     "Map Name": "Perion Street Corner",
     "Map Picture": "https://maplestory.io/api/gms/62/map/101040000/render",
+    "Map Song Name": "Nightmare",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare"
+  },
+  {
+    "MAPID": "map_land_of_wild_boar",
+    "Map Name": "Land of Wild Boar",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/101040001/render",
     "Map Song Name": "Nightmare",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm00/Nightmare"
   },
@@ -567,6 +707,41 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/BlueSky"
   },
   {
+    "MAPID": "map_line_1_area_1",
+    "Map Name": "Line 1 <Area 1>",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103000101/render",
+    "Map Song Name": "Subway",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/Subway"
+  },
+  {
+    "MAPID": "map_transfer_area",
+    "Map Name": "Transfer Area",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103000102/render",
+    "Map Song Name": "Subway",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/Subway"
+  },
+  {
+    "MAPID": "map_line_1_area_2",
+    "Map Name": "Line 1 <Area 2>",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103000103/render",
+    "Map Song Name": "Subway",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/Subway"
+  },
+  {
+    "MAPID": "map_line_1_area_3",
+    "Map Name": "Line 1 <Area 3>",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103000104/render",
+    "Map Song Name": "Subway",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/Subway"
+  },
+  {
+    "MAPID": "map_line_1_area_4",
+    "Map Name": "Line 1 <Area 4>",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/103000105/render",
+    "Map Song Name": "Subway",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm03/Subway"
+  },
+  {
     "MAPID": "map_the_swamp_of_despair_i",
     "Map Name": "The Swamp of Despair I",
     "Map Picture": "https://maplestory.io/api/gms/62/map/107000000/render",
@@ -651,6 +826,20 @@
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar"
   },
   {
+    "MAPID": "map_dangerous_valley",
+    "Map Name": "Dangerous Valley",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/106000001/render",
+    "Map Song Name": "Highland Star",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar"
+  },
+  {
+    "MAPID": "map_dangerous_valley_ii",
+    "Map Name": "Dangerous Valley II",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/106000002/render",
+    "Map Song Name": "Highland Star",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar"
+  },
+  {
     "MAPID": "map_deep_valley_ii",
     "Map Name": "Deep Valley II",
     "Map Picture": "https://maplestory.io/api/GMS/22/map/106000100/render",
@@ -661,6 +850,13 @@
     "MAPID": "map_deep_valley_iii",
     "Map Name": "Deep Valley III",
     "Map Picture": "https://maplestory.io/api/GMS/22/map/106000200/render",
+    "Map Song Name": "Highland Star",
+    "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar"
+  },
+  {
+    "MAPID": "map_perion_dungeon_entrance",
+    "Map Name": "Perion Dungeon Entrance",
+    "Map Picture": "https://maplestory.io/api/GMS/22/map/106000300/render",
     "Map Song Name": "Highland Star",
     "Map Song": "https://maplestory.io/api/GMS/22/music/Bgm01/HighlandStar"
   },
@@ -966,8 +1162,8 @@
     "Map Song": ""
   },
   {
-    "MAPID": "map_perilous_descent",
-    "Map Name": "Perilous Descent",
+    "MAPID": "map_perilous_descent_i",
+    "Map Name": "Perilous Descent I",
     "Map Picture": "",
     "Map Song Name": "",
     "Map Song": ""
