@@ -1662,6 +1662,12 @@
     "NumberOfMobs": ""
   },
   {
+    "MAPID": "map_dark_cave",
+    "MOBID": "mob_zombie_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
     "MAPID": "map_dangerous_steam",
     "MOBID": "mob_stirge",
     "Verified": "TRUE",
@@ -1670,6 +1676,12 @@
   {
     "MAPID": "map_dangerous_steam",
     "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_dangerous_steam",
+    "MOBID": "mob_zombie_mushroom",
     "Verified": "TRUE",
     "NumberOfMobs": ""
   },
@@ -1694,6 +1706,12 @@
   {
     "MAPID": "map_deep_ant_tunnel_i",
     "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_deep_ant_tunnel_i",
+    "MOBID": "mob_jr_boogie",
     "Verified": "TRUE",
     "NumberOfMobs": ""
   },
@@ -1742,6 +1760,132 @@
   {
     "MAPID": "map_the_cave_of_evil_eye_i",
     "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_ii",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_ii",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_iii",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_iv",
+    "MOBID": "mob_jr_boogie",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_cave_of_evil_eye_iv",
+    "MOBID": "mob_evil_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_drake_hunting_ground",
+    "MOBID": "mob_horny_mushroom",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_drake_hunting_ground",
+    "MOBID": "mob_drake",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tunnel_that_lost_light_i",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tunnel_that_lost_light_i",
+    "MOBID": "mob_drake",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tunnel_that_lost_light_ii",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_the_tunnel_that_lost_light_ii",
+    "MOBID": "mob_drake",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_another_path",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_i",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_i",
+    "MOBID": "mob_tauromacis",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_ii",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iii",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iii",
+    "MOBID": "mob_tauromacis",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iii",
+    "MOBID": "mob_taurospear",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iv",
+    "MOBID": "mob_cold_eye",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iv",
+    "MOBID": "mob_tauromacis",
+    "Verified": "TRUE",
+    "NumberOfMobs": ""
+  },
+  {
+    "MAPID": "map_sanctuary_entrance_iv",
+    "MOBID": "mob_taurospear",
     "Verified": "TRUE",
     "NumberOfMobs": ""
   }

@@ -38,13 +38,16 @@ mob_copper_drake,Copper Drake,https://maplestory.io/api/gms/83/mob/4130100/rende
 mob_echopus,Echopus,/images/monsters/echopus.png,?,89,1300,14.61,FALSE
 mob_rafflesia,Rafflesia,/images/monsters/rafflesia.png,?,93,1500,16.13,FALSE
 mob_wraith,Wraith,https://maplestory.io/api/gms/83/mob/4230102/render/stand,?,95,1450,15.26,FALSE
+mob_cold_eye,Cold Eye,https://maplestory.io/api/gms/83/mob/4230100/render/stand,?,0,0,0.00,FALSE
 mob_rotten_mushroom,Rotten Mushroom,/images/monsters/rotten_mushroom.png,?,95,1750,18.42,FALSE
 mob_malady,Malady,https://maplestory.io/api/gms/83/mob/5300100/render/fly,55,95,1900,20.00,TRUE
 mob_duskmander,Duskmander,/images/monsters/duskmander.png,?,99,1900,19.19,FALSE
 mob_drake,Drake,https://maplestory.io/api/gms/83/mob/5130100/render/stand,?,99,1625,16.41,FALSE
 mob_croco,Croco,https://maplestory.io/api/gms/83/mob/5130103/render/stand,?,103,1750,16.99,FALSE
-mob_myewood,Myewood,/images/monsters/myrewood.png,?,107,2125,19.86,FALSE
+mob_myewood,Myewood,/images/monsters/myewood.png,?,107,2125,19.86,FALSE
 mob_red_drake,Red Drake,https://maplestory.io/api/gms/83/mob/6130100/render/stand,?,109,1800,16.51,FALSE
 mob_stone_golem,Stone Golem,https://maplestory.io/api/gms/83/mob/5130101/render/stand,?,109,2550,23.39,FALSE
 mob_dark_stone_golem,Dark Stone Golem,https://maplestory.io/api/gms/83/mob/5130102/render/stand,?,109,2650,24.31,FALSE
 mob_sporewood,Sporewood,/images/monsters/sporewood.png,?,120,3000,25.00,FALSE
+mob_tauromacis,Tauromacis,https://maplestory.io/api/gms/83/mob/7130100/render/stand,?,0,0,0.00,FALSE
+mob_taurospear,Taurospear,https://maplestory.io/api/gms/83/mob/7130101/render/stand,?,0,0,0.00,FALSE

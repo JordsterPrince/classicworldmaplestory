@@ -79,6 +79,15 @@ function getVerifiedMapMonsterBorderStyle(mm) {
     : '';
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 // Load all data
 Promise.all([
   fetch("JSONS/mobs.json").then(res => res.json()),
@@ -100,7 +109,7 @@ Promise.all([
   });
   mapsData.forEach(item => {
     item.type = 'map';
-    item.displayName = item['Map Name'];
+    item.displayName = escapeHtml(item['Map Name']);
   });
   allData = [...monstersData, ...itemsData, ...mapsData];
   mobDrops = dropsData;
@@ -274,8 +283,8 @@ window.showMonster = (mobid) => {
       if (map) {
         mapHTML += `
           <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(me)} onclick="showMap('${map.MAPID}')">
-            <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
-            <p>${map['Map Name']}</p>
+            <img src="${map['Map Picture']}" alt="${escapeHtml(map['Map Name'])}" style="width:40px; height:40px;">
+            <p>${escapeHtml(map['Map Name'])}</p>
           </div>
         `;
       }
@@ -334,8 +343,8 @@ window.showMap = (mapid) => {
       if (map) {
         connectionsHTML += `
           <div class="drop-card" onclick="showMap('${map.MAPID}')">
-            <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
-            <p>${map['Map Name']}</p>
+            <img src="${map['Map Picture']}" alt="${escapeHtml(map['Map Name'])}" style="width:40px; height:40px;">
+            <p>${escapeHtml(map['Map Name'])}</p>
           </div>
         `;
       }
@@ -346,10 +355,10 @@ window.showMap = (mapid) => {
   const detailsHTML = `
       <div class="map-details">
         <div class="entity-header">
-          <h3>${item['Map Name']}</h3>
+          <h3>${escapeHtml(item['Map Name'])}</h3>
           <img 
             src="${item['Map Picture']}" 
-            alt="${item['Map Name']}" 
+            alt="${escapeHtml(item['Map Name'])}" 
             class="item-icon"
             style="width: 100%; height: 100%; object-fit: cover;"
           >
@@ -519,8 +528,8 @@ function applyFilters() {
             if (map) {
               mapHTML += `
                 <div class="drop-card" ${getVerifiedMapMonsterBorderStyle(me)} onclick="showMap('${map.MAPID}')">
-                  <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
-                  <p>${map['Map Name']}</p>
+                  <img src="${map['Map Picture']}" alt="${escapeHtml(map['Map Name'])}" style="width:40px; height:40px;">
+                  <p>${escapeHtml(map['Map Name'])}</p>
                 </div>
               `;
             }
@@ -671,8 +680,8 @@ function applyFilters() {
       if (map) {
         connectionsHTML += `
           <div class="drop-card" onclick="showMap('${map.MAPID}')">
-            <img src="${map['Map Picture']}" alt="${map['Map Name']}" style="width:40px; height:40px;">
-            <p>${map['Map Name']}</p>
+            <img src="${map['Map Picture']}" alt="${escapeHtml(map['Map Name'])}" style="width:40px; height:40px;">
+            <p>${escapeHtml(map['Map Name'])}</p>
           </div>
         `;
       }
@@ -683,10 +692,10 @@ function applyFilters() {
       const detailsHTML = `
         <div class="map-details">
           <div class="entity-header">
-            <h3>${item['Map Name']}</h3>
+            <h3>${escapeHtml(item['Map Name'])}</h3>
             <img 
               src="${item['Map Picture']}" 
-              alt="${item['Map Name']}" 
+              alt="${escapeHtml(item['Map Name'])}" 
               class="item-icon"
               style="width: 100%; height: 100%; object-fit: cover;"
             >

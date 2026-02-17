@@ -390,6 +390,16 @@
     "Verified": "FALSE"
   },
   {
+    "MOBID": "mob_cold_eye",
+    "Name": "Cold Eye",
+    "Picture": "https://maplestory.io/api/gms/83/mob/4230100/render/stand",
+    "Level": "?",
+    "XP": 0,
+    "HP": 0,
+    "XPCost": 0,
+    "Verified": "FALSE"
+  },
+  {
     "MOBID": "mob_rotten_mushroom",
     "Name": "Rotten Mushroom",
     "Picture": "/images/monsters/rotten_mushroom.png",
@@ -487,6 +497,26 @@
     "XP": 120,
     "HP": 3000,
     "XPCost": 25,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_tauromacis",
+    "Name": "Tauromacis",
+    "Picture": "https://maplestory.io/api/gms/83/mob/7130100/render/stand",
+    "Level": "?",
+    "XP": 0,
+    "HP": 0,
+    "XPCost": 0,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_taurospear",
+    "Name": "Taurospear",
+    "Picture": "https://maplestory.io/api/gms/83/mob/7130101/render/stand",
+    "Level": "?",
+    "XP": 0,
+    "HP": 0,
+    "XPCost": 0,
     "Verified": "FALSE"
   }
 ]
