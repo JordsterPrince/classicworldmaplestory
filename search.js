@@ -88,6 +88,21 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function getMapSongPlayer(map) {
+  const mapSongUrl = map['Map Song'] || map.mapSong;
+  const mapSongName = map['Map Song Name'] || map.mapSongName || 'Map Music';
+  if (!mapSongUrl) return '';
+
+  return `
+    <div class="map-song-player" style="margin:12px 0 8px 0; text-align:left;">
+      <p style="font-size:0.95rem; margin-bottom:6px;"><strong>Map Song:</strong> ${escapeHtml(mapSongName)}</p>
+      <audio controls preload="none" style="width:100%; max-width:420px;">
+        <source src="${mapSongUrl}" type="audio/mpeg">
+      </audio>
+    </div>
+  `;
+}
+
 // Load all data
 Promise.all([
   fetch("JSONS/mobs.json").then(res => res.json()),
@@ -117,6 +132,7 @@ Promise.all([
   mapConnections = mapConnectionsData;
   console.log("All data loaded:", allData.length, "Drops:", mobDrops.length, "MapMonsters:", mapMonsters.length, "MapConnections:", mapConnections.length);
 
+  populateEquipTypeFilters();
   updateSubFilters();
 
   // Check URL parameters for pre-selected type
@@ -138,7 +154,7 @@ Promise.all([
   searchInput.addEventListener("input", applyFilters);
   document.querySelectorAll('input[name="entity-type"]').forEach(rb => rb.addEventListener("change", () => { updateSubFilters(); applyFilters(); }));
   document.querySelectorAll('.level-filter').forEach(cb => cb.addEventListener("change", applyFilters));
-  document.querySelectorAll('.category-filter').forEach(cb => cb.addEventListener("change", () => { updateReqLevelVisibility(); applyFilters(); }));
+  document.querySelectorAll('.category-filter').forEach(cb => cb.addEventListener("change", handleCategoryChange));
   document.querySelectorAll('.req-level-filter').forEach(cb => cb.addEventListener("change", applyFilters));
   document.querySelectorAll('.job-filter').forEach(cb => cb.addEventListener("change", applyFilters));
 })
@@ -249,6 +265,7 @@ window.showItem = (itemid) => {
   
   detailsHTML += `</div>`;
   resultsContainer.innerHTML = detailsHTML;
+  scrollToResults();
 };
 
 // Function to show monster details
@@ -310,6 +327,7 @@ window.showMonster = (mobid) => {
     </div>
   `;
   resultsContainer.innerHTML = detailsHTML;
+  scrollToResults();
 };
 
 // Function to show map details
@@ -363,11 +381,13 @@ window.showMap = (mapid) => {
             style="width: 100%; height: 100%; object-fit: cover;"
           >
         </div>
+        ${getMapSongPlayer(item)}
         ${monstersHTML}
         ${connectionsHTML}
       </div>
     `;
   resultsContainer.innerHTML = detailsHTML;
+  scrollToResults();
 };
 
 const resultsContainer = document.getElementById("searchResults");
@@ -377,6 +397,48 @@ const filterItem = document.getElementById("filter-item");
 const filterMap = document.getElementById("filter-map");
 const monsterFilters = document.getElementById("monster-filters");
 const itemFilters = document.getElementById("item-filters");
+const equipTypeSection = document.getElementById("equip-type-section");
+const equipTypeOptions = document.getElementById("equip-type-options");
+
+function scrollToResults() {
+  if (!resultsContainer) return;
+  requestAnimationFrame(() => {
+    resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
+function populateEquipTypeFilters() {
+  if (!equipTypeOptions) return;
+
+  const equipmentTypes = [...new Set(
+    allData
+      .filter(item => item.type === 'item' && item.Category === 'EQUIPMENT' && item['Equip Type'])
+      .map(item => item['Equip Type'].trim())
+      .filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
+
+  equipTypeOptions.innerHTML = `
+    <label><input type="radio" name="equip-type" class="equip-type-filter" value="" checked> All</label>
+    ${equipmentTypes.map(type => `<label><input type="radio" name="equip-type" class="equip-type-filter" value="${escapeHtml(type)}"> ${escapeHtml(type)}</label>`).join('')}
+  `;
+
+  document.querySelectorAll('.equip-type-filter').forEach(cb => cb.addEventListener("change", applyFilters));
+}
+
+function resetRadioGroupToAll(selector) {
+  const allOption = [...document.querySelectorAll(selector)].find(input => input.value === '');
+  if (allOption) allOption.checked = true;
+}
+
+function handleCategoryChange() {
+  filterItem.checked = true;
+  resetRadioGroupToAll('.req-level-filter');
+  resetRadioGroupToAll('.job-filter');
+  resetRadioGroupToAll('.equip-type-filter');
+  updateSubFilters();
+  updateReqLevelVisibility();
+  applyFilters();
+}
 
 function updateSubFilters() {
   const selectedType = document.querySelector('input[name="entity-type"]:checked');
@@ -396,7 +458,11 @@ function updateSubFilters() {
 function updateReqLevelVisibility() {
   const selectedCategory = document.querySelector('.category-filter:checked');
   const reqLevelSection = document.getElementById('req-level-section');
-  reqLevelSection.style.display = (selectedCategory && selectedCategory.value === 'EQUIPMENT') ? 'block' : 'none';
+  const showEquipmentFilters = (selectedCategory && selectedCategory.value === 'EQUIPMENT');
+  reqLevelSection.style.display = showEquipmentFilters ? 'block' : 'none';
+  if (equipTypeSection) {
+    equipTypeSection.style.display = showEquipmentFilters ? 'block' : 'none';
+  }
 }
 
 function applyFilters() {
@@ -471,6 +537,16 @@ function applyFilters() {
       filtered = filtered.filter(item => {
         if (item.type !== 'item') return true;
         return item.Job === job;
+      });
+    }
+
+    const selectedEquipType = document.querySelector('.equip-type-filter:checked');
+    if (selectedEquipType && selectedEquipType.value) {
+      hasActiveFilters = true;
+      const equipType = selectedEquipType.value;
+      filtered = filtered.filter(item => {
+        if (item.type !== 'item') return true;
+        return item['Equip Type'] === equipType;
       });
     }
   }
@@ -555,6 +631,7 @@ function applyFilters() {
           </div>
         `;
         resultsContainer.innerHTML = detailsHTML;
+        scrollToResults();
       } else if (item.type === 'item') {
         let detailsHTML = `<div class="item-details">`;
         
@@ -653,6 +730,7 @@ function applyFilters() {
         
         detailsHTML += droppersHTML + `</div>`;
         resultsContainer.innerHTML = detailsHTML;
+        scrollToResults();
       } else if (item.type === 'map') {
         // Get monsters in this map
         const monstersInMap = mapMonsters.filter(mm => mm.MAPID === item.MAPID);
@@ -700,11 +778,13 @@ function applyFilters() {
               style="width: 100%; height: 100%; object-fit: cover;"
             >
           </div>
+          ${getMapSongPlayer(item)}
           ${monstersHTML}
           ${connectionsHTML}
         </div>
       `;
       resultsContainer.innerHTML = detailsHTML;
+      scrollToResults();
     }
     };
 
