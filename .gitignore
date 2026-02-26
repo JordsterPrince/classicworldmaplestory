@@ -1,0 +1,12 @@
+Unused/
+CSVs/
+
+lambda_contact.py
+https_server
+https_server.py
+.Unused/DynamoDBsearch.py
+
+*.pem
+*.csv
+*.log
+*.key

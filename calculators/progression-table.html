@@ -12,7 +12,7 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../MapleLeaf.png" />
+    <link rel="icon" type="image/png" href="../images/decoration/MapleLeaf.png" />
   <title>Progression Table - MapleStory Classic World</title>
   <link rel="stylesheet" href="../styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
   <!-- 🌤 Header / Navigation -->
   <header class="navbar">
     <a class="logo" href="../index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
-      <img src="../MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
+      <img src="../images/decoration/MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
       <span>MapleStory Classic World</span>
     </a>
     <div class="hamburger" onclick="toggleNav(this)">
@@ -148,6 +148,107 @@
       ];
       let progressionTable = {};
       let plannedUpgradesTable = {};
+      const PROFILE_API_BASE = 'https://otvk1as2n9.execute-api.us-east-1.amazonaws.com';
+      const PROGRESSION_CURRENT_SETUP_TYPE = 'progression-current';
+      const PROGRESSION_PLANNED_SETUP_TYPE = 'progression-planned';
+
+      function getAuth() {
+        return window.MSCWAuth || null;
+      }
+
+      function isLoggedIn() {
+        const auth = getAuth();
+        if (!auth || !auth.getAccessToken) return false;
+        return !!auth.getAccessToken();
+      }
+
+      function getFallbackEmail() {
+        const auth = getAuth();
+        if (!auth) return '';
+        const payload = auth.getIdTokenPayload ? auth.getIdTokenPayload() : null;
+        return payload?.email || auth.getUserEmail?.() || '';
+      }
+
+      async function fetchProfileFromApi() {
+        const auth = getAuth();
+        const accessToken = auth?.getValidAccessToken
+          ? await auth.getValidAccessToken()
+          : (auth?.getAccessToken ? auth.getAccessToken() : '');
+        if (!accessToken) return null;
+
+        try {
+          const response = await fetch(`${PROFILE_API_BASE}/profile`, {
+            method: 'GET',
+            headers: {
+              Authorization: `Bearer ${accessToken}`
+            }
+          });
+
+          if (!response.ok) return null;
+          return await response.json();
+        } catch {
+          return null;
+        }
+      }
+
+      function mergeSetupByType(existingSetups, setupType, values) {
+        const setups = Array.isArray(existingSetups) ? existingSetups.filter(Boolean) : [];
+        const filtered = setups.filter((setup) => setup?.type !== setupType);
+        filtered.push({ type: setupType, values });
+        return filtered;
+      }
+
+      function getSetupValuesByType(setups, setupType) {
+        if (!Array.isArray(setups)) return null;
+        const match = setups.find((setup) => setup?.type === setupType && setup?.values);
+        return match?.values || null;
+      }
+
+      async function saveSetupToApi(setupType, values) {
+        const auth = getAuth();
+        const accessToken = auth?.getValidAccessToken
+          ? await auth.getValidAccessToken()
+          : (auth?.getAccessToken ? auth.getAccessToken() : '');
+        if (!accessToken) throw new Error('Missing access token');
+
+        const existingProfile = await fetchProfileFromApi();
+        const mergedSetups = mergeSetupByType(existingProfile?.equipmentSetups, setupType, values);
+
+        const response = await fetch(`${PROFILE_API_BASE}/profile`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${accessToken}`
+          },
+          body: JSON.stringify({
+            email: existingProfile?.email || getFallbackEmail(),
+            avatar: existingProfile?.avatar,
+            equipmentSetups: mergedSetups
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to save profile data');
+        }
+      }
+
+      function loadProgressionFromObject(parsed) {
+        progressionTable = {};
+        for (const slot of equipSlots) {
+          if (parsed && parsed[slot.slot]) {
+            progressionTable[slot.slot] = parsed[slot.slot];
+          }
+        }
+      }
+
+      function loadPlannedFromObject(parsed) {
+        plannedUpgradesTable = {};
+        for (const slot of equipSlots) {
+          if (parsed && parsed[slot.slot]) {
+            plannedUpgradesTable[slot.slot] = Array.isArray(parsed[slot.slot]) ? parsed[slot.slot] : [parsed[slot.slot]];
+          }
+        }
+      }
 
       // Fetch equipment from items.json
       fetch('../JSONS/items.json')
@@ -305,46 +406,88 @@
         }
       }
 
-      // Save to localStorage
-      document.getElementById('saveProgression').onclick = function() {
-        localStorage.setItem('progressionTable', JSON.stringify(progressionTable));
-        document.getElementById('saveMsg').textContent = 'Progression table saved!';
-        setTimeout(()=>{document.getElementById('saveMsg').textContent='';}, 2000);
-      }
-      document.getElementById('savePlannedUpgrades').onclick = function() {
-        localStorage.setItem('plannedUpgradesTable', JSON.stringify(plannedUpgradesTable));
-        document.getElementById('plannedSaveMsg').textContent = 'Planned upgrades saved!';
-        setTimeout(()=>{document.getElementById('plannedSaveMsg').textContent='';}, 2000);
+      // Save to profile API (DynamoDB) with local fallback
+      document.getElementById('saveProgression').onclick = async function() {
+        const msgEl = document.getElementById('saveMsg');
+        const button = document.getElementById('saveProgression');
+        button.disabled = true;
+        msgEl.textContent = 'Saving...';
+
+        try {
+          if (isLoggedIn()) {
+            await saveSetupToApi(PROGRESSION_CURRENT_SETUP_TYPE, progressionTable);
+          }
+          localStorage.setItem('progressionTable', JSON.stringify(progressionTable));
+          msgEl.textContent = 'Progression table saved!';
+        } catch {
+          localStorage.setItem('progressionTable', JSON.stringify(progressionTable));
+          msgEl.textContent = 'Saved locally only (cloud save unavailable).';
+        } finally {
+          button.disabled = false;
+          setTimeout(() => { msgEl.textContent = ''; }, 2200);
+        }
       }
 
-      // Load from localStorage
-      document.addEventListener('DOMContentLoaded', () => {
-        const saved = localStorage.getItem('progressionTable');
-        if (saved) {
-          try {
-            const parsed = JSON.parse(saved);
-            progressionTable = {};
-            for (const slot of equipSlots) {
-              if (parsed[slot.slot]) {
-                progressionTable[slot.slot] = parsed[slot.slot];
-              }
-            }
-          } catch {}
+      document.getElementById('savePlannedUpgrades').onclick = async function() {
+        const msgEl = document.getElementById('plannedSaveMsg');
+        const button = document.getElementById('savePlannedUpgrades');
+        button.disabled = true;
+        msgEl.textContent = 'Saving...';
+
+        try {
+          if (isLoggedIn()) {
+            await saveSetupToApi(PROGRESSION_PLANNED_SETUP_TYPE, plannedUpgradesTable);
+          }
+          localStorage.setItem('plannedUpgradesTable', JSON.stringify(plannedUpgradesTable));
+          msgEl.textContent = 'Planned upgrades saved!';
+        } catch {
+          localStorage.setItem('plannedUpgradesTable', JSON.stringify(plannedUpgradesTable));
+          msgEl.textContent = 'Saved locally only (cloud save unavailable).';
+        } finally {
+          button.disabled = false;
+          setTimeout(() => { msgEl.textContent = ''; }, 2200);
         }
+      }
+
+      // Load from profile API (DynamoDB) first, then local fallback
+      document.addEventListener('DOMContentLoaded', async () => {
+        let loadedFromServer = false;
+
+        if (isLoggedIn()) {
+          const profile = await fetchProfileFromApi();
+          const currentSetup = getSetupValuesByType(profile?.equipmentSetups, PROGRESSION_CURRENT_SETUP_TYPE);
+          const plannedSetup = getSetupValuesByType(profile?.equipmentSetups, PROGRESSION_PLANNED_SETUP_TYPE);
+
+          if (currentSetup) {
+            loadProgressionFromObject(currentSetup);
+            localStorage.setItem('progressionTable', JSON.stringify(currentSetup));
+            loadedFromServer = true;
+          }
+
+          if (plannedSetup) {
+            loadPlannedFromObject(plannedSetup);
+            localStorage.setItem('plannedUpgradesTable', JSON.stringify(plannedSetup));
+            loadedFromServer = true;
+          }
+        }
+
+        if (!loadedFromServer) {
+          const saved = localStorage.getItem('progressionTable');
+          if (saved) {
+            try {
+              loadProgressionFromObject(JSON.parse(saved));
+            } catch {}
+          }
+
+          const plannedSaved = localStorage.getItem('plannedUpgradesTable');
+          if (plannedSaved) {
+            try {
+              loadPlannedFromObject(JSON.parse(plannedSaved));
+            } catch {}
+          }
+        }
+
         renderTable();
-        // Planned upgrades
-        const plannedSaved = localStorage.getItem('plannedUpgradesTable');
-        if (plannedSaved) {
-          try {
-            const parsed = JSON.parse(plannedSaved);
-            plannedUpgradesTable = {};
-            for (const slot of equipSlots) {
-              if (parsed[slot.slot]) {
-                plannedUpgradesTable[slot.slot] = Array.isArray(parsed[slot.slot]) ? parsed[slot.slot] : [parsed[slot.slot]];
-              }
-            }
-          } catch {}
-        }
         renderPlannedUpgradesTable();
         renderUpgradeComparisonTable();
         document.getElementById('calculateComparison').onclick = function() {
@@ -469,5 +612,6 @@ document.addEventListener('click', function(e) {
   }
 });
 </script>
+<script src="../auth-nav.js"></script>
 </body>
 </html>

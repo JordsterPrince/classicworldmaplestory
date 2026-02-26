@@ -174,12 +174,6 @@
     "Chance": ""
   },
   {
-    "MOBID": "mob_blue_snail",
-    "ITEMID": "item_arrow_for_crossbow",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
     "MOBID": "mob_shroom",
     "ITEMID": "item_mesos",
     "Verified": "TRUE",
@@ -1244,12 +1238,6 @@
   {
     "MOBID": "mob_axe_stump",
     "ITEMID": "item_wooden_top",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_axe_stump",
-    "ITEMID": "item_blue_potion",
     "Verified": "FALSE",
     "Chance": ""
   },
@@ -2515,6 +2503,18 @@
   },
   {
     "MOBID": "mob_iron_hog",
+    "ITEMID": "item_orange_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_iron_hog",
+    "ITEMID": "item_arrow_for_bow",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_iron_hog",
     "ITEMID": "item_iron_hogs_metal_hoof",
     "Verified": "TRUE",
     "Chance": ""
@@ -3145,12 +3145,6 @@
   },
   {
     "MOBID": "mob_curse_eye",
-    "ITEMID": "item_black_knucklevest",
-    "Verified": "FALSE",
-    "Chance": ""
-  },
-  {
-    "MOBID": "mob_curse_eye",
     "ITEMID": "item_brown_piette_pants",
     "Verified": "FALSE",
     "Chance": ""
@@ -3678,6 +3672,18 @@
     "Chance": ""
   },
   {
+    "MOBID": "mob_golden_stirge",
+    "ITEMID": "item_golden_stirge_wing",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_golden_stirge",
+    "ITEMID": "item_white_potion",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
     "MOBID": "mob_aquamander",
     "ITEMID": "item_mesos",
     "Verified": "TRUE",
@@ -3764,6 +3770,18 @@
   {
     "MOBID": "mob_echopus",
     "ITEMID": "item_echopus_leg",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_echopus",
+    "ITEMID": "item_orihalcon_ore",
+    "Verified": "TRUE",
+    "Chance": ""
+  },
+  {
+    "MOBID": "mob_echopus",
+    "ITEMID": "item_emerald_ore",
     "Verified": "TRUE",
     "Chance": ""
   },

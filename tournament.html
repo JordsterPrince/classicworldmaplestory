@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MB3RE46XM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-6MB3RE46XM');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/decoration/MapleLeaf.png" />
+  <title>Maple Tournament - MapleStory Classic World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .tournament-panel {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+      padding: 24px;
+    }
+
+    .tournament-controls {
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .tournament-label {
+      font-weight: 600;
+      color: #1b2a41;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .tournament-type-cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .tournament-type-card {
+      border: 1px solid #dbe6f3;
+      border-radius: 12px;
+      background: #f8fbff;
+      color: #1b2a41;
+      padding: 14px;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+      transition: transform 0.12s, border-color 0.12s, background 0.12s;
+    }
+
+    .tournament-type-card:hover {
+      transform: translateY(-1px);
+      border-color: #b7d5fb;
+      background: #eef6ff;
+    }
+
+    .tournament-type-card.is-selected {
+      border-color: #2563eb;
+      background: #e8f2ff;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+    }
+
+    .tournament-type-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .tournament-type-card-sub {
+      font-size: 0.9rem;
+      color: #4b607c;
+      display: block;
+    }
+
+    .tournament-action-panel {
+      border: 1px solid #dbe6f3;
+      border-radius: 12px;
+      background: #f8fbff;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+
+    .tournament-selected-type {
+      color: #1b2a41;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .tournament-leaderboard {
+      margin-top: 12px;
+      background: #fff;
+      border: 1px solid #e4edf8;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .tournament-leaderboard h3 {
+      margin: 0 0 8px;
+      color: #1b2a41;
+      font-size: 1rem;
+    }
+
+    .tournament-leaderboard-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: #1b2a41;
+    }
+
+    .tournament-leaderboard-head {
+      display: grid;
+      grid-template-columns: 56px 1fr 84px;
+      gap: 8px;
+      color: #61758f;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0 8px 6px;
+      border-bottom: 1px solid #e7eef8;
+      margin-bottom: 6px;
+    }
+
+    .tournament-leaderboard-head .name-col {
+      text-align: center;
+    }
+
+    .tournament-leaderboard-head .wins-col {
+      text-align: right;
+    }
+
+    .tournament-leaderboard-row {
+      display: grid;
+      grid-template-columns: 56px 1fr 84px;
+      gap: 8px;
+      align-items: center;
+      padding: 7px 8px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      background: #f8fbff;
+      border: 1px solid #e5edf8;
+    }
+
+    .tournament-leaderboard-row .rank {
+      font-weight: 700;
+      color: #1b2a41;
+    }
+
+    .tournament-leaderboard-row .name {
+      text-align: center;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .tournament-leaderboard-row .wins {
+      text-align: right;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .tournament-leaderboard-empty {
+      color: #4b607c;
+      font-size: 0.92rem;
+    }
+
+    .tournament-select {
+      width: 100%;
+      border: 1px solid #dbe6f3;
+      border-radius: 10px;
+      background: #fff;
+      padding: 10px 12px;
+      font-family: inherit;
+      color: #1b2a41;
+    }
+
+    .tournament-start-btn {
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      min-width: 180px;
+    }
+
+    .tournament-start-btn:hover {
+      opacity: 0.92;
+    }
+
+    .tournament-lock-btn {
+      border: none;
+      border-radius: 10px;
+      background: #0f766e;
+      color: white;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 14px;
+    }
+
+    .tournament-lock-btn:hover {
+      opacity: 0.92;
+    }
+
+    .tournament-lock-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .tournament-status {
+      color: #4b607c;
+      margin-bottom: 14px;
+      min-height: 1.2rem;
+    }
+
+    .tournament-status.is-error {
+      color: #b91c1c;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .tournament-login-box {
+      margin-bottom: 14px;
+      border: 1px solid #dbe6f3;
+      border-radius: 12px;
+      background: #f8fbff;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tournament-login-box p {
+      margin: 0;
+      color: #1b2a41;
+      font-weight: 600;
+    }
+
+    .tournament-login-btn {
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: #fff;
+      padding: 9px 13px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tournament-login-btn:hover {
+      opacity: 0.92;
+    }
+
+    .tournament-login-container {
+      max-width: 1200px;
+      margin: 0 auto 12px;
+    }
+
+    .bracket-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .bracket-round {
+      border: 1px solid #dbe6f3;
+      border-radius: 12px;
+      background: #f8fbff;
+      padding: 12px;
+    }
+
+    .bracket-round h3 {
+      margin: 0 0 10px;
+      color: #1b2a41;
+      font-size: 1rem;
+    }
+
+    .match-card {
+      border: 1px solid #e4edf8;
+      border-radius: 10px;
+      background: #fff;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+
+    .match-id {
+      font-size: 0.78rem;
+      color: #61758f;
+      margin-bottom: 6px;
+    }
+
+    .vote-btn {
+      width: 100%;
+      border: 1px solid #dbe6f3;
+      border-radius: 8px;
+      background: #f8fbff;
+      color: #1b2a41;
+      padding: 7px 8px;
+      margin-bottom: 6px;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .vote-btn:hover {
+      background: #eef6ff;
+    }
+
+    .match-entry {
+      margin-bottom: 6px;
+    }
+
+    .match-entry-with-image .vote-btn {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 8px;
+    }
+
+    .match-participant-image {
+      width: 84px;
+      height: 84px;
+      object-fit: contain;
+      border: 1px solid #dbe6f3;
+      border-radius: 10px;
+      background: #fff;
+      padding: 4px;
+    }
+
+    .match-song-player {
+      width: 100%;
+      margin-top: -2px;
+      margin-bottom: 2px;
+    }
+
+    .winner-line {
+      font-size: 0.84rem;
+      color: #1b2a41;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .champion-box {
+      border: 1px solid #b7d5fb;
+      background: #eef6ff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 14px;
+      color: #1b2a41;
+      font-weight: 600;
+    }
+
+    .tournament-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(12, 22, 38, 0.72);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 3000;
+    }
+
+    .tournament-modal-overlay[hidden] {
+      display: none !important;
+    }
+
+    .tournament-modal {
+      width: min(92vw, 980px);
+      min-height: min(78vh, 720px);
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      position: relative;
+      padding: 44px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .tournament-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 34px;
+      height: 34px;
+      border: none;
+      border-radius: 999px;
+      background: #e8eef8;
+      color: #1b2a41;
+      font-size: 1.2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .tournament-modal-close:hover {
+      background: #dbe6f3;
+    }
+
+    .tournament-modal-title {
+      margin: 0 0 14px;
+      color: #1b2a41;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+    }
+
+    .tournament-modal-winner {
+      color: #0f172a;
+      font-size: clamp(1.6rem, 4.8vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .tournament-modal-runnerup {
+      color: #4b607c;
+      font-size: clamp(1rem, 2.4vw, 1.3rem);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .tournament-modal-question {
+      margin-top: 18px;
+      color: #1b2a41;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .tournament-modal-actions {
+      margin-top: 14px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tournament-modal-btn {
+      border: 1px solid #dbe6f3;
+      border-radius: 10px;
+      background: #f8fbff;
+      color: #1b2a41;
+      padding: 8px 14px;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      min-width: 86px;
+    }
+
+    .tournament-modal-btn:hover {
+      background: #eef6ff;
+    }
+
+    .tournament-modal-btn.is-primary {
+      border-color: #2563eb;
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .tournament-modal-btn.is-primary:hover {
+      opacity: 0.92;
+    }
+
+    @media (max-width: 760px) {
+      .tournament-type-cards {
+        grid-template-columns: 1fr;
+      }
+      .tournament-start-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+      <img src="images/decoration/MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
+      <span>MapleStory Classic World</span>
+    </a>
+    <div class="hamburger" onclick="toggleNav(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="calculators.html">Calculators</a>
+      <a href="search.html">Library</a>
+      <a href="tournament.html">Tournament</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Maple Tournament</h1>
+      <p>Pick a type and vote each match winner.</p>
+    </div>
+  </section>
+
+  <section style="padding: 48px 20px 60px;">
+    <div class="tournament-login-container">
+      <div id="tournamentLoginBox" class="tournament-login-box" hidden>
+        <p>Log in to start and save tournaments.</p>
+        <button id="tournamentLoginBtn" class="tournament-login-btn" type="button">Login / Register</button>
+      </div>
+    </div>
+
+    <div class="tournament-panel">
+      <div id="tournamentControls" class="tournament-controls" hidden>
+        <label class="tournament-label">Tournament Type</label>
+        <div id="tournamentTypeCards" class="tournament-type-cards">
+          <button type="button" class="tournament-type-card" data-type="OST">
+            <span class="tournament-type-card-title">♪ Songs (OST)</span>
+            <span class="tournament-type-card-sub">Battle your favorite Maple tracks.</span>
+          </button>
+          <button type="button" class="tournament-type-card" data-type="MAP">
+            <span class="tournament-type-card-title">🗺️ Maps</span>
+            <span class="tournament-type-card-sub">Vote for the best Maple world map.</span>
+          </button>
+          <button type="button" class="tournament-type-card" data-type="MONSTER">
+            <span class="tournament-type-card-title">👾 Monsters</span>
+            <span class="tournament-type-card-sub">Pick the strongest monster legend.</span>
+          </button>
+        </div>
+
+        <div id="tournamentActionPanel" class="tournament-action-panel" hidden>
+          <div id="tournamentSelectedType" class="tournament-selected-type"></div>
+          <button id="startTournamentBtn" class="tournament-start-btn" type="button">Start Tournament</button>
+          <div id="tournamentLeaderboard" class="tournament-leaderboard">
+            <h3>Community Leaderboard</h3>
+            <div id="tournamentLeaderboardBody" class="tournament-leaderboard-empty">Loading leaderboard...</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tournamentStatus" class="tournament-status"></div>
+      <div id="tournamentChampion" class="champion-box" hidden></div>
+      <button id="lockRoundBtn" class="tournament-lock-btn" type="button" hidden disabled>Lock In Round Winners</button>
+      <div id="bracketContainer" class="bracket-grid"></div>
+      <button id="lockRoundBtnBottom" class="tournament-lock-btn" type="button" hidden disabled>Lock In Round Winners</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fan-made MapleStory Classic World site by Jordsterking • Not affiliated with Nexon</p>
+  </footer>
+
+  <div id="tournamentChampionModalOverlay" class="tournament-modal-overlay" hidden>
+    <div class="tournament-modal" role="dialog" aria-modal="true" aria-labelledby="tournamentChampionModalTitle">
+      <button id="tournamentChampionModalClose" class="tournament-modal-close" type="button" aria-label="Close tournament winner modal">×</button>
+      <h2 id="tournamentChampionModalTitle" class="tournament-modal-title">Tournament Winner</h2>
+      <div id="tournamentChampionModalWinner" class="tournament-modal-winner"></div>
+      <div id="tournamentChampionModalRunnerUp" class="tournament-modal-runnerup"></div>
+      <div id="tournamentChampionModalQuestion" class="tournament-modal-question" hidden>
+        Do you want to save this song as your profile's favorite song?
+      </div>
+      <div id="tournamentChampionModalActions" class="tournament-modal-actions" hidden>
+        <button id="tournamentChampionModalYes" class="tournament-modal-btn is-primary" type="button">Yes</button>
+        <button id="tournamentChampionModalNo" class="tournament-modal-btn" type="button">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav(el) {
+      var nav = document.querySelector('.navbar nav');
+      nav.classList.toggle('show');
+      el.classList.toggle('active');
+    }
+    document.addEventListener('click', function(e) {
+      var nav = document.querySelector('.navbar nav');
+      var burger = document.querySelector('.hamburger');
+      if (!nav.contains(e.target) && !burger.contains(e.target)) {
+        nav.classList.remove('show');
+        burger.classList.remove('active');
+      }
+    });
+  </script>
+  <script src="auth-nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="tournament.js"></script>
+</body>
+</html>

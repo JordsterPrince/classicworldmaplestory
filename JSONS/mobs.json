@@ -518,5 +518,25 @@
     "HP": 0,
     "XPCost": 0,
     "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_mushmom",
+    "Name": "Mushmom",
+    "Picture": "https://maplestory.io/api/gms/83/mob/6130101/render/stand",
+    "Level": "?",
+    "XP": 1630,
+    "HP": 200000,
+    "XPCost": 122.7,
+    "Verified": "FALSE"
+  },
+  {
+    "MOBID": "mob_jrbalrog",
+    "Name": "Jr.Balrog",
+    "Picture": "https://maplestory.io/api/gms/83/mob/8130100/render/stand",
+    "Level": "?",
+    "XP": 1820,
+    "HP": "?",
+    "XPCost": 0,
+    "Verified": "FALSE"
   }
 ]

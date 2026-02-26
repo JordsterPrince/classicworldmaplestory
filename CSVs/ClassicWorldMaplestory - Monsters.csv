@@ -51,3 +51,5 @@ mob_dark_stone_golem,Dark Stone Golem,https://maplestory.io/api/gms/83/mob/51301
 mob_sporewood,Sporewood,/images/monsters/sporewood.png,?,120,3000,25.00,FALSE
 mob_tauromacis,Tauromacis,https://maplestory.io/api/gms/83/mob/7130100/render/stand,?,0,0,0.00,FALSE
 mob_taurospear,Taurospear,https://maplestory.io/api/gms/83/mob/7130101/render/stand,?,0,0,0.00,FALSE
+mob_mushmom,Mushmom,https://maplestory.io/api/gms/83/mob/6130101/render/stand,?,1630,200000,122.70,FALSE
+mob_jrbalrog,Jr.Balrog,https://maplestory.io/api/gms/83/mob/8130100/render/stand,?,1820,?,0.00,FALSE

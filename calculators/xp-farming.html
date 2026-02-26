@@ -12,7 +12,7 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../MapleLeaf.png" />
+    <link rel="icon" type="image/png" href="../images/decoration/MapleLeaf.png" />
   <title>XP Farming Calculator - MapleStory Classic World</title>
   <link rel="stylesheet" href="../styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
@@ -193,7 +193,27 @@
       margin-top: 12px;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 50px;
+    }
+
+    .xp-level-column {
+      display: flex;
+      flex-direction: column;
       gap: 10px;
+    }
+
+    .xp-level-group {
+      margin-top: 16px;
+    }
+
+    .xp-level-group:first-of-type {
+      margin-top: 0;
+    }
+
+    .xp-level-group h4 {
+      margin: 0;
+      color: #1b2a41;
+      font-size: 1rem;
     }
 
     .xp-level-row {
@@ -207,6 +227,15 @@
       border-radius: 10px;
       font-size: 0.92rem;
       color: #1b2a41;
+    }
+
+    .xp-level-row.is-current-level {
+      background: #beddff;
+      border-color: #7eb8fa;
+    }
+
+    .xp-level-row.is-current-level span:first-child {
+      font-weight: 600;
     }
 
     .xp-level-row span:last-child {
@@ -254,7 +283,7 @@
   <!-- 🌤 Header / Navigation -->
   <header class="navbar">
     <a class="logo" href="../index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
-      <img src="../MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
+      <img src="../images/decoration/MapleLeaf.png" alt="Maple Leaf" style="height: 32px; width: 32px; vertical-align: middle;">
       <span>MapleStory Classic World</span>
     </a>
     <div class="hamburger" onclick="toggleNav(this)">
@@ -275,7 +304,6 @@
   <section class="hero">
     <div class="hero-content">
       <h1>XP Farming Calculator</h1>
-      <p>Find the best XP farming spots for your level.</p>
     </div>
   </section>
 
@@ -332,7 +360,18 @@
     <div class="xp-level-wrapper">
       <div class="xp-level-section">
         <h3 style="margin-bottom: 6px;">XP to Next Level</h3>
-        <div id="xpLevelTable" class="xp-level-grid"></div>
+        <div class="xp-level-group">
+          <h4>Levels 1-30</h4>
+          <div id="xpLevelTable1to30" class="xp-level-grid"></div>
+        </div>
+        <div class="xp-level-group">
+          <h4>Levels 31-70</h4>
+          <div id="xpLevelTable31to70" class="xp-level-grid"></div>
+        </div>
+        <div class="xp-level-group">
+          <h4>Levels 71+</h4>
+          <div id="xpLevelTable71Plus" class="xp-level-grid"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -367,7 +406,9 @@ const mobSuggestions = document.getElementById('mobSuggestions');
 const selectedMobPreview = document.getElementById('selectedMobPreview');
 const selectedMobPreviewImg = document.getElementById('selectedMobPreviewImg');
 const selectedMobPreviewName = document.getElementById('selectedMobPreviewName');
-const xpLevelTableEl = document.getElementById('xpLevelTable');
+const xpLevelTable1to30El = document.getElementById('xpLevelTable1to30');
+const xpLevelTable31to70El = document.getElementById('xpLevelTable31to70');
+const xpLevelTable71PlusEl = document.getElementById('xpLevelTable71Plus');
 
 const xpPerKillEl = document.getElementById('xpPerKill');
 const xpPerKillLabelEl = document.getElementById('xpPerKillLabel');
@@ -419,19 +460,59 @@ function getExpRequiredForLevel(level) {
 }
 
 function renderXpLevelTable() {
-  if (!xpLevelTableEl) return;
+  if (!xpLevelTable1to30El || !xpLevelTable31to70El || !xpLevelTable71PlusEl) return;
 
-  xpLevelTableEl.innerHTML = XP_TO_NEXT_BY_LEVEL
-    .map((xp, level) => {
-      if (level === 0) return '';
-      return `
-        <div class="xp-level-row">
-          <span>Level ${level}</span>
-          <span>${formatNumber(xp)}</span>
-        </div>
-      `;
-    })
-    .join('');
+  function renderRange(startLevel, endLevel) {
+    const levels = XP_TO_NEXT_BY_LEVEL
+      .map((xp, level) => ({ xp, level }))
+      .filter(({ level }) => level >= startLevel && level <= endLevel);
+
+    const chunkSize = 10;
+    const columns = [];
+
+    for (let i = 0; i < levels.length; i += chunkSize) {
+      columns.push(levels.slice(i, i + chunkSize));
+    }
+
+    return columns
+      .map((column) => {
+        const rows = column
+          .map(({ level, xp }) => `
+            <div class="xp-level-row" data-level="${level}">
+              <span>Level ${level}</span>
+              <span>${formatNumber(xp)}</span>
+            </div>
+          `)
+          .join('');
+
+        return `
+          <div class="xp-level-column">
+            ${rows}
+          </div>
+        `;
+      })
+      .join('');
+  }
+
+  xpLevelTable1to30El.innerHTML = renderRange(1, 30);
+  xpLevelTable31to70El.innerHTML = renderRange(31, 70);
+  xpLevelTable71PlusEl.innerHTML = renderRange(71, XP_TO_NEXT_BY_LEVEL.length - 1);
+}
+
+function updateLevelHighlight(levelValue) {
+  const allRows = document.querySelectorAll('.xp-level-row');
+  allRows.forEach((row) => row.classList.remove('is-current-level'));
+
+  if (!Number.isFinite(levelValue)) return;
+
+  const maxLevel = XP_TO_NEXT_BY_LEVEL.length - 1;
+  const level = Math.floor(levelValue);
+  if (level < 1 || level > maxLevel) return;
+
+  const targetRow = document.querySelector(`.xp-level-row[data-level="${level}"]`);
+  if (targetRow) {
+    targetRow.classList.add('is-current-level');
+  }
 }
 
 function clearSuggestions() {
@@ -518,10 +599,12 @@ function resolveTypedMob() {
 function updateEstimates() {
   resolveTypedMob();
 
+  const level = Number(currentLevelInput.value);
+  updateLevelHighlight(level);
+
   const selectedName = selectedMob && selectedMob.Name ? selectedMob.Name : '';
   xpPerKillLabelEl.textContent = selectedName ? `XP per ${selectedName} Kill` : 'XP per Kill';
 
-  const level = Number(currentLevelInput.value);
   const currentPercent = Number(currentPercentInput.value);
   const killsPerSix = Number(killsPerSixInput.value);
   const mobXp = Number(selectedMob && selectedMob.XP ? selectedMob.XP : 0);
@@ -577,6 +660,7 @@ document.addEventListener('click', (event) => {
 });
 
 renderXpLevelTable();
+updateLevelHighlight(Number(currentLevelInput.value));
 
 fetch('../JSONS/mobs.json')
   .then(res => res.json())
@@ -589,5 +673,6 @@ fetch('../JSONS/mobs.json')
     updateEstimates();
   });
 </script>
+<script src="../auth-nav.js"></script>
 </body>
 </html>

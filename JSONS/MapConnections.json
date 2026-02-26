@@ -860,6 +860,14 @@
     "ToMapID": "map_line_1_area_2"
   },
   {
+    "FromMapID": "map_line_1_area_3",
+    "ToMapID": "map_line_1_area_4"
+  },
+  {
+    "FromMapID": "map_line_1_area_4",
+    "ToMapID": "map_line_1_area_3"
+  },
+  {
     "FromMapID": "map_kerning_city_contruction_site",
     "ToMapID": "map_kerning_city"
   },
