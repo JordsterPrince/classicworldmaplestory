@@ -498,7 +498,59 @@
         });
       });
 
+      function getStatEquivalencies() {
+        try {
+          const eq = JSON.parse(localStorage.getItem('statEqValues'));
+
+          if (!eq) return null;
+
+          const weaponMult = Number(eq.maxMult);
+          const masteryLevel = Number(eq.masteryLevel);
+
+          if (
+            !Number.isFinite(weaponMult) ||
+            weaponMult <= 0 ||
+            !Number.isFinite(masteryLevel) ||
+            masteryLevel < 0 ||
+            masteryLevel > 10
+          ) {
+            return null;
+          }
+
+          // New damage formula
+          const M = (masteryLevel / 10 + 0.1) * 0.7;
+
+          // Average damage contribution of each stat
+          const primaryGain = weaponMult * ((M + 1) / 2);
+
+          const secToPrimary = 1 / primaryGain;
+          const atkPowerToPrimary = 2 / primaryGain;
+
+          return {
+            secToPrimary,
+            atkPowerToPrimary
+          };
+
+        } catch {
+          return null;
+        }
+      }
       function renderUpgradeComparisonTable() {
+        const statEq = getStatEquivalencies();
+        if (!statEq) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="8" style="padding:18px;text-align:center;color:#764ba2;font-size:1.15rem;">
+                Please recalculate and save your Stat Equivalence
+                <a href="../calculators/stat-equivalence-calculator.html"
+                  style="color:#667eea;text-decoration:underline;font-weight:600;">
+                  here
+                </a>.
+              </td>
+            </tr>
+          `;
+          return;
+        }
         const tbody = document.getElementById('upgradeComparisonTableBody');
         // Build row data objects first
         let rows = [];
@@ -519,18 +571,25 @@
           plannedArr.forEach((planned, idx) => {
             const currIcon = curr ? `<img src="${curr.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
             const plannedIcon = planned ? `<img src="${planned.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
-            // Calculate scores using stat equivalence
-            let secToPrimary = 0, atkPowerToPrimary = 0;
-            try {
-              const eq = JSON.parse(localStorage.getItem('statEqValues'));
-              secToPrimary = eq?.secToPrimary || 0;
-              atkPowerToPrimary = eq?.atkPowerToPrimary || 0;
-            } catch {}
+            // Calculate scores using the updated stat equivalencies
+            const statEq = getStatEquivalencies();
+
+            const secToPrimary = statEq.secToPrimary;
+            const atkPowerToPrimary = statEq.atkPowerToPrimary;
             // Checkbox logic
             const treatSecAsPrimary = document.getElementById('treatSecAsPrimary')?.checked;
             const secMultiplier = treatSecAsPrimary ? 1 : secToPrimary;
-            const currScore = curr ? (Number(curr.primaryStat || 0) + Number(curr.secondaryStat || 0) * secMultiplier + Number(curr.attackPower || 0) * atkPowerToPrimary) : 0;
-            const plannedScore = planned ? (Number(planned.primaryStat || 0) + Number(planned.secondaryStat || 0) * secMultiplier + Number(planned.attackPower || 0) * atkPowerToPrimary) : 0;
+            const currScore = curr
+              ? Number(curr.primaryStat || 0)
+                + Number(curr.secondaryStat || 0) * secMultiplier
+                + Number(curr.attackPower || 0) * atkPowerToPrimary
+              : 0;
+
+            const plannedScore = planned
+              ? Number(planned.primaryStat || 0)
+                + Number(planned.secondaryStat || 0) * secMultiplier
+                + Number(planned.attackPower || 0) * atkPowerToPrimary
+              : 0;
             const plannedCost = planned && planned.price !== undefined && planned.price !== '' ? planned.price : '';
             let statGain = plannedScore - currScore;
             let costPerStat = '';
