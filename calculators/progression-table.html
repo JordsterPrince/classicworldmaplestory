@@ -518,31 +518,21 @@
 
           if (!eq) return null;
 
-          const weaponMult = Number(eq.maxMult);
-          const masteryLevel = Number(eq.masteryLevel);
+          const secToPrimary = Number(eq.secToPrimary);
+          const weaponAttackToPrimary = Number(eq.wAttToPrimary);
 
           if (
-            !Number.isFinite(weaponMult) ||
-            weaponMult <= 0 ||
-            !Number.isFinite(masteryLevel) ||
-            masteryLevel < 0 ||
-            masteryLevel > 10
+            !Number.isFinite(secToPrimary) ||
+            secToPrimary <= 0 ||
+            !Number.isFinite(weaponAttackToPrimary) ||
+            weaponAttackToPrimary <= 0
           ) {
             return null;
           }
 
-          // New damage formula
-          const M = (masteryLevel / 10 + 0.1) * 0.7;
-
-          // Average damage contribution of each stat
-          const primaryGain = weaponMult * ((M + 1) / 2);
-
-          const secToPrimary = 1 / primaryGain;
-          const atkPowerToPrimary = 2 / primaryGain;
-
           return {
             secToPrimary,
-            weaponAttackToPrimary: atkPowerToPrimary
+            weaponAttackToPrimary
           };
 
         } catch {
