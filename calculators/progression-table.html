@@ -64,7 +64,7 @@
                 <th class="progression-th">Name</th>
                 <th class="progression-th">Primary Stat</th>
                 <th class="progression-th">Secondary Stat</th>
-                <th class="progression-th">Attack Power</th>
+                <th class="progression-th">Weapon Attack</th>
                 <th class="progression-th">Remove</th>
             </tr>
             </thead>
@@ -89,7 +89,7 @@
                 <th class="progression-th">Name</th>
                 <th class="progression-th">Primary Stat</th>
                 <th class="progression-th">Secondary Stat</th>
-                <th class="progression-th">Attack Power</th>
+                <th class="progression-th">Weapon Attack</th>
                 <th class="progression-th">Price (mil)</th>
                 <th class="progression-th">Notes</th>
                 <th class="progression-th">Remove</th>
@@ -234,18 +234,32 @@
 
       function loadProgressionFromObject(parsed) {
         progressionTable = {};
+
         for (const slot of equipSlots) {
           if (parsed && parsed[slot.slot]) {
-            progressionTable[slot.slot] = parsed[slot.slot];
+            const row = parsed[slot.slot];
+
+            progressionTable[slot.slot] = {
+              ...row,
+              weaponAttack: row.weaponAttack ?? row.attackPower ?? ''
+            };
           }
         }
       }
 
       function loadPlannedFromObject(parsed) {
         plannedUpgradesTable = {};
+
         for (const slot of equipSlots) {
           if (parsed && parsed[slot.slot]) {
-            plannedUpgradesTable[slot.slot] = Array.isArray(parsed[slot.slot]) ? parsed[slot.slot] : [parsed[slot.slot]];
+            const rows = Array.isArray(parsed[slot.slot])
+              ? parsed[slot.slot]
+              : [parsed[slot.slot]];
+
+            plannedUpgradesTable[slot.slot] = rows.map(row => ({
+              ...row,
+              weaponAttack: row.weaponAttack ?? row.attackPower ?? ''
+            }));
           }
         }
       }
@@ -350,7 +364,7 @@
             <td class='progression-td'>${row ? row.name : '<span class="progression-empty">—</span>'}</td>
             <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.primaryStat || ''}" min="0" onchange="updateStat('${slot.slot}', 'primaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
             <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.secondaryStat || ''}" min="0" onchange="updateStat('${slot.slot}', 'secondaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
-            <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.attackPower || ''}" min="0" onchange="updateStat('${slot.slot}', 'attackPower', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+            <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.weaponAttack || ''}" min="0" onchange="updateStat('${slot.slot}', 'weaponAttack', this.value)">` : '<span class="progression-empty">—</span>'}</td>
             <td class='progression-td'>${row ? `<button onclick="removeRow('${slot.slot}')" class="progression-remove-btn">Remove</button>` : ''}</td>
           </tr>`;
         }).join('');
@@ -373,7 +387,7 @@
               <td class='progression-td'>${row ? row.name : '<span class="progression-empty">—</span>'}</td>
               <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.primaryStat || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'primaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
               <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.secondaryStat || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'secondaryStat', this.value)">` : '<span class="progression-empty">—</span>'}</td>
-              <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.attackPower || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'attackPower', this.value)">` : '<span class="progression-empty">—</span>'}</td>
+              <td class='progression-td'>${row ? `<input type="number" class="progression-input" value="${row.weaponAttack || ''}" min="0" onchange="updatePlannedStat('${slot.slot}', ${idx}, 'weaponAttack', this.value)">` : '<span class="progression-empty">—</span>'}</td>
               <td class='progression-td'>${row ? `<input type="text" class="progression-input-price" value="${row.price}" onchange="updatePlannedPrice('${slot.slot}', ${idx}, this.value)">` : '<span class="progression-empty">—</span>'}</td>
               <td class='progression-td'>${row ? `<input type="text" class="progression-input-notes" value="${row.notes}" onchange="updatePlannedNotes('${slot.slot}', ${idx}, this.value)">` : '<span class="progression-empty">—</span>'}</td>
               <td class='progression-td'>${row ? `<button onclick="removePlannedRow('${slot.slot}', ${idx})" class="progression-remove-btn">Remove</button>` : ''}</td>
@@ -528,7 +542,7 @@
 
           return {
             secToPrimary,
-            atkPowerToPrimary
+            weaponAttackToPrimary: atkPowerToPrimary
           };
 
         } catch {
@@ -537,6 +551,7 @@
       }
       function renderUpgradeComparisonTable() {
         const statEq = getStatEquivalencies();
+        const tbody = document.getElementById('upgradeComparisonTableBody');
         if (!statEq) {
           tbody.innerHTML = `
             <tr>
@@ -551,7 +566,8 @@
           `;
           return;
         }
-        const tbody = document.getElementById('upgradeComparisonTableBody');
+        const secToPrimary = statEq.secToPrimary;
+        const weaponAttackToPrimary = statEq.weaponAttackToPrimary;
         // Build row data objects first
         let rows = [];
         equipSlots.forEach(slot => {
@@ -571,25 +587,18 @@
           plannedArr.forEach((planned, idx) => {
             const currIcon = curr ? `<img src="${curr.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
             const plannedIcon = planned ? `<img src="${planned.icon}" alt="icon" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">` : '<span style="color:#bbb;">—</span>';
-            // Calculate scores using the updated stat equivalencies
-            const statEq = getStatEquivalencies();
-
-            const secToPrimary = statEq.secToPrimary;
-            const atkPowerToPrimary = statEq.atkPowerToPrimary;
             // Checkbox logic
             const treatSecAsPrimary = document.getElementById('treatSecAsPrimary')?.checked;
             const secMultiplier = treatSecAsPrimary ? 1 : secToPrimary;
-            const currScore = curr
-              ? Number(curr.primaryStat || 0)
-                + Number(curr.secondaryStat || 0) * secMultiplier
-                + Number(curr.attackPower || 0) * atkPowerToPrimary
-              : 0;
+            const currScore = curr ?
+              (Number(curr.primaryStat || 0) +
+              Number(curr.secondaryStat || 0) * secMultiplier +
+              Number(curr.weaponAttack || 0) * weaponAttackToPrimary) : 0;
 
-            const plannedScore = planned
-              ? Number(planned.primaryStat || 0)
-                + Number(planned.secondaryStat || 0) * secMultiplier
-                + Number(planned.attackPower || 0) * atkPowerToPrimary
-              : 0;
+            const plannedScore = planned ?
+              (Number(planned.primaryStat || 0) +
+              Number(planned.secondaryStat || 0) * secMultiplier +
+              Number(planned.weaponAttack || 0) * weaponAttackToPrimary) : 0;
             const plannedCost = planned && planned.price !== undefined && planned.price !== '' ? planned.price : '';
             let statGain = plannedScore - currScore;
             let costPerStat = '';
@@ -601,7 +610,7 @@
             let statGainDisplayNum = statGain;
             if (planned && statGain > 0) {
               statGainDisplay = statGainDisplayNum.toFixed(2);
-              const costNum = Number(plannedCost.replace(/[^\d.]/g, ''));
+              const costNum = Number(String(plannedCost).replace(/[^\d.]/g, ''));
               if (!isNaN(costNum) && statGain > 0) {
                 costPerStat = costNum > 0 ? (costNum / statGain).toFixed(2) : '';
                 sortValue = costNum > 0 ? (costNum / statGain) : null;
@@ -641,16 +650,7 @@
           return a.sortValue - b.sortValue;
         });
         // Show stat equivalence missing message if needed
-        let statEqMissing = false;
-        try {
-          const eq = JSON.parse(localStorage.getItem('statEqValues'));
-          if (!eq || typeof eq.secToPrimary !== 'number' || typeof eq.atkPowerToPrimary !== 'number') statEqMissing = true;
-        } catch { statEqMissing = true; }
-        if (statEqMissing) {
-          tbody.innerHTML = `<tr><td colspan='8' style='padding:18px;text-align:center;color:#764ba2;font-size:1.15rem;'>Please Save your Stat Equivalence <a href='../calculators/stat-equivalence-calculator.html' style='color:#667eea;text-decoration:underline;font-weight:600;'>here</a>.</td></tr>`;
-        } else {
-          tbody.innerHTML = rows.map(r => r.html).join('');
-        }
+        tbody.innerHTML = rows.map(r => r.html).join('');
       }
     </script>
   <footer>
