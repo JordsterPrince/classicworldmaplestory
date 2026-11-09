@@ -73,6 +73,8 @@
           <select id="swingType" name="swingType" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;">
             <option value="Swing">Swing</option>
             <option value="Stab">Stab</option>
+            <option value="Shoot">Shoot</option>
+            <option value="Mixed">Mixed</option>
           </select>
         </div>
         <div style="margin-bottom: 18px;">
@@ -90,6 +92,13 @@
         <div style="margin-bottom: 18px;">
           <label for="atkPower" style="font-weight:600;">Attack Power:</label>
           <input type="number" id="atkPower" name="atkPower" min="0" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;">
+        </div>
+        <div style="margin-bottom: 18px;">
+          <label for="masteryLevel" style="font-weight:600;">Mastery Level:</label>
+          <input type="number" id="masteryLevel" name="masteryLevel" min="0" max="10" step="1" value="0" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;">
+          <span style="color:#888;font-size:0.95rem;">
+            (0-10, affects minimum damage)
+          </span>
         </div>
         <div style="margin-bottom: 18px;">
           <label for="maxMult" style="font-weight:600;">Max Multiplier:</label>
@@ -125,25 +134,51 @@ document.addEventListener('click', function(e) {
 });
 
 const weaponMultipliers = {
-  '1H Sword':   { Swing: 1.5, Stab: 1.5 },
-  '2H Sword':   { Swing: 2.5, Stab: 2.5 },
-  '1H Blunt Weapon': { Swing: 2, Stab: 1 },
-  '2H Blunt Weapon': { Swing: 3, Stab: 2 },
-  '1H Axe':     { Swing: 2, Stab: 1 },
-  '2H Axe':     { Swing: 3, Stab: 2 },
-  'Spear':      { Swing: 1.5, Stab: 3.5 },
-  'Polearm':    { Swing: 3.5, Stab: 1.5 },
-  'Bow':        { Swing: 2.5, Stab: 2.5 },
-  'Xbow':       { Swing: 2.5, Stab: 2.5 },
-  'Claw':       { Swing: 2.5, Stab: 2.5 },
-  'Dagger':     { Swing: 1, Stab: 2 }
+  '1H Sword': {
+    Swing: 1.8, Stab: 1.8, Shoot: null, Mixed: 1.8
+  },
+  '2H Sword': {
+    Swing: 2.5, Stab: 2.5, Shoot: null, Mixed: 2.5
+  },
+  '1H Blunt Weapon': {
+    Swing: 2.4, Stab: 1.2, Shoot: null, Mixed: 1.8
+  },
+  '2H Blunt Weapon': {
+    Swing: 3.0, Stab: 2.0, Shoot: null, Mixed: 2.5
+  },
+  '1H Axe': {
+    Swing: 2.4, Stab: 1.2, Shoot: null, Mixed: 1.8
+  },
+  '2H Axe': {
+    Swing: 3.0, Stab: 2.0, Shoot: null, Mixed: 2.5
+  },
+  'Spear': {
+    Swing: 1.5, Stab: 3.5, Shoot: null, Mixed: 2.5
+  },
+  'Polearm': {
+    Swing: 3.5, Stab: 1.5, Shoot: null, Mixed: 2.5
+  },
+  'Bow': {
+    Swing: 1.0, Stab: null, Shoot: 2.5, Mixed: 1.0
+  },
+  'Xbow': {
+    Swing: 1.0, Stab: 1.0, Shoot: 2.5, Mixed: 1.0
+  },
+  'Claw': {
+    Swing: null, Stab: 1.0, Shoot: 2.5, Mixed: 1.0
+  },
+  'Dagger': {
+    Swing: 1.0, Stab: 2.0, Shoot: null, Mixed: 1.5
+  }
 };
 
 function updateMaxMultiplier() {
   const weaponType = document.getElementById('weaponType').value;
   const swingType = document.getElementById('swingType').value;
-  const mult = weaponMultipliers[weaponType][swingType];
-  document.getElementById('maxMult').value = mult;
+
+  const mult = weaponMultipliers[weaponType]?.[swingType];
+
+  document.getElementById('maxMult').value = mult ?? '';
 }
 
 document.getElementById('weaponType').addEventListener('change', updateMaxMultiplier);
@@ -243,50 +278,131 @@ function applySavedValues(vals) {
   if (vals.secondaryStat !== undefined) document.getElementById('secondaryStat').value = vals.secondaryStat;
   if (vals.wAtk !== undefined) document.getElementById('wAtk').value = vals.wAtk;
   if (vals.atkPower !== undefined) document.getElementById('atkPower').value = vals.atkPower;
+  if (vals.masteryLevel !== undefined) document.getElementById('masteryLevel').value = vals.masteryLevel;
   if (vals.weaponType !== undefined) document.getElementById('weaponType').value = vals.weaponType;
   if (vals.swingType !== undefined) document.getElementById('swingType').value = vals.swingType;
   updateMaxMultiplier();
 }
 document.getElementById('calculateStatEq').onclick = function() {
-  const mainStat = Number(document.getElementById('mainStat').value) || 0;
-  const secondaryStat = Number(document.getElementById('secondaryStat').value) || 0;
-  const wAtk = Number(document.getElementById('wAtk').value) || 0;
-  const atkPower = Number(document.getElementById('atkPower').value) || 0;
-  const maxMult = Number(document.getElementById('maxMult').value) || 0;
+  const mainStat = Number(document.getElementById('mainStat').value);
+  const secondaryStat = Number(document.getElementById('secondaryStat').value);
+  const wAtk = Number(document.getElementById('wAtk').value);
+  const atkPower = Number(document.getElementById('atkPower').value);
+  const masteryLevel = Number(document.getElementById('masteryLevel').value);
+
   const weaponType = document.getElementById('weaponType').value;
   const swingType = document.getElementById('swingType').value;
-  // MAX = (PrimaryStat * MaxMult + 100 + SecondaryStat + W.ATK) * AttackPower / 100
-  const maxDamage = ((mainStat * maxMult + 100 + secondaryStat + wAtk) * atkPower) / 100;
-  document.getElementById('statEqResult').textContent = `Max Damage: ${Math.round(maxDamage)}`;
+  const maxMult = weaponMultipliers[weaponType]?.[swingType];
 
-  // Calculate actual damage gain for +1 Attack Power
-  const base = (mainStat * maxMult + 100 + secondaryStat + wAtk);
-  const dmgGainAtkPower = (base * (atkPower + 1) / 100) - (base * atkPower / 100);
-  // Calculate actual damage gain for +1 Primary Stat
-  const dmgGainPrimary = (((mainStat + 1) * maxMult + 100 + secondaryStat + wAtk) * atkPower / 100) - (base * atkPower / 100);
-  // Calculate actual damage gain for +1 Secondary Stat
-  const dmgGainSecondary = ((mainStat * maxMult + 100 + secondaryStat + 1 + wAtk) * atkPower / 100) - (base * atkPower / 100);
-  // Calculate actual damage gain for +1 W.Att
-  const dmgGainWAtt = ((mainStat * maxMult + 100 + secondaryStat + wAtk + 1) * atkPower / 100) - (base * atkPower / 100);
+  const resultEl = document.getElementById('statEqResult');
+  const equivEl = document.getElementById('statEqEquiv');
+  const saveBtn = document.getElementById('saveStatEq');
 
-  // Stat equivalence: how many Primary Stat for 1 of each
-  const secToPrimary = dmgGainSecondary / dmgGainPrimary;
-  const atkPowerToPrimary = dmgGainAtkPower / dmgGainPrimary;
-  const wAttToPrimary = dmgGainWAtt / dmgGainPrimary;
-  statEqValues = { secToPrimary, atkPowerToPrimary, wAttToPrimary, mainStat, secondaryStat, wAtk, atkPower, maxMult, weaponType, swingType };
+  // Validate inputs
+  const inputs = [mainStat, secondaryStat, wAtk, atkPower, masteryLevel];
 
-  document.getElementById('statEqEquiv').innerHTML =
-    `<div style='margin-top:10px;'>
+  if (inputs.some(v => !Number.isFinite(v) || v < 0)) {
+    resultEl.textContent = 'Please enter valid non-negative numbers.';
+    equivEl.innerHTML = '';
+    saveBtn.style.display = 'none';
+    return;
+  }
+
+  if (!Number.isInteger(masteryLevel) || masteryLevel > 10) {
+    resultEl.textContent = 'Mastery Level must be an integer between 0 and 10.';
+    equivEl.innerHTML = '';
+    saveBtn.style.display = 'none';
+    return;
+  }
+
+  if (maxMult == null) {
+    resultEl.textContent = 'Invalid weapon action for this weapon category.';
+    equivEl.innerHTML = '';
+    saveBtn.style.display = 'none';
+    return;
+  }
+
+  if (wAtk <= 0) {
+    resultEl.textContent = 'Weapon Attack must be greater than 0.';
+    equivEl.innerHTML = '';
+    saveBtn.style.display = 'none';
+    return;
+  }
+
+  // New mastery formula
+  const M = (masteryLevel / 10 + 0.1) * 0.7;
+
+  // New physical damage formula
+  const minDamage = wAtk * (
+    0.8 +
+    (mainStat * M * maxMult + secondaryStat) / 100 +
+    atkPower / 50
+  );
+
+  const maxDamage = wAtk * (
+    1.0 +
+    (mainStat * maxMult + secondaryStat) / 100 +
+    atkPower / 50
+  );
+
+  const avgDamage = wAtk * (
+    0.9 +
+    (mainStat * ((M + 1) / 2) * maxMult + secondaryStat) / 100 +
+    atkPower / 50
+  );
+
+  // Display truncated damage range
+  resultEl.innerHTML = `
+    <div style="font-size:1.1rem;">
+      <strong>Damage Range:</strong>
+      <span style="font-size:1.6rem;color:#667eea;">
+        ${Math.trunc(minDamage)} - ${Math.trunc(maxDamage)}
+      </span>
+    </div>
+    <div style="font-size:1rem;color:#666;margin-top:6px;">
+      Average Damage: ${avgDamage.toFixed(2)}
+    </div>
+  `;
+
+  // Calculate equivalencies relative to one point of primary stat
+  const primaryGain = maxMult * ((M + 1) / 2) / 100;
+  const secondaryGain = 1 / 100;
+  const attackPowerGain = 1 / 50;
+  const weaponAttackGain = avgDamage / wAtk;
+
+  const secToPrimary = secondaryGain / primaryGain;
+  const atkPowerToPrimary = attackPowerGain / primaryGain;
+  const wAttToPrimary = weaponAttackGain / (wAtk * primaryGain);
+
+  statEqValues = {
+    secToPrimary,
+    atkPowerToPrimary,
+    wAttToPrimary,
+    mainStat,
+    secondaryStat,
+    wAtk,
+    atkPower,
+    masteryLevel,
+    maxMult,
+    weaponType,
+    swingType
+  };
+
+  equivEl.innerHTML = `
+    <div style="margin-top:10px;">
       <strong>Stat Equivalence:</strong><br>
       1 Secondary Stat = ${secToPrimary.toFixed(3)} Primary Stat<br>
       1 Attack Power = ${atkPowerToPrimary.toFixed(3)} Primary Stat<br>
-      1 W.Att = ${wAttToPrimary.toFixed(3)} Primary Stat<br>
-      <hr style='margin:10px 0;'>
-      <span style='color:#888;font-size:0.95rem;'>
-        (Values depend on your input and weapon multiplier. W.Att and Secondary are equivalent, Attack Power is much stronger.)
+      1 W.ATK = ${wAttToPrimary.toFixed(3)} Primary Stat
+      <hr style="margin:10px 0;">
+      <span style="color:#888;font-size:0.95rem;">
+        Based on average damage. Mastery affects the primary stat's
+        average damage contribution.
       </span>
-    </div>`;
-  document.getElementById('saveStatEq').style.display = 'block';
+    </div>
+  `;
+
+  saveBtn.style.display = 'block';
 };
 
 document.getElementById('saveStatEq').onclick = async function() {
